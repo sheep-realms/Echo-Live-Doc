@@ -1,0 +1,66 @@
+/* .md-main {
+    min-height: calc(100vh - 95px);
+} */
+
+.md-logo img {
+    image-rendering: pixelated;
+}
+
+ruby>span {
+    display: inline-block;
+    width: 0;
+    font-size: 0;
+}
+
+.md-main ::selection {
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+}
+
+.md-content {
+    padding-bottom: 25vh;
+}
+
+.color-bili {
+    color: #00A1D6;
+}
+
+.color-afdian {
+    color: #926AE4;
+}
+
+.color-red {
+    color: #EF5552;
+}
+
+.color-amber {
+    color: #FFC105;
+}
+
+img.pixel {
+    image-rendering: pixelated;
+}
+
+img.center {
+    display: block;
+    margin: auto;
+}
+
+a.footnote-ref {
+    user-select: none;
+}
+
+a.footnote-ref::before {
+    content: '[';
+}
+
+a.footnote-ref::after {
+    content: ']';
+}
+
+.color-show {
+    display: inline-block;
+    height: 14px;
+    width: 72px;
+    border-radius: 4px;
+}
