@@ -1,2 +1,2 @@
-# Perspective-highlight
-透视与高亮 Minecraft资源包
+# Echo-Live 帮助文档
+这里是 Echo-Live 帮助文档的仓库。
