@@ -1,3 +1,7 @@
+---
+description: 一款基于 Echo 的用于无声系虚拟主播直播的仿视觉小说对话框 OBS 插件。
+---
+
 # 欢迎使用 Echo-Live
 
 <style>
