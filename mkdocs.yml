@@ -97,6 +97,7 @@ nav:
   - 主题: custom/theme.md
   - 音效: custom/sound.md
   - 扩展: custom/extension.md
+  - 事件: custom/event.md
 - 消息格式:
   - start.js: message/index.md
   - 基本格式: message/base.md
@@ -104,6 +105,7 @@ nav:
   - 文本样式: message/style.md
   - 停顿: message/pause.md
   - 模拟打字: message/typewrite.md
+  - 事件: message/event.md
   - 多个文本段落: message/paragraph.md
 - 开发文档:
   - Echo: dev/echo.md
