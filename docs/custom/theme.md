@@ -1,4 +1,11 @@
-# 主题
+# 关于主题
+
+<style>
+    .theme-review {
+        box-shadow: var(--md-default-fg-color--lightest) 0 0 16px;
+    }
+</style>
+
 Echo-Live 内置了多套主题，您可以通过修改 `live.html` 中定义主题样式的部分修改主题，文件中已有注释指引。您可以通过 `res/style/live-theme/` 文件夹浏览可用主题。
 
 另外，各种主题文件中都在顶部整理了常用变量，方便您快速修改诸如背景颜色、边框、字体大小等参数。
@@ -29,3 +36,12 @@ Echo-Live 内置了多套主题，您可以通过修改 `live.html` 中定义主
 | - | - | - |
 | vanilla.css | 原版 | Echo-Live 的默认主题，几乎没有任何装饰，适用于在画面中以全屏宽度靠下展现。右侧预留了立绘位置，可将立绘覆盖在对话框之上。 |
 | bubble.css | 气泡 | 常见的气泡对话框，具有粗边框和投影，可调整成任意尺寸，没有预留立绘位置。 |
+
+## 主题预览
+### 原版 | Vanilla
+
+![Vanilla](../image/theme/vanilla.jpg){ .theme-review }
+
+### 气泡 | Bubble
+
+![Bubble](../image/theme/bubble.jpg){ .theme-review }

@@ -1,4 +1,4 @@
-# 欢迎使用
+# 欢迎使用 Echo-Live
 
 <style>
     #mainpage-download-before+p {
@@ -9,7 +9,7 @@
     }
 </style>
 
-![Banner](image/banner.png){ style="max-height: 40vh; display: block; margin: 0 auto;" }
+![Banner](image/banner.png){ style="max-height: 40vh; display: block; margin: 0 auto; border-radius: 8px;" }
 
 <div id="mainpage-download-before"></div>
 

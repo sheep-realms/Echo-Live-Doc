@@ -95,3 +95,9 @@ nav:
   - 基本格式: message/base.md
   - 启动参数: message/start-par.md
   - 文本样式: message/style.md
+  - 停顿: message/pause.md
+  - 模拟打字: message/typewrite.md
+  - 多个文本段落: message/paragraph.md
+- 开发文档:
+  - Echo: dev/echo.md
+  - 定制主题: dev/theme.md
