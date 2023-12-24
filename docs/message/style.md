@@ -30,7 +30,7 @@
     Echo 本身并不具备解析样式的功能，也并未规定如何定义样式，样式的解析是由下游脚本实现的，是 Echo-Live 承担了这一工作。
 
 ## :material-format-bold::material-format-italic::material-format-underline: 粗体、斜体和下划线
-`style` 字段可以定义粗体 `bold`、斜体 `italic` 和下划线 `underline`，这下值都是布尔值，把他们一股脑加进去是这样的：
+`style` 字段可以定义粗体 `bold`、斜体 `italic` 和下划线 `underline`，这些值都是布尔值，把他们一股脑加进去是这样的：
 
 ``` json linenums="1" hl_lines="5 6 7"
 {
