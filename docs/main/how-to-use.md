@@ -17,6 +17,7 @@ Echo-Live 无需安装，开箱即用。
 
 ### 方法二：通过轮询传递消息
 如果因 OBS 更新等原因导致上述方法失效，请尝试此方法。
+
 1. 使用文本编辑器打开配置文件 `config.js`, 将配置项 `echolive` 中的 `broadcast_enable` 改为 `false`，`messages_polling_enable` 改为 `true`。建议您使用 [VSCode](https://code.visualstudio.com/) 等专业文本编辑器作为您的文本编辑器，不建议使用 Windows 内置的记事本。
 2. 打开 OBS，将 `live.html` 作为浏览器源（勾选 “本地文件”）添加到您的场景中。
 3. 使用文本编辑器打开 `start.js` 备用。
