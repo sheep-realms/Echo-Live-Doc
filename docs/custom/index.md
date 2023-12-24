@@ -9,3 +9,4 @@
 - `res/script/live.js` 是部署 `res/class/Echo.js` 的脚本，主要工作为导入配置、绑定事件、配合 `res/style/echo.css` 解析消息格式。
 - `res/script/live-pre.js` 是在 `live.html` 头部加载的脚本，负责导入扩展资源。
 - `res/script/sounds.js` 定义了打字音效。
+- `res/class/EchoLive.js` 是业务逻辑类，目前正在封装整理 `res/script/live.js` 中的脚本。
