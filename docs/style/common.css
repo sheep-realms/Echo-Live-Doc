@@ -37,6 +37,18 @@ ruby>span {
     color: #FFC105;
 }
 
+.color-indigo {
+    color: #4051B5;
+}
+
+.text-version {
+    color: #4051B5;
+    display: inline-block;
+    background-color: #EDF0FF;
+    padding: 0 0.5em;
+    border-radius: 4px;
+}
+
 img.pixel {
     image-rendering: pixelated;
 }

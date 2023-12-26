@@ -111,3 +111,14 @@ nav:
 - 开发文档:
   - Echo: dev/echo.md
   - 定制主题: dev/theme.md
+  - 广播:
+    - 概览: dev/broadcast/index.md
+    - API 参数格式: dev/broadcast/api.md
+    - API 文档:
+      - dev/broadcast/api/close.md
+      - dev/broadcast/api/echo_next.md
+      - dev/broadcast/api/hello.md
+      - dev/broadcast/api/message_data.md
+      - dev/broadcast/api/page_hidden.md
+      - dev/broadcast/api/page_visible.md
+      - dev/broadcast/api/ping.md

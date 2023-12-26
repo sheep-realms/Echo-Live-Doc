@@ -1,4 +1,5 @@
 # 事件
+:material-tag:{ title="最早可用版本" .color-indigo } <span class="text-version">1.1.4</span>
 
 Echo-Live 的消息格式中允许定义自定义事件以触发一些有趣的动效，详见[事件列表](../custom/event.md)。
 

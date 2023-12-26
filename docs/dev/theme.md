@@ -26,7 +26,6 @@ Echo-Live 的演出主体（即 `live.html` 中的 `#echo-live` 元素）DOM 结
     .echo-live .bottom-left,
     .echo-live .bottom-center,
     .echo-live .bottom-right,
-    .center-center-content,
     .center-center-content>div {
         border: var(--md-default-fg-color--lighter) 1px solid;
         margin: 0.25em;
@@ -99,7 +98,7 @@ Echo-Live 的演出主体（即 `live.html` 中的 `#echo-live` 元素）DOM 结
 </div>
 ```
 
-<p>其中，<span class="echo-red">高亮</span>的 ID 和类名是重要元素，不可删除。除此之外，您可以删改任意元素。</p>
+<p>其中，<span class="echo-red">高亮</span>的 ID 和类名是重要元素，不可删除，除非您不想看见这些元素。除此之外，您可以删改任意元素。</p>
 
 - `.name` 是对话框中显示说话人的元素，内容会被替换为说话人名称。
 - `.content.echo-output` 是对话框中输出消息内容的元素，内容会被替换为消息内容。

@@ -1,4 +1,5 @@
 # 自定义数据
+:material-tag:{ title="最早可用版本" .color-indigo } <span class="text-version">1.2.0</span>
 
 Echo-Live 的消息格式中允许传递自定义数据，以实现有趣的交互。
 
