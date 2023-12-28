@@ -17,7 +17,7 @@ Echo-Live 内置了多套主题，您可以通过修改 `live.html` 中定义主
 
 ``` html linenums="1" hl_lines="2"
 <!-- ↓ 这里是主题样式，如需替换请修改这里的 href 值 -->
-<link rel="stylesheet" href="res/style/live-theme/vanilla.css">
+<link id="echo-live-theme" rel="stylesheet" href="res/style/live-theme/vanilla.css">
 <!-- ↑ 这里是主题样式，请通过 res/style/live-theme/ 文件夹浏览可用主题 -->
 ```
 
@@ -25,7 +25,7 @@ Echo-Live 内置了多套主题，您可以通过修改 `live.html` 中定义主
 
 ``` html linenums="1" hl_lines="2"
 <!-- ↓ 这里是主题样式，如需替换请修改这里的 href 值 -->
-<link rel="stylesheet" href="res/style/live-theme/bubble.css">
+<link id="echo-live-theme" rel="stylesheet" href="res/style/live-theme/bubble.css">
 <!-- ↑ 这里是主题样式，请通过 res/style/live-theme/ 文件夹浏览可用主题 -->
 ```
 
