@@ -29,8 +29,15 @@
 | - | - | - |
 | `tabpage_config_enable` | true | 显示配置标签页。 |
 | `tabpage_output_enable` | true | 显示输出标签页。 |
+| `client_state_panel_enable` | false | 显示对话框状态仪表板。 |
 | `username_init` | '' | 初始说话人。 |
 | `output_before` | 'echolive.send(' | 在输出内容之前插入的内容。 |
 | `ontput_before_enable` | 1 | 启用上述功能，0 为禁用，1 为启用。 |
 | `output_after` | ');' | 在输出内容之后插入的内容。 |
 | `ontput_after_enable` | 1 | 启用上述功能，0 为禁用，1 为启用。 |
+
+## 无障碍相关配置
+| 配置项 | 预设值 | 描述 |
+| - | - | - |
+| `high_contrast` | false | 高对比度。 |
+| `drotanopia_and_deuteranopia` | false | 红绿色盲。 |
