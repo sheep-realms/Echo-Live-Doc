@@ -62,6 +62,10 @@ Echo-Live 无需安装，开箱即用。
 
 ![广播模式](../image/how-to-use/mode1.png)
 
+广播模式下可以开启 WebSocket 连接，第三方软件可以通过 WebSocket 接口向 Echo-Live 发送消息。
+
+![广播模式](../image/how-to-use/mode1_1.png)
+
 ### 轮询模式
 轮询模式是备用方案，由对话框主动定时查询 `start.js` 是否发生更改，如果发生更改则输出新消息。
 
