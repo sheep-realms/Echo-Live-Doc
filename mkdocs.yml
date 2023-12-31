@@ -90,6 +90,8 @@ nav:
   - 欢迎使用: index.md
   - 如何下载: main/download.md
   - 如何使用: main/how-to-use.md
+  - 安全须知: main/security.md
+  - 无障碍使用指南: main/accessible.md
   - 授权协议与声明: main/copyright.md
 - 客制化:
   - 总览: custom/index.md
