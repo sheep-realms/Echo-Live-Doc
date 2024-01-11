@@ -91,7 +91,6 @@ nav:
   - 如何下载: main/download.md
   - 如何使用: main/how-to-use.md
   - 安全须知: main/security.md
-  - 二次创作指引: main/derivative_works.md
   - 无障碍使用指南: main/accessible.md
   - 授权协议与声明: main/copyright.md
 - 客制化:
@@ -104,6 +103,7 @@ nav:
 - 消息格式:
   - start.js: message/index.md
   - 基本格式: message/base.md
+  - 快速格式化代码: message/formatting-code.md
   - 启动参数: message/start-par.md
   - 文本样式: message/style.md
   - 停顿: message/pause.md

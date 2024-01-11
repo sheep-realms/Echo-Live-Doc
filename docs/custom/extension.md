@@ -55,3 +55,7 @@ extensionManager.load({
 | `addon.theme[].script` | Array | 主题脚本路径，以 `pack.js` 所在文件夹为起点。 |
 
 使用扩展添加新音效后，需要以 `命名空间:音效ID` 的格式调用音效，主题同理。
+
+### :material-script-text: 主题脚本
+
+主题脚本尚处于测试阶段，未来有可能发生更改，请不要过度依赖主题脚本。
