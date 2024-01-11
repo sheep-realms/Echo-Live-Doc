@@ -103,6 +103,7 @@ nav:
 - 消息格式:
   - start.js: message/index.md
   - 基本格式: message/base.md
+  - 快速格式化代码: message/formatting-code.md
   - 启动参数: message/start-par.md
   - 文本样式: message/style.md
   - 停顿: message/pause.md
@@ -124,3 +125,5 @@ nav:
       - dev/broadcast/api/page_hidden.md
       - dev/broadcast/api/page_visible.md
       - dev/broadcast/api/ping.md
+      - dev/broadcast/api/set_theme.md
+      - dev/broadcast/api/set_theme_style_url.md

@@ -13,7 +13,7 @@
 
 ## :material-waveform: 音效列表
 ### :material-keyboard: 打字音效
-| :material-tag: 音效名 | :material-help-circle: 描述 |
+| :material-tag: 音效 ID | :material-help-circle: 描述 |
 | - | - |
 | `typewriter` | 传统打字机的机械按键声。 |
 | `typewriter_loop` | 同上，但是准备了10种不同的音频随机播放。 |

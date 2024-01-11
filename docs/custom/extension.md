@@ -2,7 +2,7 @@
 
 Echo-Live 支持扩展，可用于增加额外资源。
 
-**注意：Echo-Live 的扩展仅作规范导入分享资源之用，虽然目前仅支持增加额外音频资源，但实际上可以被用来做任何事，因此请谨慎安装来路不明的扩展。**
+**注意：Echo-Live 的扩展仅作规范导入分享资源之用，虽然目前仅支持增加额外音频资源和主题，但实际上可以被用来做任何事，因此请不要安装来路不明的扩展。**
 
 ## :material-import: 安装
 1. 将扩展（是一个文件夹）放入 `extensions` 文件夹。
@@ -15,13 +15,24 @@ Echo-Live 支持扩展，可用于增加额外资源。
 ``` javascript linenums="1"
 extensionManager.load({
     meta: {
-        namespace: 'sample'
+        namespace: 'example'
     },
     addon: {
         audio: [
             {
                 name: 'sonar',
                 path: 'audio/sonar.ogg'
+            }
+        ],
+        theme: [
+            {
+                name: 'example_theme',
+                title: '示例主题',
+                description: '主题描述',
+                style: 'style/example.css',
+                script: [
+                    'script/example.js'
+                ]
             }
         ]
     }
@@ -34,7 +45,17 @@ extensionManager.load({
 | `meta.namespace` | String | 命名空间，与文件夹名称一致。 |
 | `addon` | Object | 扩展所添加的额外内容。 |
 | `addon.audio` | Array | 音效列表。 |
-| `addon.audio[].name` | String | 音效名称。 |
+| `addon.audio[].name` | String | 音效 ID。 |
 | `addon.audio[].path` | String | 音效路径，以 `pack.js` 所在文件夹为起点。 |
+| `addon.theme` | Array | 主题列表。 |
+| `addon.theme[].name` | String | 主题 ID。 |
+| `addon.theme[].title` | String | 主题名称。 |
+| `addon.theme[].description` | String | 主题描述。 |
+| `addon.theme[].style` | String | 主题样式表路径，以 `pack.js` 所在文件夹为起点。请通过 @import 导入更多样式表。 |
+| `addon.theme[].script` | Array | 主题脚本路径，以 `pack.js` 所在文件夹为起点。 |
 
-使用扩展添加新音效后，需要以 `命名空间:音效名称` 的格式调用音效。
+使用扩展添加新音效后，需要以 `命名空间:音效ID` 的格式调用音效，主题同理。
+
+### :material-script-text: 主题脚本
+
+主题脚本尚处于测试阶段，未来有可能发生更改，请不要过度依赖主题脚本。
