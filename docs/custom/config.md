@@ -10,6 +10,8 @@
 ## Echo Live 相关配置
 | 配置项 | 预设值 | 描述 |
 | - | - | - |
+| `live_theme` | 'vanilla' | 主题名称。可用的主题请见[主题列表](theme.md#theme-list)。 |
+| `live_theme_script_enable` | false | 启用主题脚本。 |
 | `broadcast_enable` | true | 启用广播，可通过编辑器直接发送消息，启用此项将禁用消息轮询。 |
 | `broadcast_channel` | 'sheep-realms:echolive' | 广播频道名称。 |
 | `messages_polling_enable` | true | 启用消息轮询，无需手动刷新，关闭则使用旧版手动操作。 |

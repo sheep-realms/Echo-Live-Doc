@@ -12,31 +12,19 @@ Echo-Live 内置了多套主题，您可以通过修改 `live.html` 中定义主
 
 主题文件使用的是广泛运用的 CSS 样式，如有需要，您可以咨询网页或UI设计师定制主题。
 
-## 修改主题的方法
-在 `live.html` 文件中您可用看到以下被注释强调的内容：
+## 如何修改主题
+在配置文件 `config.js` 中您可以在 `echolive` 配置项中找到 `live_theme` 配置项，后面的值即为主题的 ID，修改即可更换主题，主题名称见下表。
 
-``` html linenums="1" hl_lines="2"
-<!-- ↓ 这里是主题样式，如需替换请修改这里的 href 值 -->
-<link id="echo-live-theme" rel="stylesheet" href="res/style/live-theme/vanilla.css">
-<!-- ↑ 这里是主题样式，请通过 res/style/live-theme/ 文件夹浏览可用主题 -->
-```
-
-假如您想将主题文件更换为 `bubble.css`，您应当如此修改：
-
-``` html linenums="1" hl_lines="2"
-<!-- ↓ 这里是主题样式，如需替换请修改这里的 href 值 -->
-<link id="echo-live-theme" rel="stylesheet" href="res/style/live-theme/bubble.css">
-<!-- ↑ 这里是主题样式，请通过 res/style/live-theme/ 文件夹浏览可用主题 -->
-```
+该配置下方还有 `live_theme_script_enable` 配置项，其作用是启用主题附带的脚本。一些高级效果可能需要启动脚本才能生效，目前所有预制主题中均不包含脚本。关于启用脚本可能存在的风险请见[安全须知](../main/security.md)。
 
 最后，别忘了保存文件。
 
-## 主题介绍
-| :material-file: 文件名 | :material-tag: 名称 | :material-help-circle: 描述 |
-| - | - | - |
-| vanilla.css | 原版 | Echo-Live 的默认主题，几乎没有任何装饰，适用于在画面中以全屏宽度靠下展现。右侧预留了立绘位置，可将立绘覆盖在对话框之上。 |
-| bubble.css | 气泡 | 常见的气泡对话框，具有粗边框和投影，可调整成任意尺寸，没有预留立绘位置。 |
-| vold.css | 虚空 | 无背景对话框，仅显示文字。 |
+## 主题列表 { id="theme-list" }
+| :material-tag: ID | :material-format-title: 名称 | :material-help-circle: 描述 | :material-script-text: 脚本 |
+| - | - | - | - |
+| `vanilla` | 原版 | Echo-Live 的默认主题，几乎没有任何装饰，适用于在画面中以全屏宽度靠下展现。右侧预留了立绘位置，可将立绘覆盖在对话框之上。 | :material-close: 无 |
+| `bubble` | 气泡 | 常见的气泡对话框，具有粗边框和投影，可调整成任意尺寸，没有预留立绘位置。 | :material-close: 无 |
+| `void` | 虚空 | 无背景对话框，仅显示文字。 | :material-close: 无 |
 
 ## 主题预览
 ### 原版 | Vanilla

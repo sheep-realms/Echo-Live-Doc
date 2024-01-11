@@ -91,6 +91,7 @@ nav:
   - 如何下载: main/download.md
   - 如何使用: main/how-to-use.md
   - 安全须知: main/security.md
+  - 二次创作指引: main/derivative_works.md
   - 无障碍使用指南: main/accessible.md
   - 授权协议与声明: main/copyright.md
 - 客制化:
@@ -124,3 +125,5 @@ nav:
       - dev/broadcast/api/page_hidden.md
       - dev/broadcast/api/page_visible.md
       - dev/broadcast/api/ping.md
+      - dev/broadcast/api/set_theme.md
+      - dev/broadcast/api/set_theme_style_url.md
