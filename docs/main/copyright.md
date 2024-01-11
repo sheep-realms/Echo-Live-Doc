@@ -1,13 +1,27 @@
-# 授权协议与声明
+# Echo-Live 授权协议与声明
 版权所有 © [Sheep-realms](https://github.com/sheep-realms){ target="_blank" } 和 [GitHub 项目 sheep-realms/Echo-Live 上的贡献者们](https://github.com/sheep-realms/Echo-Live/graphs/contributors){ target="_blank" }。
 
 Echo-Live 是自由软件，您可以依据自由软件基金会发行的 [GPL（GNU General Public License，GNU通用公共许可协议）第3版](https://www.gnu.org/licenses/gpl-3.0.html){ target="_blank" } 或任意后续版本的条款，传播和/或修改本软件。您传播和/或修改本软件即视为您已阅读 GPL 协议并无条件同意。
 
 Echo-Live 发表时预期有用，但对此无任何保证；亦无隐含的可以销售或适合特定目的的保证。详情请见 GNU 公众授权协议。
 
-Echo-Live 包含有并非以 GNU 公众授权协议共享的网络音频资源，这些音频资源的版权信息将在下文列出。
+Echo-Live 包含有并非以 GNU 公众授权协议共享的多媒体资源，这些多媒体资源的版权信息将在下文列出。
 
 您在使用 Echo-Live 时所生产的内容（包括但不限于文字、图像、媒体、文件，不包括软件本身）版权由您自己享有。
 
-## 音频版权信息
-未在下表列出的音频文件均以 CC 0 公有领域授权。
+## 多媒体资源版权信息
+未在下表列出的多媒体资源文件均以 CC 0 公有领域授权。
+
+| 文件名或文件夹名 | 授权协议 | 作者 | 来源 |
+| - | - | - | - |
+
+## EchoLiveChan 授权协议与声明
+EchoLiveChan（或称 “EchoLive酱”）是 Echo-Live 的拟人形象，内容包含立绘图像，由 Sheep-realms 创作，用于 Echo-Live 的立绘互动功能。
+
+版权所有 © [Sheep-realms](https://github.com/sheep-realms){ target="_blank" }
+
+作者对于使用此形象有以下要求：
+
+> 只要你别给我找麻烦，你想干嘛就干嘛。
+
+作者保留对此授权协议的最终解释权。
