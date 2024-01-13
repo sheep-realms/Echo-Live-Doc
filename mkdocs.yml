@@ -84,6 +84,9 @@ extra:
       link: https://github.com/sheep-realms
     - icon: fontawesome/brands/bilibili
       link: https://space.bilibili.com/43881503
+  analytics:
+    provider: google
+    property: G-2F1KW42J1Q
 
 nav:
 - 首页: 
