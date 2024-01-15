@@ -102,7 +102,7 @@ nav:
   - 主题: custom/theme.md
   - 音效: custom/sound.md
   - 扩展: custom/extension.md
-  - 事件: custom/event.md
+  - 消息事件: custom/event.md
 - 消息格式:
   - start.js: message/index.md
   - 基本格式: message/base.md
