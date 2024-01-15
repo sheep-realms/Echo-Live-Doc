@@ -70,3 +70,21 @@
     }
 }
 ```
+
+## :material-lightbulb-on: 自定义样式
+如何您想尝试自定义样式，请先学习 [CSS](https://www.runoob.com/css/css-tutorial.html){ target="_blank" }。
+
+您可以通过 `style` 字段为文本段落写入自定义样式。是的，你没看错，是 `style` 中的 `style`...... 好吧这个套娃确实有点奇怪。
+
+如果您已经掌握了 CSS，那我们直接上示例，这不难理解：
+
+``` json linenums="1" hl_lines="5"
+{
+    "message": {
+        "text": "我们所经历的每个平凡的日常，也许就是连续发生的奇迹。",
+        "style": {
+            "style": "font-size: 0.75em; color: #66CCFF;"
+        }
+    }
+}
+```
