@@ -69,7 +69,8 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
-# plugins:
+plugins:
+  - search
 #   - social:
 #       cards_layout_options:
 #         font_family: Noto Sans SC
@@ -96,6 +97,7 @@ nav:
   - 安全须知: main/security.md
   - 无障碍使用指南: main/accessible.md
   - 授权协议与声明: main/copyright.md
+  - 历史记录: main/history.md
 - 客制化:
   - 总览: custom/index.md
   - 配置: custom/config.md
