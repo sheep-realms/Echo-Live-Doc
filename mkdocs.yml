@@ -108,7 +108,7 @@ nav:
   - 消息事件: custom/event.md
 - 消息格式:
   - start.js: message/index.md
-  - 基本格式: message/base.md
+  - 基本段落格式: message/base.md
   - 快速格式化代码: message/formatting-code.md
   - 启动参数: message/start-par.md
   - 文本样式: message/style.md
