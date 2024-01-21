@@ -59,16 +59,25 @@ Echo-Live 无需安装，开箱即用。
 ### :material-broadcast: 广播模式
 广播模式是一种基于浏览器内网页之间的通信技术实现的工作模式，由编辑器发送广播消息，对话框接收消息。该工作模式要求对话框和编辑器都在 OBS 的环境内。
 
-![广播模式工作原理](../image/how-to-use/mode1.png)
+<figure markdown>
+  ![广播模式工作原理](../image/how-to-use/mode1.png){ .img-light-hyper }
+  <figcaption>广播模式工作原理</figcaption>
+</figure>
 
 广播模式下可以开启 WebSocket 连接，第三方软件可以通过 WebSocket 接口向 Echo-Live 发送消息。
 
-![WebSocket 工作原理](../image/how-to-use/mode1_1.png)
+<figure markdown>
+  ![WebSocket 工作原理](../image/how-to-use/mode1_1.png){ .img-light-hyper }
+  <figcaption>WebSocket 工作原理</figcaption>
+</figure>
 
 ### :material-sync: 轮询模式
 轮询模式是备用方案，由对话框主动定时查询 `start.js` 是否发生更改，如果发生更改则输出新消息。启用广播模式将会禁用该模式。
 
-![轮询模式工作原理](../image/how-to-use/mode2.png)
+<figure markdown>
+  ![轮询模式工作原理](../image/how-to-use/mode2.png){ .img-light-hyper }
+  <figcaption>轮询模式工作原理</figcaption>
+</figure>
 
 ### :material-island: 孤立模式
 
