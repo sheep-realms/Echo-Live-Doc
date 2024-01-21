@@ -27,7 +27,7 @@ theme:
   features:
     - content.code.annotate
     - content.code.copy
-    - content.tabs.link
+    # - content.tabs.link
     # - header.autohide
     # - navigation.expand
     # - navigation.indexes
@@ -63,8 +63,8 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
   - footnotes
-  # - pymdownx.tabbed:
-  #   alternate_style: true 
+  - pymdownx.tabbed:
+      alternate_style: true 
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg

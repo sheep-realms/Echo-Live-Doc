@@ -41,19 +41,25 @@ tags:
 ## :material-format-bold::material-format-italic::material-format-underline::material-format-strikethrough: 粗体、斜体、下划线和删除线
 `style` 字段可以定义粗体 `bold`、斜体 `italic`、下划线 `underline` 和删除线 `strikethrough`，这些值都是布尔值，把他们一股脑加进去是这样的：
 
-``` json linenums="1" hl_lines="5 6 7 8"
-{
-    "message": {
-        "text": "我们所经历的每个平凡的日常，也许就是连续发生的奇迹。",
-        "style": {
-            "bold": true,
-            "italic": true,
-            "underline": true,
-            "strikethrough": true
+=== "代码"
+
+    ``` json linenums="1" hl_lines="5 6 7 8"
+    {
+        "message": {
+            "text": "我们所经历的每个平凡的日常，也许就是连续发生的奇迹。",
+            "style": {
+                "bold": true,
+                "italic": true,
+                "underline": true,
+                "strikethrough": true
+            }
         }
     }
-}
-```
+    ```
+
+=== "效果预览"
+
+    <b><i><u><s>我们所经历的每个平凡的日常，也许就是连续发生的奇迹。</b></i></u></s>
 
 当然一般情况下不需要加这么多，除非你在搞什么抽象艺术。
 
@@ -69,16 +75,22 @@ tags:
 
 关于颜色值的格式详见：[&lt;color&gt; - CSS：层叠样式表 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/color_value){ target="_blank" }
 
-``` json linenums="1" hl_lines="5"
-{
-    "message": {
-        "text": "我们所经历的每个平凡的日常，也许就是连续发生的奇迹。",
-        "style": {
-            "color": "#66CCFF"
+=== "代码"
+
+    ``` json linenums="1" hl_lines="5"
+    {
+        "message": {
+            "text": "我们所经历的每个平凡的日常，也许就是连续发生的奇迹。",
+            "style": {
+                "color": "#66CCFF"
+            }
         }
     }
-}
-```
+    ```
+
+=== "效果预览"
+
+    <span style="color: #66CCFF;">我们所经历的每个平凡的日常，也许就是连续发生的奇迹。</span>
 
 ## :material-lightbulb-on: 自定义样式
 如何您想尝试自定义样式，请先学习 [CSS](https://www.runoob.com/css/css-tutorial.html){ target="_blank" }。
@@ -87,13 +99,19 @@ tags:
 
 如果您已经掌握了 CSS，那我们直接上示例，这不难理解：
 
-``` json linenums="1" hl_lines="5"
-{
-    "message": {
-        "text": "我们所经历的每个平凡的日常，也许就是连续发生的奇迹。",
-        "style": {
-            "style": "font-size: 0.75em; color: #66CCFF;"
+=== "代码"
+
+    ``` json linenums="1" hl_lines="5"
+    {
+        "message": {
+            "text": "我们所经历的每个平凡的日常，也许就是连续发生的奇迹。",
+            "style": {
+                "style": "font-size: 0.75em; color: #66CCFF;"
+            }
         }
     }
-}
-```
+    ```
+
+=== "效果预览"
+
+    <span style="font-size: 0.75em; color: #66CCFF;">我们所经历的每个平凡的日常，也许就是连续发生的奇迹。</span>
