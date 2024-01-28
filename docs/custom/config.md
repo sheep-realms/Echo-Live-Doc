@@ -39,7 +39,7 @@
 | `ontput_after_enable` | 1 | 启用上述功能，`0` 为禁用，`1` 为启用。 |
 | `history_resend_bubble` | false | 历史消息再次发送时是否使历史记录回到顶部。 |
 | `history_maximum` | 128 | 历史消息数量上限。设为 `-1` 则不设上限。 |
-| `log_line_maximum` | 128 | 日志行数上限。设为 `-1` 则不设上限。 |
+| `log_line_maximum` | 512 | 日志行数上限。设为 `-1` 则不设上限。 |
 | `palette` | 'all' | 拾色器中启用的色板。设为 `all` 视为启用所有可用色板，否则类型为数组，数组元素为字符串，填写需要启用的色板名称，可排序。 |
 | `palette_color_contrast_enable` | false | 拾色器是否启用 WCAG 颜色对比度测试面板。 |
 | `palette_color_contrast_background_color` | '#ffffff' | 拾色器 WCAG 颜色对比度测试面板参考背景色。仅支持十六进制颜色码，背景色的 Alpha 通道会被忽略。 |
