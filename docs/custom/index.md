@@ -10,4 +10,5 @@
 - `res/script/live-pre.js` 是在 `live.html` 头部加载的脚本，负责导入扩展资源。
 - `res/script/sounds.js` 定义了打字音效。
 - `res/script/themes.js` 定义了主题。
+- `res/script/palettes.js` 定义了拾色器中的色板。
 - `res/class/EchoLive.js` 是业务逻辑类，目前正在封装整理 `res/script/live.js` 中的脚本。
