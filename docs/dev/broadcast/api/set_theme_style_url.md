@@ -14,6 +14,7 @@
 {
     action: 'set_theme_style_url',
     target: undefined,
+    type: 'server',
     data: {
         url: 'res/style/live-theme/bubble.css'
     }

@@ -12,6 +12,7 @@ Echo-Live 客户端页面重新可见时发送。
 {
     action: 'page_visible',
     target: undefined,
+    type: 'live',
     data: {
         uuid: '2c3103f0-b4ec-4041-b17a-a3d5d19d515a'
     }

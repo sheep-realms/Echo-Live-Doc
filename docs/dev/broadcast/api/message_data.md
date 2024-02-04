@@ -10,6 +10,7 @@
 {
     action: 'message_data',
     target: undefined,
+    type: 'server',
     data: {
         username: "【说话人】",
         messages: [

@@ -12,8 +12,21 @@
 {
     action: 'ping',
     target: undefined,
+    type: 'server',
     data: {
         uuid: '2c3103f0-b4ec-4041-b17a-a3d5d19d515a'
+    }
+}
+```
+
+``` javascript title="客户端回复示例"
+{
+    action: 'hello',
+    target: '2c3103f0-b4ec-4041-b17a-a3d5d19d515a',
+    type: 'live',
+    data: {
+        uuid: 'ee8b8e3b-e8fb-4c41-b9be-757b4add08ad',
+        hidden: false
     }
 }
 ```

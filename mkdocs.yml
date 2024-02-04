@@ -122,6 +122,8 @@ nav:
 - 开发文档:
   - Echo: dev/echo.md
   - 定制主题: dev/theme.md
+  - GitHub 分支: dev/branches.md
+  - 配置文件数据版本历史: dev/config-data-version.md
   - 广播:
     - 概览: dev/broadcast/index.md
     - API 参数格式: dev/broadcast/api.md
@@ -135,3 +137,4 @@ nav:
       - dev/broadcast/api/ping.md
       - dev/broadcast/api/set_theme.md
       - dev/broadcast/api/set_theme_style_url.md
+      - dev/broadcast/api/websocket_close.md

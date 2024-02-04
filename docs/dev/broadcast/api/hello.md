@@ -7,6 +7,7 @@ Echo-Live 客户端加入频道广播或响应服务端 [`ping`](ping.md) 广播
 | 键名 | 类型 | 预期值 | 描述 |
 | - | - | - | - |
 | `uuid` | String | UUID | 客户端自己的 UUID。 |
+| `type` | String | 客户端类型 | 对话框 `live` 或历史记录 `history`。 |
 | `hidden` | Boolean | 布尔值 | 客户端网页是否不可见。 |
 
 ``` javascript title="示例"
@@ -15,6 +16,7 @@ Echo-Live 客户端加入频道广播或响应服务端 [`ping`](ping.md) 广播
     target: undefined,
     data: {
         uuid: '2c3103f0-b4ec-4041-b17a-a3d5d19d515a',
+        type: 'live',
         hidden: false
     }
 }

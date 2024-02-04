@@ -10,6 +10,7 @@
 {
     action: 'echo_next',
     target: undefined,
+    type: 'live',
     data: {}
 }
 ```

@@ -12,6 +12,7 @@
 {
     action: 'set_theme',
     target: undefined,
+    type: 'server',
     data: {
         name: 'bubble'
     }
