@@ -50,7 +50,11 @@ markdown_extensions:
   - md_in_html
   - tables
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -107,6 +111,7 @@ nav:
   - 音效: custom/sound.md
   - 扩展: custom/extension.md
   - 消息事件: custom/event.md
+  - 语言 / Language: custom/language.md
 - 消息格式:
   - start.js: message/index.md
   - 基本段落格式: message/base.md
@@ -123,6 +128,7 @@ nav:
   - Echo: dev/echo.md
   - 定制主题: dev/theme.md
   - GitHub 分支: dev/branches.md
+  - 本地化: dev/i18n.md
   - 配置文件数据版本历史: dev/config-data-version.md
   - 广播:
     - 概览: dev/broadcast/index.md
