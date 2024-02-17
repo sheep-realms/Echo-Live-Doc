@@ -116,17 +116,15 @@ tags:
 
     <span style="font-size: 0.75em; color: #66CCFF;">我们所经历的每个平凡的日常，也许就是连续发生的奇迹。</span>
 
-另外，如果您预先准备好了一些样式，您也可以通过为文本添加类（Class）属性来为其赋予样式：
+另外，如果您预先准备好了一些样式，您也可以通过为文本添加类（Class）属性来为其赋予样式，请注意该字段并不在 `style` 字段内：
 
 === "消息"
 
-    ``` json linenums="1" hl_lines="5"
+    ``` json linenums="1" hl_lines="4"
     {
         "message": {
             "text": "我们所经历的每个平凡的日常，也许就是连续发生的奇迹。",
-            "style": {
-                "class": "example-text example-text-2"
-            }
+            "class": "example-text example-text-2"
         }
     }
     ```
