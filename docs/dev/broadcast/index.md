@@ -21,3 +21,14 @@ WebSocket 接口直接对接到广播，因此可以通过 WebSocket 使用广�
 1. 加入频道后，发送 [`ping`](api/ping.md) 消息。
 2. 收到客户端发来的 [`hello`](api/hello.md) 消息时，登记其 UUID 以便于管理。
 3. 收到客户端发来的 [`close`](api/hello.md) 消息时，将其 UUID 从登记列表中移除。
+
+## :material-code-braces-box: 广播类
+Echo-Live 广播系统由以下几个类组成：
+
+| 类名 | 父类 | 描述 |
+| - | - | - |
+| `EchoLiveBroadcast` | | 基类。 |
+| `EchoLiveBroadcastServer` | `EchoLiveBroadcast` | 服务器。 |
+| `EchoLiveBroadcastClient` | `EchoLiveBroadcast` | 客户端。 |
+| `EchoLiveBroadcastPortal` | `EchoLiveBroadcastClient` | 对话框。 |
+| `EchoLiveBroadcastHistory` | `EchoLiveBroadcastClient` | 历史记录浏览器。 |

@@ -1,6 +1,6 @@
 # 如何使用 Echo-Live
 
-Echo-Live 无需安装，开箱即用。
+Echo-Live 无需运行安装程序，开箱即用。
 
 <p style="color: var(--md-default-fg-color--light);">不过在开始使用之前，您最好将其放置在一个合适的位置。</p>
 

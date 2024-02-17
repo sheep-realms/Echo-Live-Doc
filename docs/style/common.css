@@ -16,6 +16,38 @@
     display: none!important;
 }
 
+.feature-tag {
+    --color: var(--color-indigo);
+    --bg-color: #526cfe1a;
+    display: inline-flex;
+    align-items: center;
+    border: var(--bg-color) 1px solid;
+    border-radius: 4px;
+}
+
+.feature-tag>span {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-tag .icon {
+    color: var(--color);
+    fill: var(--color);
+    padding: 0 0.35em;
+}
+
+.feature-tag .text {
+    background-color: var(--bg-color);
+    color: var(--color);
+    padding: 0 0.5em;
+}
+
+.feature-tag+.feature-tag {
+    margin-left: 0.5em;
+}
+
 /* .md-main {
     min-height: calc(100vh - 95px);
 } */
@@ -57,14 +89,6 @@ ruby>span {
 
 .color-indigo {
     color: var(--color-indigo);
-}
-
-.text-version {
-    color: var(--color-indigo);
-    display: inline-block;
-    background-color: #526cfe1a;
-    padding: 0 0.5em;
-    border-radius: 4px;
 }
 
 img.pixel {

@@ -1,5 +1,12 @@
 # page_visible
-:material-tag:{ title="最早可用版本" .color-indigo } <span class="text-version">1.2.2</span>
+<span class="feature-tag" title="最早可用版本" markdown>
+    <span class="icon">:material-tag:</span>
+    <span class="text">1.2.2</span>
+</span>
+<span class="feature-tag" title="终端类型" markdown>
+    <span class="icon">:material-application-braces:</span>
+    <span class="text">所有客户端</span>
+</span>
 
 Echo-Live 客户端页面重新可见时发送。
 
