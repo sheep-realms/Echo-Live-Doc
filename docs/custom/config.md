@@ -19,9 +19,14 @@
 | `live_theme_script_enable` | false | 启用主题脚本。 |
 | `broadcast_enable` | true | 启用广播，可通过编辑器直接发送消息，启用此项将禁用消息轮询。 |
 | `broadcast_channel` | 'sheep-realms:echolive' | 广播频道名称。 |
+| `websocket_enable` | false | 启用 WebSocket。广播模式下启用 WebSocket 可连接至服务器以从第三方软件获取消息。 |
+| `websocket_url` | 'ws://127.0.0.1:3000' | WebSocket 连接地址。 |
+| `websocket_reconnect_limit` | 5 | WebSocket 最大重连尝试次数。 |
+| `experimental_api_enable` | false | 启用实验性 API。 |
 | `messages_polling_enable` | true | 启用消息轮询，无需手动刷新，关闭则使用旧版手动操作。 |
 | `messages_polling_tick` | 250 | 消息轮询间隔（毫秒），值越小响应越快，性能消耗越高。 |
 | `sleep_enable` | true | 启用休眠机制，当页面不可见时休眠以防止计时器失效所引发的灾难性演出。 |
+| `sleep_during_printing_stop_print` | true | 在打印期间休眠立即停止打印。 |
 | `print_audio_enable` | false | 启用打字音效，`false` 为禁用，`true` 为启用。 |
 | `print_audio_name` | 'typewriter_loop' | 音效名称（详见 res/script/sounds.js）。 |
 | `print_audio_volume` | 0.5 | 音效音量，`1` 为最大。 |
@@ -50,10 +55,23 @@
 | `palette_color_contrast_background_color` | '#ffffff' | 拾色器 WCAG 颜色对比度测试面板参考背景色。仅支持十六进制颜色码，背景色的 Alpha 通道会被忽略。 |
 | `palette_color_contrast_threshold` | 3.8 | 拾色器 WCAG 颜色对比度测试面板对比度参考阈值。 |
 
+## 历史记录相关配置
+| 配置项 | 预设值 | 描述 |
+| - | - | - |
+| `message_list_reverse` | false | 历史记录倒序排列。 |
+| `message_item_reverse` | false | 历史记录布局左右翻转。 |
+| `display_username` | true | 显示说话人。 |
+| `display_time` | true | 显示发送时间。 |
+| `remove_continuous_duplicate` | true | 去除连续的重复消息。如果场景中有多个对话框同时接收消息，启用此项可避免重复记录历史消息。 |
+| `latest_message_hide` | true | 隐藏最新的历史记录。 |
+
 ## 无障碍相关配置
 | 配置项 | 预设值 | 描述 |
 | - | - | - |
 | `high_contrast` | false | 高对比度。 |
+| `high_contrast_outline_color` | '#00E9FF' | 焦点高亮边框颜色。 |
+| `high_contrast_outline_size` | '2px' | 焦点高亮边框尺寸。 |
+| `high_contrast_outline_style` | 'solid' | 焦点高亮边框样式。 |
 | `drotanopia_and_deuteranopia` | false | 红绿色盲。 |
 
 ## 高级设置
