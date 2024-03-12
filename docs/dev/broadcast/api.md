@@ -5,7 +5,7 @@ Echo-Live 的广播数据是一种 Object 类型的数据，内容如下：
 | - | - | - | - |
 | `action` | String | 动作名称 | 见本文档目录中的广播 API 文档。 |
 | `target` | String | undefined 或 UUID | 可选，指定接收方 UUID 或识别名，设为 undefined 即全体接收。 |
-| `type` | String | 发送者类型 | 见下文。 |
+| `from` | Object | 发送来源 | 见下文。 |
 | `data` | Object | | 需要传递的数据。 |
 
 ## target 参数
@@ -13,9 +13,18 @@ Echo-Live 的广播数据是一种 Object 类型的数据，内容如下：
 
 - UUID，例如：`2c3103f0-b4ec-4041-b17a-a3d5d19d515a`；
 - 识别名，以 `@` 开头。`@__` 开头的识别名为保留识别名，如 `@__server` 指代 WebSocket 服务器。
-  - 以 `@` 开头的识别名目前没有任何作用，计划在后续版本加入相关功能。
 
-## type 参数
+## from 参数
+`from` 参数是一个 Object 对象，有以下参数：
+
+| 键名 | 类型 | 预期值 | 描述 |
+| - | - | - | - |
+| `name` | String | 识别名 | 终端的自定义识别名，以 `@` 开头。如果没有自定义识别名则为 UUID。 |
+| `uuid` | String | UUID | 终端的 UUID。 |
+| `type` | String | 发送者类型 | 见下文。 |
+| `timestamp` | Number | 时间戳 | 消息发送时的时间戳。 |
+
+### from 中的 type 参数
 `type` 参数可以是以下值：
 
 | 值 | 描述 |
@@ -25,3 +34,17 @@ Echo-Live 的广播数据是一种 Object 类型的数据，内容如下：
 | `client` | 客户端。此类型仅用于确保继承结构完整性，正常情况下不应出现。 |
 | `live` | 对话框。 |
 | `history` | 历史记录浏览器。 |
+
+``` javascript title="示例"
+{
+    action: 'close',
+    target: undefined,
+    from: {
+        name: '@example',
+        uuid: '2c3103f0-b4ec-4041-b17a-a3d5d19d515a',
+        type: 'live',
+        timestamp: 1721491200000
+    },
+    data: {}
+}
+```

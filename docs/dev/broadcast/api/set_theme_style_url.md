@@ -25,8 +25,7 @@
 ``` javascript title="示例"
 {
     action: 'set_theme_style_url',
-    target: undefined,
-    type: 'server',
+    /* 这里省略了一部分头部信息 */
     data: {
         url: 'res/style/live-theme/bubble.css'
     }

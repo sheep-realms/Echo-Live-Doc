@@ -79,4 +79,5 @@
 
 | 配置项 | 预设值 | 描述 |
 | - | - | - |
+| `broadcast.allow_name_duplicate` | false | 允许识别名重复。 |
 | `editor.history_minimum_breaker_threshold` | 128 | 历史记录底部游标熔断阈值。设为 `-1` 可禁用此机制。 |

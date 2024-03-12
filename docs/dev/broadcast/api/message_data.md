@@ -17,8 +17,7 @@
 ``` javascript title="示例"
 {
     action: 'message_data',
-    target: undefined,
-    type: 'server',
+    /* 这里省略了一部分头部信息 */ 
     data: {
         username: "【说话人】",
         messages: [

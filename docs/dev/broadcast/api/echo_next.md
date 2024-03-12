@@ -6,7 +6,7 @@
 </span>
 <span class="feature-tag" title="终端类型" markdown>
     <span class="icon">:material-application-braces:</span>
-    <span class="text">对话框</span>
+    <span class="text">服务器</span>
 </span>
 
 命令 Echo 打印下一条消息。
@@ -17,8 +17,7 @@
 ``` javascript title="示例"
 {
     action: 'echo_next',
-    target: undefined,
-    type: 'live',
+    /* 这里省略了一部分头部信息 */ 
     data: {}
 }
 ```

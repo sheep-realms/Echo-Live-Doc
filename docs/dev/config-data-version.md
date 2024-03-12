@@ -1,10 +1,19 @@
 # 配置文件数据版本历史
 
-## 2
+## 2（1.3.0）
 **新增：**
 
+- `global`：
+    - `language`。
+- `echolive`：
+    - `websocket_reconnect_limit`、`sleep_during_printing_stop_print`。
+- `history`：
+    - `message_list_reverse`、`message_item_reverse`、`display_username`、`display_time`、`remove_continuous_duplicate`、`latest_message_hide`。
 - `accessible`：
     - `high_contrast_outline_color`、`high_contrast_outline_size`、`high_contrast_outline_style`。
+- `advanced`：
+    - `broadcast`：
+        - `allow_name_duplicate`。
 
 ## 1（~1.2.7）
 **新增：**

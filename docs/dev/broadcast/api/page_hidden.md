@@ -12,17 +12,12 @@
 Echo-Live 客户端页面不可见时发送。
 
 ## :material-send: 发送数据
-| 键名 | 类型 | 预期值 | 描述 |
-| - | - | - | - |
-| `uuid` | String | UUID | 客户端自己的 UUID。 |
+此动作不需要发送任何数据。
 
 ``` javascript title="示例"
 {
     action: 'page_hidden',
-    target: undefined,
-    type: 'live',
-    data: {
-        uuid: '2c3103f0-b4ec-4041-b17a-a3d5d19d515a'
-    }
+    /* 这里省略了一部分头部信息 */ 
+    data: {}
 }
 ```

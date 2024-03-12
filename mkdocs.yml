@@ -100,6 +100,7 @@ nav:
   - 如何下载: main/download.md
   - 如何使用: main/how-to-use.md
   - 常见问题: main/faq.md
+  - 配置要求: main/computer_requirement.md
   - 安全须知: main/security.md
   - 无障碍使用指南: main/accessible.md
   - 授权协议与声明: main/copyright.md
@@ -134,11 +135,13 @@ nav:
     - 概览: dev/broadcast/index.md
     - API 参数格式: dev/broadcast/api.md
     - API 文档:
+      - dev/broadcast/api/broadcast_close.md
       - dev/broadcast/api/close.md
       - dev/broadcast/api/echo_next.md
       - dev/broadcast/api/echo_printing.md
       - dev/broadcast/api/echo_state_update.md
       - dev/broadcast/api/error.md
+      - dev/broadcast/api/error_unknow.md
       - dev/broadcast/api/hello.md
       - dev/broadcast/api/message_data.md
       - dev/broadcast/api/page_hidden.md

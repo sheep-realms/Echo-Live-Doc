@@ -9,7 +9,7 @@
     <span class="text">服务器</span>
 </span>
 
-关闭 Echo-Live 的 Websocket 连接。
+关闭 Echo-Live 客户端的 Websocket 连接。
 
 ## :material-send: 发送数据
 此动作不需要发送任何数据。
@@ -17,8 +17,7 @@
 ``` javascript title="示例"
 {
     action: 'websocket_close',
-    target: undefined,
-    type: 'server',
+    /* 这里省略了一部分头部信息 */
     data: {}
 }
 ```

@@ -19,8 +19,7 @@
 ``` javascript title="示例"
 {
     action: 'set_theme',
-    target: undefined,
-    type: 'server',
+    /* 这里省略了一部分头部信息 */
     data: {
         name: 'bubble'
     }

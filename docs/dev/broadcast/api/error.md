@@ -6,33 +6,36 @@
 </span>
 <span class="feature-tag" title="终端类型" markdown>
     <span class="icon">:material-application-braces:</span>
-    <span class="text">所有客户端</span>
+    <span class="text">所有终端</span>
 </span>
 
-Echo-Live 客户端发送错误报告。
-
-关于捕获的错误信息，通常通过 [Error](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Error){ target="_blank" } 对象获取。
+Echo-Live 终端发送已知错误的错误报告。
 
 ## :material-send: 发送数据
 | 键名 | 类型 | 预期值 | 描述 |
 | - | - | - | - |
-| `uuid` | String | UUID | 客户端自己的 UUID。 |
-| `message` | String | 错误消息 | 错误事件的消息或包含堆栈的消息。 |
-| `source` | String | 源文件名 | 发生错误的文件。 |
-| `line` | Number | 行号 | 错误所在行号。 |
-| `col` | Number | 列号 | 错误所在列号。 |
+| `name` | String | 错误名称 | 内部已捕获的错误名称。 |
+| ... | ... | ... | 更多错误相关信息... |
 
-``` javascript title="示例"
+``` javascript title="示例：WebSocket 消息解析错误"
 {
     action: 'error',
-    target: undefined,
-    type: 'live',
+    /* 这里省略了一部分头部信息 */ 
     data: {
-        uuid: '2c3103f0-b4ec-4041-b17a-a3d5d19d515a',
-        message: 'SyntaxError: Missing initializer in const declaration\n    at <anonymous>:3:8',
-        source: 'file:///C:/foo/bar/live.html',
-        line: 1,
-        col: 7
+        name: 'websocket_message_error'
+    }
+}
+```
+
+``` javascript title="示例：WebSocket 连接失败尝试重连"
+{
+    action: 'error',
+    /* 这里省略了一部分头部信息 */ 
+    data: {
+        name: 'websocket_error',
+        url: 'ws://127.0.0.1:3000',
+        tryReconnect: true,
+        reconnectCount: 1
     }
 }
 ```

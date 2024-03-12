@@ -14,7 +14,6 @@ Echo-Live 客户端更新 Echo 状态。
 ## :material-send: 发送数据
 | 键名 | 类型 | 预期值 | 描述 |
 | - | - | - | - |
-| `uuid` | String | UUID | 客户端自己的 UUID。 |
 | `state` | String | 状态名称 | Echo 的运行状态名称。 |
 | `messagesCount` | Number | 剩余消息数 | Echo 消息队列中剩余的消息数。 |
 
@@ -31,10 +30,8 @@ Echo-Live 客户端更新 Echo 状态。
 ``` javascript title="示例"
 {
     action: 'error',
-    target: undefined,
-    type: 'live',
+    /* 这里省略了一部分头部信息 */ 
     data: {
-        uuid: '2c3103f0-b4ec-4041-b17a-a3d5d19d515a',
         state: 'play',
         messagesCount: 0
     }
