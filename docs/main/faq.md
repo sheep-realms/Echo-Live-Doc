@@ -8,7 +8,7 @@
 
 **不 要 使 用 记 事 本！**
 
-### :material-file-eye: 如何显示文件扩展名？
+### :material-file-eye: 如何显示文件扩展名？ { id="file-extension" }
 
 本文档默认您已开启文件扩展名显示，您可能会疑惑：
 

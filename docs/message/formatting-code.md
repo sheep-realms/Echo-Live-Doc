@@ -1,5 +1,10 @@
 # 快速格式化代码
 
+<span class="feature-tag" title="最早可用版本" markdown>
+    <span class="icon">:material-tag:</span>
+    <span class="text">1.2.5</span>
+</span>
+
 快速格式化代码是一种用于在编辑器中快速编辑格式的代码，通过在编辑器中输入特定符号以将文本段落转换成含有特定样式的消息格式。
 
 ## 使用方法

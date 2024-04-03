@@ -5,6 +5,12 @@ tags:
   - 下划线
   - 删除线
   - 颜色
+  - 背景颜色
+  - 字号
+  - 字重
+  - 字间距
+  - 字形伸缩
+  - 自定义文本样式
 ---
 
 # 文本样式
@@ -38,7 +44,7 @@ tags:
 
     Echo 本身并不具备解析样式的功能，也并未规定如何定义样式，样式的解析是由下游脚本实现的，是 Echo-Live 承担了这一工作。
 
-## :material-format-bold::material-format-italic::material-format-underline::material-format-strikethrough: 粗体、斜体、下划线和删除线
+## :material-format-bold::material-format-italic::material-format-underline::material-format-strikethrough: 粗体、斜体、下划线和删除线 { id="bold-italic-underline-strikethrough" }
 `style` 字段可以定义粗体 `bold`、斜体 `italic`、下划线 `underline` 和删除线 `strikethrough`，这些值都是布尔值，把他们一股脑加进去是这样的：
 
 === "代码"
@@ -63,8 +69,8 @@ tags:
 
 当然一般情况下不需要加这么多，除非你在搞什么抽象艺术。
 
-## :material-palette: 文本颜色
-文本颜色可以通过 `color` 字段定义，这是一个字符串，可以接受
+## :material-palette: 文本颜色 { id="color" }
+文本颜色可以通过 `color` 字段定义，这是一个字符串，可以接受：
 
 - `red`、`green` 等颜色关键字；
 - 十六进制（如 `#66CCFF`）；
@@ -92,7 +98,186 @@ tags:
 
     <span style="color: #66CCFF;">我们所经历的每个平凡的日常，也许就是连续发生的奇迹。</span>
 
-## :material-lightbulb-on: 自定义样式
+## :material-palette: 背景颜色 { id="background-color" }
+
+<span class="feature-tag" title="最早可用版本" markdown>
+    <span class="icon">:material-tag:</span>
+    <span class="text">1.3.0</span>
+</span>
+
+文本颜色可以通过 `backgroundColor` 字段定义，格式同上。
+
+=== "代码"
+
+    ``` json linenums="1" hl_lines="5"
+    {
+        "message": {
+            "text": "我们所经历的每个平凡的日常，也许就是连续发生的奇迹。",
+            "style": {
+                "backgroundColor": "#4287ff44"
+            }
+        }
+    }
+    ```
+
+=== "效果预览"
+
+    <span style="background-color: #4287ff44;">我们所经历的每个平凡的日常，也许就是连续发生的奇迹。</span>
+
+## :material-format-size: 字号 { id="size" }
+
+<span class="feature-tag" title="最早可用版本" markdown>
+    <span class="icon">:material-tag:</span>
+    <span class="text">1.3.0</span>
+</span>
+
+字号可以通过 `size` 字段定义，这是一个字符串，可以接受以下值：
+
+| 值 | 描述 |
+| - | - |
+| `extra-small` | 特小号，0.5 倍大小。 |
+| `small` | 小号，0.75 倍大小。 |
+| `middle` | 中号，原始大小。 |
+| `large` | 大号，1.5 倍大小。 |
+| `extra-large` | 特大号，2 倍大小。 |
+
+!!! warning "注意"
+
+    在有多个文本段落的情况下，文本打印过程中出现更大字号的文本会使整行文本的基线突然向下移动，这个效果不太好看，这也是 Echo-Live 直到 1.3.0 版本才加入此功能的原因。
+
+=== "代码"
+
+    ``` json linenums="1" hl_lines="5"
+    {
+        "message": {
+            "text": "我们所经历的每个平凡的日常，也许就是连续发生的奇迹。",
+            "style": {
+                "size": "large"
+            }
+        }
+    }
+    ```
+
+=== "效果预览"
+
+    <span style="font-size: 1.5em;">我们所经历的每个平凡的日常，也许就是连续发生的奇迹。</span>
+
+## :material-weight: 字重 { id="weight" }
+
+<span class="feature-tag" title="最早可用版本" markdown>
+    <span class="icon">:material-tag:</span>
+    <span class="text">1.3.0</span>
+</span>
+
+字重是指字体的粗细字形，字重会覆盖粗体设置。
+
+一些字体不一定支持所有字重，在指定字重缺失的情况下会就近选择可用字重。
+
+字重可以通过 `weight` 字段定义，这是一个字符串，可以接受以下值：
+
+| 值 | 描述 |
+| - | - |
+| `thin`、`hairline` | 淡体，字重 100。 |
+| `extra-light`、`ultra-light` | 特细，字重 200。 |
+| `light` | 细体，字重 300。 |
+| `semi-light`、`demi-light` | 次细，字重 350。 |
+| `regular`、`normal`、`book`、`plain` | 标准，字重 400，默认字重。 |
+| `medium` | 适中，字重 500。 |
+| `semi-bold`、`demi-bold` | 次粗，字重 600。 |
+| `bold` | 粗体，字重 700，与上文的粗体等价。 |
+| `extra-bold`、`ultra-bold` | 特粗，字重 800。 |
+| `black`、`heavy` | 浓体，字重 900。 |
+| `extra-black`、`ultra-black`、`extra-heavy`、`ultra-heavy` | 特浓，字重 950。 |
+
+=== "代码"
+
+    ``` json linenums="1" hl_lines="5"
+    {
+        "message": {
+            "text": "我们所经历的每个平凡的日常，也许就是连续发生的奇迹。",
+            "style": {
+                "weight": "thin"
+            }
+        }
+    }
+    ```
+
+=== "效果预览"
+
+    <span style="font-weight: 100;">我们所经历的每个平凡的日常，也许就是连续发生的奇迹。</span>
+
+## :material-format-letter-spacing: 字间距 { id="letter-spacing" }
+
+<span class="feature-tag" title="最早可用版本" markdown>
+    <span class="icon">:material-tag:</span>
+    <span class="text">1.3.0</span>
+</span>
+
+字间距可以通过 `letterSpacing` 字段定义，这是一个字符串，可以接受以下值：
+
+| 值 | 描述 |
+| - | - |
+| `compact` | 紧凑的间距，文字略微相互靠拢。 |
+| `normal` | 默认间距。 |
+| `four-per-width` | 四分之一字符宽度间距。 |
+| `half-width` | 半角字符宽度间距。 |
+| `full-width` | 全角字符宽度间距。 |
+
+=== "代码"
+
+    ``` json linenums="1" hl_lines="5"
+    {
+        "message": {
+            "text": "你说话带空格。",
+            "style": {
+                "letterSpacing": "half-width"
+            }
+        }
+    }
+    ```
+
+=== "效果预览"
+
+    <span style="letter-spacing: 0.5em;">你说话带空格。</span>
+
+## :material-format-letter-matches: 字形伸缩 { id="stretch" }
+
+<span class="feature-tag" title="最早可用版本" markdown>
+    <span class="icon">:material-tag:</span>
+    <span class="text">1.3.0</span>
+</span>
+
+字形伸缩可以通过 `stretch` 字段定义，这是一个字符串，可以接受以下值：
+
+| 值 | 描述 |
+| - | - |
+| `ultra-condensed` | 伸缩 50%。 |
+| `extra-condensed` | 伸缩 62.5%。 |
+| `condensed` | 伸缩 75%。 |
+| `semi-condensed` | 伸缩 87.5%。 |
+| `normal` | 伸缩 100%，原始字形。 |
+| `semi-expanded` | 伸缩 112.5%。 |
+| `expanded` | 伸缩 125%。 |
+| `extra-expanded` | 伸缩 150%。 |
+| `ultra-expanded` | 伸缩 200%。 |
+
+!!! warning "注意"
+
+    绝大多数字体都不支持伸缩调整，包括 Echo-Live 默认使用的思源黑体。您需要自行选用支持伸缩调整的字体才能正常使用此功能。
+
+``` json linenums="1" hl_lines="5" title="代码"
+{
+    "message": {
+        "text": "Only my RAILGUN can shoot it.",
+        "style": {
+            "stretch": "condensed"
+        }
+    }
+}
+```
+
+## :material-lightbulb-on: 自定义样式 { id="style" }
+
 如何您想尝试自定义样式，请先学习 [CSS](https://www.runoob.com/css/css-tutorial.html){ target="_blank" }。
 
 您可以通过 `style` 字段为文本段落写入自定义样式。是的，你没看错，是 `style` 中的 `style`...... 好吧这个套娃确实有点奇怪。
