@@ -11,7 +11,7 @@
 
 `res/audio/` 文件夹存放的是音频文件。
 
-## :material-waveform: 音效列表
+## :material-waveform: 音效列表 { id="list" }
 ### :material-keyboard: 打字音效
 | :material-tag: 音效 ID | :material-help-circle: 描述 |
 | - | - |

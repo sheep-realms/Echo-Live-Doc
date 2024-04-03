@@ -5,6 +5,7 @@ tags:
   - 下划线
   - 删除线
   - 颜色
+  - 背景颜色
   - 字号
   - 字重
   - 字间距
@@ -96,6 +97,32 @@ tags:
 === "效果预览"
 
     <span style="color: #66CCFF;">我们所经历的每个平凡的日常，也许就是连续发生的奇迹。</span>
+
+## :material-palette: 背景颜色 { id="background-color" }
+
+<span class="feature-tag" title="最早可用版本" markdown>
+    <span class="icon">:material-tag:</span>
+    <span class="text">1.3.0</span>
+</span>
+
+文本颜色可以通过 `backgroundColor` 字段定义，格式同上。
+
+=== "代码"
+
+    ``` json linenums="1" hl_lines="5"
+    {
+        "message": {
+            "text": "我们所经历的每个平凡的日常，也许就是连续发生的奇迹。",
+            "style": {
+                "backgroundColor": "#4287ff44"
+            }
+        }
+    }
+    ```
+
+=== "效果预览"
+
+    <span style="background-color: #4287ff44;">我们所经历的每个平凡的日常，也许就是连续发生的奇迹。</span>
 
 ## :material-format-size: 字号 { id="size" }
 

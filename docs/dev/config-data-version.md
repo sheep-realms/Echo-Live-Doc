@@ -1,6 +1,14 @@
 # 配置文件数据版本历史
 
-## 2（1.3.0）
+## 3（1.3.0）
+**新增：**
+
+- `global`：
+    - `theme`、`theme_script_enable`、`color_scheme`。
+- `history`：
+    - `history_theme`、`history_theme_script_enable`。
+
+## 2（1.3.0-snapshot-24w09a）
 **新增：**
 
 - `global`：

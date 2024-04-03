@@ -1,14 +1,69 @@
 # 总览
 
-- `res/style/live-theme/` 是主题文件夹，定义了对话框的样式，默认选中 `vanilla.css`，里面已经整理好了常用变量以供修改。
-  - 如需切换主题，请修改 `config.js` 中定义的主题样式，文件中已有注释指引。
-- `res/style/echo.css` 定义了对话框正文的样式。
-- `res/style/fh-ui.css` 是编辑器所使用的 UI 库，请不要动它，除非您知道您在做什么。
-- `res/style/editor.css` 是编辑器所使用的样式，请不要动它，除非您知道您在做什么。
-- `config.js` 是配置文件，可修改默认滚动速度等信息。
-- `res/script/live.js` 是部署 `res/class/Echo.js` 的脚本，主要工作为导入配置、绑定事件、配合 `res/style/echo.css` 解析消息格式。
-- `res/script/live-pre.js` 是在 `live.html` 头部加载的脚本，负责导入扩展资源。
-- `res/script/sounds.js` 定义了打字音效。
-- `res/script/themes.js` 定义了主题。
-- `res/script/palettes.js` 定义了拾色器中的色板。
-- `res/class/EchoLive.js` 是业务逻辑类，目前正在封装整理 `res/script/live.js` 中的脚本。
+## :material-script-text-play: 启动脚本  { id="start-script" }
+
+启动脚本位于软件根目录中。
+
+| 路径 | 描述 |
+| - | - |
+| `config.js` | 配置文件。如需修改配置文件，请见[配置](config.md)。 |
+| `extensions.js` | 扩展列表。 |
+| `start.js` | 对话框启动脚本。 |
+
+## :material-application-outline: 页面 { id="page" }
+
+页面文件位于软件根目录中。
+
+| 路径 | 描述 |
+| - | - |
+| `editor.html` | 编辑器。广播模式下，需要将其以自定义浏览器停靠窗口的方式导入 OBS。 |
+| `history.html` | 供观众查看的历史记录。需以浏览器源的方式导入 OBS 场景中。 |
+| `live.html` | 对话框。需以浏览器源的方式导入 OBS 场景中。 |
+| `settings.html` | 配置文件编辑器。直接在浏览器中打开即可使用。 |
+| `template.html` | 模板编辑器，未开发。通常不会被打包进发行版本中。 |
+
+## :material-brush-variant: 样式 { id="style" }
+
+样式文件位于 `res/style/` 文件夹中，下文的路径以此为起点。
+
+| 路径 | 描述 |
+| - | - |
+| `live-common/` | 通用样式文件夹。 |
+| `live-common/base.css` | 前台页面基础样式。 |
+| `live-common/char-indent.css` | 对话框引用符号缩进样式。 |
+| `live-common/event-effect.css` | 对话框事件动效样式。 |
+| `live-common/font-family.css` | 前台页面字体样式。 |
+| `live-common/i18n.css` | 前台页面本地化样式。 |
+| `live-theme/` | 主题文件夹，定义了对话框等前台页面的样式。<br>各个主题样式文件中已经整理好了常用变量以供修改。<br>如需切换主题，请见[配置](config.md)。 |
+| `echo.css` | 定义了对话框正文的样式。 |
+| `editor.css` | 后台页面样式，请不要动它，除非您知道您在做什么。 |
+| `editor-accessible.css` | 后台页面无障碍访问样式，请不要动它。 |
+| `fh-ui.css` | 后台页面所使用的 UI 库，请不要动它。 |
+| `settings.css` | 配置文件编辑器样式，请不要动它。 |
+
+## :material-database: 数据 { id="data" }
+
+数据文件位于 `res/style/` 文件夹中，和脚本文件位于同一文件夹，下文的路径以此为起点。
+
+| 路径 | 描述 |
+| - | - |
+| `config-define.js` | 配置定义列表。 |
+| `palettes.js` | 拾色器中的色板列表。 |
+| `sounds.js` | 音效列表。 |
+| `text-styles.js` | 文本样式列表，未使用。 |
+| `themes.js` | 主题列表。 |
+
+## :material-script-text: 脚本 { id="script" }
+
+脚本文件位于 `res/script/` 文件夹中，和数据文件位于同一文件夹，下文的路径以此为起点。
+
+| 路径 | 描述 |
+| - | - |
+| `config-load-fail.js` | 用于配置文件加载失败时触发警告。 |
+| `editor.js` | 编辑器脚本。 |
+| `editor-common.js` | 后台页面通用脚本。 |
+| `history.js` | 历史记录脚本，负责部署 EchoLiveHistory 类。 |
+| `live.js` | 部署 Echo 的脚本，主要工作为导入配置、绑定事件、配合 `res/style/echo.css` 解析消息格式。 |
+| `live-pre.js` | 预加载脚本，负责导入扩展资源。 |
+| `settings.js` | 配置文件编辑器脚本。 |
+| `template.js` | 模板编辑器脚本，未使用。 |
