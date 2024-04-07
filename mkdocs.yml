@@ -132,6 +132,7 @@ nav:
   - GitHub 分支: dev/branches.md
   - 本地化: dev/i18n.md
   - 配置文件数据版本历史: dev/config-data-version.md
+  - 浏览器支持情况: dev/browser-support.md
   - 广播:
     - 概览: dev/broadcast/index.md
     - API 参数格式: dev/broadcast/api.md
