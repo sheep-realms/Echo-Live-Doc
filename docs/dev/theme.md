@@ -1,6 +1,45 @@
 # 定制主题
 
-## :material-message-text: 定制对话框
+## 更改样式变量
+
+Echo-Live 的主题样式文件制作了很多样式变量以方便修改，您可以[使用文本编辑器](../main/faq.md#edit-file)编辑主题文件定制您的主题。
+
+Echo-Live 的样式文件位于 `res/style/` 文件夹中，其中需要您注意的内容如下：
+
+- `live-common/` —— 通用样式文件夹。
+    - `font-family.css` —— 定义了所有前台页面的字体，可以在这里修改字体变量更换字体。
+- `live-theme/` —— 主题样式文件夹，所有的预制主题都在这里。
+
+以 `font-family.css` 为例，您可以在里面找到以下内容：
+
+``` css
+--echo-default-font-family: "思源黑体";
+```
+
+`--echo-default-font-family` 是变量名，`思源黑体` 是变量的值。引号 `"` 是为了表示这是一个字符串值，您不需要了解这是什么，您只需要知道只要有引号的地方，您最好别把引号删了。
+
+- 如果您不小心把引号删了，请注意您的输入法，不要补回去一对中文引号 `“”`;
+
+您在修改变量的时候有可能会一不小心把末尾的分号 `;` 删了，这会引发错误，请您注意检查。
+
+- 您甚至有可能为了修正这个错误又补了一个中文的分号 `；`，请注意您的输入法。
+
+用于分隔变量名和值的冒号 `:` 也不应当删除。
+
+- 您知道我要说什么。
+
+假如您想更换字体为得意黑，您应当如此修改：
+
+``` css
+--echo-default-font-family: "得意黑";
+```
+
+需要注意的是，一些字体的实际名称可能与其对外宣称的名称并不一致，您可以打开其字体文件查看名称。
+
+同理，您也可以在主题样式文件中找到如上变量，它们都放置在开头位置，并且有注释指引。
+
+## 定制参考
+### :material-message-text: 对话框
 Echo-Live 的演出主体（即 `live.html` 中的 `#echo-live` 元素）DOM 结构如下：
 
 <style>
@@ -108,7 +147,7 @@ Echo-Live 的演出主体（即 `live.html` 中的 `#echo-live` 元素）DOM 结
 
 - [res/style/live-theme/](https://github.com/sheep-realms/Echo-Live/tree/master/res/style/live-theme){ target="_blank" }
 
-## :material-format-text: 定制文本样式
+### :material-format-text: 文本样式
 Echo-Live 的文本样式与主题样式分离，需要由 `res/script/live.js` 中的格式解析函数 `msgStyleGenerator()` 配合。
 
 文本样式目前仍未做好客制化准备，如有需要请您自行阅读相关文件：

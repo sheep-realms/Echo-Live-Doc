@@ -122,6 +122,7 @@ nav:
   - 文本样式: message/style.md
   - 停顿: message/pause.md
   - 模拟打字: message/typewrite.md
+  - 注释: message/ruby.md
   - 事件: message/event.md
   - 自定义数据: message/data.md
   - 多个文本段落: message/paragraph.md
@@ -151,4 +152,5 @@ nav:
       - dev/broadcast/api/ping.md
       - dev/broadcast/api/set_theme.md
       - dev/broadcast/api/set_theme_style_url.md
+      - dev/broadcast/api/shutdown.md
       - dev/broadcast/api/websocket_close.md
