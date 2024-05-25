@@ -1,6 +1,48 @@
 # 配置文件数据版本历史
 
-## 3（1.3.0~至今）
+## 4（1.4.0~至今）
+**新增：**
+
+- `echolive`：
+    - `speech_synthesis`：
+        - `voice`、`pitch`、`rate`、`delay`、`speech_emoji`、`ignored_characters`。
+    - `image`：
+        - `enable`、`allow_data_url_and_relative_url`、`default_max_size`。
+- `editor`：
+    - `function`：
+        - `images_cache_maximum`。
+    - `form`：
+        - `quote_before`、`quote_after`。
+    - `emoji_picker`：
+        - `emoji`。
+- `accessible`：
+    - `link_underline`、`animation_disable`、`power_saving_mode`。
+- `advanced`：
+    - `editor`：
+        - `forced_display_split_message`。
+
+**移动：**
+
+- `echolive`：
+  - `live_theme`、`live_theme_script_enable` 移动至 `style`。
+  - `broadcast_enable`、`broadcast_channel` 移动至 `broadcast` 并分别更名为 `enable`、`channel`。
+  - `websocket_enable`、`websocket_url`、`websocket_reconnect_limit`、`experimental_api_enable` 移动至 `broadcast`。
+  - `messages_polling_enable`、`messages_polling_tick` 移动至 `messages_polling` 并分别更名为 `enable`、`tick`。
+  - `sleep_enable`、`sleep_during_printing_stop_print` 移动至 `sleep` 并分别更名为 `enable`、`during_printing_stop_print`。
+  - `print_audio_enable`、`print_audio_name`、`print_audio_volume`、`print_audio_rate` 移动至 `print_audio` 并分别更名为 `enable`、`name`、`volume`、`rate`。
+  - `next_audio_enable`、`next_audio_name`、`next_audio_volume`、`next_audio_rate` 移动至 `next_audio` 并分别更名为 `enable`、`name`、`volume`、`rate`。
+- `editor`：
+  - `tabpage_config_enable`、`tabpage_output_enable`、`client_state_panel_enable`、`history_resend_bubble`、`history_maximum`、`log_line_maximum` 移动至 `function`。
+  - `username_init` 移动至 `form` 并更名为 `username`。
+  - `ontput_before_enable`、`output_before`、`ontput_after_enable`、`output_after` 移动至 `form`。
+  - `palette` 移动至 `color_picker`。
+  - `palette_color_contrast_enable`、`palette_color_contrast_background_color`、`palette_color_contrast_threshold` 移动至 `color_picker` 并分别更名为 `contrast_enable`、`contrast_background_color`、`contrast_threshold`。
+- `history`：
+  - `history_theme`、`history_theme_script_enable` 移动至 `style`。
+  - `message_list_reverse`、`message_item_reverse`、`display_username`、`display_time` 移动至 `layout`。
+  - `remove_continuous_duplicate`、`latest_message_hide` 移动至 `message`。
+
+## 3（1.3.0~1.3.3）
 **新增：**
 
 - `global`：

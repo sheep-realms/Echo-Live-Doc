@@ -12,7 +12,7 @@ Echo-Live 没有自动更新机制，您需要前往 [GitHub](https://github.com
 
 从 1.3.0 版本开始，Echo-Live 内置了配置文件编辑器。
 
-在浏览器中打开根目录中的 `settgins.html`，这是配置文件编辑器。此页面使用了一些最新技术，建议您使用最新版 Chrome 或 Edge 浏览器打开。
+在浏览器中打开根目录中的 `settings.html`，这是配置文件编辑器。此页面使用了一些最新技术，建议您使用最新版 Chrome 或 Edge 浏览器打开。
 
 ![配置文件编辑器](../image/settgins/settings_01.png)
 
