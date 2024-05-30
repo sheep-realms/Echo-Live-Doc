@@ -134,6 +134,16 @@ nav:
   - 本地化: dev/i18n.md
   - 配置文件数据版本历史: dev/config-data-version.md
   - 浏览器支持情况: dev/browser-support.md
+  - 命令:
+    - 概览: dev/command.md
+    - 命令列表:
+      - dev/command/next.md
+      - dev/command/ping.md
+      - dev/command/say.md
+      - dev/command/shutdown.md
+      - dev/command/theme.md
+      - dev/command/var.md
+      - dev/command/varg.md
   - 广播:
     - 概览: dev/broadcast/index.md
     - API 参数格式: dev/broadcast/api.md
