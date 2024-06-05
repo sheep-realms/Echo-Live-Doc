@@ -127,6 +127,17 @@
 | `volume` | 0.5 | 音效音量，`1` 为最大。 |
 | `rate` | 1 | 音效播放速度，`1` 为原速。 |
 
+#### 隐去与显现动画
+前缀：`echolive.display.`
+
+| 配置项 | 预设值 | 描述 |
+| - | - | - |
+| `auto` | false | 闲置时是否自动隐去。 |
+| `hidden_wait_time` | 20000 | 闲置等候时间，单位毫秒。 |
+| `long_text_compensation_rate` | 0.15 | 长文本等候时间补偿率。当消息文本过长时会额外补偿一些等候时间，设为 0 则禁用。 |
+| `hidden_time` | 1000 | 隐去动画用时，单位毫秒。 |
+| `show_time` | 500 | 显现动画用时，单位毫秒。 |
+
 #### 讲述人
 前缀：`echolive.speech_synthesis.`
 
