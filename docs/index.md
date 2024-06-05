@@ -26,6 +26,10 @@ Echo-Live 是一款基于 Echo 的用于无声系虚拟主播直播的仿视觉�
 
 <p style="color: var(--md-default-fg-color--light); text-align: center; font-size: 1.2rem; font-weight: 200; border-bottom: .05rem solid var(--md-typeset-table-color); margin-top: 64px;">快速参考</p>
 
+!!! info "时效性问题提醒"
+
+    Echo-Live 目前仍在不断开发新功能，本文档有时不能保证与 Echo-Live 一同更新，具有一定的滞后性。如果您在阅读本文档的过程中有感到困惑的地方，请直接与开发者联系。
+
 <div class="grid cards" markdown>
 
 -   :material-help-circle: **使用指南**
