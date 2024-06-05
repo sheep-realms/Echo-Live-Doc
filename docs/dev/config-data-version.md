@@ -1,6 +1,13 @@
 # 配置文件数据版本历史
 
-## 4（1.4.0~至今）
+## 5（1.4.3~至今）
+**新增：**
+
+- `echolive`：
+    - `display`：
+        - `auto`、`hidden_wait_time`、`long_text_compensation_rate`、`hidden_time`、`show_time`。
+
+## 4（1.4.0~1.4.2）
 **新增：**
 
 - `echolive`：
