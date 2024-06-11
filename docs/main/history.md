@@ -1,6 +1,9 @@
 # Echo-Live 历史记录
 
 ## 2024 年 { id="2024" }
+### 6 月 { id="2024-06" }
+- 06 月 11 日 —— GitHub 星星数达到 256 颗。
+
 ### 5 月 { id="2024-05" }
 - 05 月 25 日 —— 1.4.0 版本发布，看板娘形象 EchoLiveChan 更名为<ruby>エコー<rt>Echo</rt></ruby><ruby>追音<rt>Otone</rt></ruby>。GitHub 下载量达到 1000 次。
 
