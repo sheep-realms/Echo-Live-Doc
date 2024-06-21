@@ -14,7 +14,7 @@ Echo-Live 没有自动更新机制，您需要前往 [GitHub](https://github.com
 
 在浏览器中打开根目录中的 `settings.html`，这是配置文件编辑器。此页面使用了一些最新技术，建议您使用最新版 Chrome 或 Edge 浏览器打开。
 
-![配置文件编辑器](../image/settgins/settings_01.png)
+![配置文件编辑器](../image/settgins/settings_01.png){ .img-light-hyper }
 
 将旧版配置文件拖入配置文件编辑器的文件导入框中（无障碍辅助工具会将其描述为 “文件选择器”），当然您也可以鼠标单击导入框选择文件。
 
