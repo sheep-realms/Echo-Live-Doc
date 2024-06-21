@@ -49,7 +49,7 @@ Echo-Live 无需运行安装程序，开箱即用。
 当您勾选了 “使用快速格式化代码” 后，您可以使用[快速格式化代码](../message/formatting-code.md)为文本添加样式，同时编辑器中会出现格式化控制器，用于快速在光标处或选中文本两侧插入代码。点击控制器上的文本颜色按钮会弹出拾色器悬浮框，拾色器最上方是色板下拉选单，我们准备了多套精心设计的配色方案（除了 “Minecraft” 色板，您最好谨慎使用），您可以在此切换不同的色板。如果您对颜色的使用有困扰，请见[无障碍使用指南 § 色盲/色弱视觉调整](accessible.md#visual)。
 
 <figure markdown>
-  ![编辑器](../image/how-to-use/editor.png)
+  ![编辑器](../image/how-to-use/editor.png){ .img-light-hyper }
   <figcaption>勾选 “使用快速格式化代码” 后的编辑器</figcaption>
 </figure>
 
@@ -72,13 +72,13 @@ Echo-Live 无需运行安装程序，开箱即用。
 
 对话框状态仪表板可以监控对话框运行状态，底部的颜色指示条表示对话框是否处于休眠状态，绿色为激活，红色为休眠。如果您有视觉障碍，请见[无障碍使用指南 § 色盲/色弱视觉调整](accessible.md#visual)。
 
-![对话框状态仪表板](../image/how-to-use/client_state_panel_01.png)
+![对话框状态仪表板](../image/how-to-use/client_state_panel_01.png){ .img-light-hyper }
 
 当对话框正在打印消息时，仪表板上对应的方块会显示 :material-timer-sand: 沙漏图标。
 
 如果对话框收到了多条消息并且至少有一条消息未打印，将会在空闲时显示 :material-message-processing: 气泡图标。此时点击对应的方块即可打印下一条消息。
 
-![对话框状态仪表板上显示了气泡图标](../image/how-to-use/client_state_panel_02.png)
+![对话框状态仪表板上显示了气泡图标](../image/how-to-use/client_state_panel_02.png){ .img-light-hyper }
 
 也许您已经发现了，对话框可以被命名，并且在仪表盘中显示自定义名称。想要自定义对话框名称，请打开 OBS 中对话框源的设置，在地址后方添加以下参数：
 
