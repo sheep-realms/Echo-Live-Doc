@@ -14,6 +14,12 @@
 - 【可选】[WebSocket API](https://caniuse.com/mdn-api_websocket){ target="_blank" }
     - 广播系统的 WebSocket 接口依赖此 API 工作。如果没有使用 WebSocket 接口的需求则不受影响。
 
+## 对话框
+- 【可选】[Performance API](https://caniuse.com/mdn-api_performance){ target="_blank" }
+    - 对话框依赖此 API 衡量对话框停留时间。如果不启用闲置时自动隐去功能则不受影响。
+- 【可选】[SpeechSynthesisUtterance API](https://caniuse.com/mdn-api_speechsynthesisutterance){ target="_blank" }
+    - 讲述人功能依赖此 API 工作。
+
 ## 配置文件编辑器
 - 【可选】[Window API: showOpenFilePicker](https://caniuse.com/mdn-api_window_showopenfilepicker){ target="_blank" }
     - 如果浏览器不支持此 API，将无法打开文件选择窗口，但仍可以通过拖拽文件导入文件。
