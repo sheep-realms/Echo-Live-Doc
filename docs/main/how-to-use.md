@@ -112,6 +112,32 @@ file:///home/root/Echo-Live/live.html?name=自定义名称
 2. 打开 OBS，将 `history.html` 作为浏览器源 **（不要勾选 “本地文件”）** 添加到您的场景中。如果您不知道如何正确填写地址，请直接使用浏览器打开 `history.html`，然后复制地址栏里的地址。
 3. 如果您已完成了上文中描述的广播模式下应该做的准备工作，那么历史记录可以开始使用了。
 
+## :material-link: 如何使用 URL 参数
+
+部分页面支持传递 URL 参数，以单独实现特定效果。
+
+如果您不知道什么是 URL 参数，请参阅 MDN 上的《[什么是 URL？](https://developer.mozilla.org/zh-CN/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL#%E5%8F%82%E6%95%B0){ target="_blank" }》。本文简而言之：URL 地址中可以传递一些参数，包含参数名（键）和参数值，以问号 `?` 作为参数列表的开始，以 `&` 符号分隔的键/值对列表。如下所示：
+
+```
+http://example.com/hello.html?参数名=参数值
+http://example.com/hello.html?参数名=参数值&另一个参数名=另一个参数值
+```
+
+例如，您可以为某个对话框单独设置主题为 `void`，您在 OBS 中应当为对应的浏览器源的 URL 设置为如下内容：
+
+```
+file:///D:/Echo-Live/live.html?theme=void
+```
+
+其中，`theme` 就是参数名，在这里表示指定主题。前面的地址是 `live.html` 这个文件在您的设备中的地址，请根据实际情况修改。
+
+其他可用的参数名请见下表：
+
+| 参数名 | 描述 | 可用范围 |
+| - | - | - |
+| `name` | 对话框的识别名。 | 对话框（`live.html`） |
+| `theme` | 设置主题。可用的主题请见[主题列表](../custom/theme.md#theme-list)。 | 所有前台页面 |
+
 ## :material-cog: 工作模式
 ### :material-broadcast: 广播模式
 广播模式是一种基于浏览器内网页之间的通信技术实现的工作模式，由编辑器发送广播消息，对话框接收消息。该工作模式要求对话框和编辑器都在 OBS 的环境内。
