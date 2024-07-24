@@ -4,6 +4,7 @@ repo_name: sheep-realms/Echo-Live-Doc
 repo_url: https://github.com/sheep-realms/Echo-Live-Doc
 edit_uri: ""
 # site_url: https://sheep-realms.github.io/Echo-Live-Doc/
+# use_directory_urls: false # 构建本地文档时使用
 
 theme:
   name: material
@@ -75,7 +76,7 @@ markdown_extensions:
 
 plugins:
   - glightbox
-  - search
+  - search # 构建本地文档时禁用
 #   - social:
 #       cards_layout_options:
 #         font_family: Noto Sans SC
