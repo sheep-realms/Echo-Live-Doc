@@ -25,7 +25,7 @@ Echo-Live 的广播数据是一种 Object 类型的数据，内容如下：
 
 | 键名 | 类型 | 预期值 | 描述 |
 | - | - | - | - |
-| `name` | String | 识别名 | 终端的自定义识别名，以 `@` 开头。如果没有自定义识别名则为 UUID。 |
+| `name` | String | 识别名 | 终端的自定义识别名。如果没有自定义识别名则为 UUID。 |
 | `uuid` | String | UUID | 终端的 UUID。 |
 | `type` | String | 发送者类型 | 见下文。 |
 | `timestamp` | Number | 时间戳 | 消息发送时的时间戳。 |
