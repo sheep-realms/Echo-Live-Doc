@@ -139,6 +139,8 @@ nav:
   - 命令:
     - 概览: dev/command.md
     - 命令列表:
+      - dev/command/clearlocalstorage.md
+      - dev/command/getlang.md
       - dev/command/next.md
       - dev/command/ping.md
       - dev/command/say.md

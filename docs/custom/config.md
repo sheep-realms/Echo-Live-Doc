@@ -60,6 +60,7 @@
 | `theme` | "vanilla" | 全局主题，控制前台页面的主题。可用的主题请见[主题列表](theme.md#theme-list)。 |
 | `theme_script_enable` | false | 启用全局主题脚本。 |
 | `color_scheme` | "auto" | 后台页面配色方案，可选择 `auto`（跟随系统）、`light`（浅色）和 `dark`（深色）。 |
+| `controller_layout_reverse` | false | 反转控制器按钮布局。根据阅读方向将重要按钮放置于最先被阅读的位置。 |
 
 ### :material-code-braces-box: Echo 相关配置
 前缀：`echo.`
@@ -246,3 +247,5 @@
 | `broadcast.allow_name_duplicate` | false | 允许识别名重复。 |
 | `editor.forced_display_split_message` | false | 强制显示 “多行文本分割为消息队列” 选项。 |
 | `editor.history_minimum_breaker_threshold` | 128 | 历史记录底部游标熔断阈值。设为 `-1` 可禁用此机制。 |
+| `settings.display_config_key` | false | 显示配置项键名。 |
+| `settings.speech_synthesis_voices_maximum` | 64 | 讲述人语音资源列表最大显示数量。在某些操作系统中可能会列出大量项目从而影响渲染性能，设为 `-1` 则不设上限。 |
