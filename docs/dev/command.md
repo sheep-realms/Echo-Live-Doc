@@ -31,6 +31,7 @@ Echo-Live 的命令以命令关键词作为开头，使用空格分隔绝大多�
 一些命令执行时要求满足特定条件。
 
 - :material-broadcast: **仅限广播模式**：一些命令需要使用广播才能正常运作。
+- :material-console-line: **函数中不可用**：一些命令仅供调试使用，不可在函数中执行，只能通过控制台执行。
 
 ### 结果
 
@@ -60,14 +61,36 @@ Echo-Live 的命令以命令关键词作为开头，使用空格分隔绝大多�
 
 当函数的生命周期结束时，其本地堆栈会被销毁。
 
+### 函数
+
+函数是一种一次性执行多条命令的机制。在编辑器控制台中，可以输入以 `//` 开头的内容启用函数模式。同时，`//` 也是函数中的注释标识符，如果输入的内容包含非注释内容也将会一并执行。
+
+进入函数模式后，按键将有所变化。回车改为 <kbd>↵ Enter</kbd>，执行命令改为 <kbd>Ctrl</kbd> + <kbd>↵ Enter</kbd>。
+
+要退出函数模式，输入 `//` 且不包含其他内容按下 <kbd>Ctrl</kbd> + <kbd>↵ Enter</kbd> 组合键即可退出。
+
+#### 注释
+
+函数中可以使用注释来备注一些命令，注释中的内容不会被当作命令执行。
+
+注释仅可出现在行首，以 `//` 开头。以下是一段在函数中使用注释的示例：
+
+```
+// 这是一个简单的 HelloWorld
+var a = Hello, World!
+say @a
+```
+
 ## 命令列表
 
-| 命令 | 描述 | :material-broadcast: 仅广播 |
-| - | - | - |
-| [`next`](command/next.md) | 发送 [`echo_next`](broadcast/api/echo_next.md) 广播，打印下一条消息。 | 是 |
-| [`ping`](command/ping.md) | 发送 [`ping`](broadcast/api/ping.md) 广播。 | 是 |
-| [`say`](command/say.md) | 在日志中输出一段消息。 | |
-| [`shutdown`](command/shutdown.md) | 发送 [`shutdown`](broadcast/api/shutdown.md) 广播，终止客户端运行。 | 是 |
-| [`theme`](command/theme.md) | 发送 [`set_theme`](broadcast/api/set_theme.md) 广播，更改客户端主题。 | 是 |
-| [`var`](command/var.md) | 设置变量，可在命令中通过 `@<变量名>` 使用。 | |
-| [`varg`](command/varg.md) | 在全局堆栈中设置变量。 | |
+| 命令 | 描述 | :material-broadcast: 仅广播 | :material-console-line: 函数禁用 |
+| - | - | - | - |
+| [`clearlocalstorage`](command/clearlocalstorage.md) | 清空本地存储数据，需要弹出对话框确认。 | | 是 |
+| [`getlang`](command/getlang.md) | 获取当前所使用的本地化信息。 | | |
+| [`next`](command/next.md) | 发送 [`echo_next`](broadcast/api/echo_next.md) 广播，打印下一条消息。 | 是 | |
+| [`ping`](command/ping.md) | 发送 [`ping`](broadcast/api/ping.md) 广播。 | 是 | |
+| [`say`](command/say.md) | 在日志中输出一段消息。 | | |
+| [`shutdown`](command/shutdown.md) | 发送 [`shutdown`](broadcast/api/shutdown.md) 广播，终止客户端运行。 | 是 | |
+| [`theme`](command/theme.md) | 发送 [`set_theme`](broadcast/api/set_theme.md) 广播，更改客户端主题。 | 是 | |
+| [`var`](command/var.md) | 设置变量，可在命令中通过 `@<变量名>` 使用。 | | |
+| [`varg`](command/varg.md) | 在全局堆栈中设置变量。 | | |

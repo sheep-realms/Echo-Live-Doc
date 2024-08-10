@@ -1,6 +1,16 @@
 # 配置文件数据版本历史
 
-## 5（1.4.3~至今）
+## 6（1.4.7~至今）
+
+**新增：**
+
+- `global`：
+    - `global.controller_layout_reverse`。
+- `advanced`：
+    - `settings`：
+        - `display_config_key`、`speech_synthesis_voices_maximum`。
+
+## 5（1.4.3~1.4.6）
 **新增：**
 
 - `echolive`：
