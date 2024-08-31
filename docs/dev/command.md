@@ -87,6 +87,7 @@ say @a
 | - | - | - | - |
 | [`clearlocalstorage`](command/clearlocalstorage.md) | 清空本地存储数据，需要弹出对话框确认。 | | 是 |
 | [`getlang`](command/getlang.md) | 获取当前所使用的本地化信息。 | | |
+| [`livedisplay`](command/livedisplay.md) | 设置对话框显示状态。 | 是 | |
 | [`next`](command/next.md) | 发送 [`echo_next`](broadcast/api/echo_next.md) 广播，打印下一条消息。 | 是 | |
 | [`ping`](command/ping.md) | 发送 [`ping`](broadcast/api/ping.md) 广播。 | 是 | |
 | [`say`](command/say.md) | 在日志中输出一段消息。 | | |

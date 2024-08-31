@@ -141,6 +141,7 @@ nav:
     - 命令列表:
       - dev/command/clearlocalstorage.md
       - dev/command/getlang.md
+      - dev/command/livedisplay.md
       - dev/command/next.md
       - dev/command/ping.md
       - dev/command/say.md
@@ -160,11 +161,32 @@ nav:
       - dev/broadcast/api/error.md
       - dev/broadcast/api/error_unknow.md
       - dev/broadcast/api/hello.md
+      - dev/broadcast/api/history_clear.md
+      - dev/broadcast/api/live_display_update.md
       - dev/broadcast/api/message_data.md
       - dev/broadcast/api/page_hidden.md
       - dev/broadcast/api/page_visible.md
       - dev/broadcast/api/ping.md
+      - dev/broadcast/api/set_live_display.md
       - dev/broadcast/api/set_theme.md
       - dev/broadcast/api/set_theme_style_url.md
       - dev/broadcast/api/shutdown.md
       - dev/broadcast/api/websocket_close.md
+  - 注册表:
+    - 概览: dev/registry.md
+    - 注册表列表:
+      - dev/registry/echolive/root.md
+      - dev/registry/echolive/border_style.md
+      - dev/registry/echolive/emoji.md
+      - dev/registry/echolive/emoji_namespace.md
+      - dev/registry/echolive/language.md
+      - dev/registry/echolive/language_index.md
+      - dev/registry/echolive/live_theme.md
+      - dev/registry/echolive/palette.md
+      - dev/registry/echolive/print_effect.md
+      - dev/registry/echolive/script.md
+      - dev/registry/echolive/settings_data.md
+      - dev/registry/echolive/sound.md
+      - dev/registry/echolive/stylesheet.md
+      - dev/registry/echolive/system.md
+      - dev/registry/echolive/timing_function.md

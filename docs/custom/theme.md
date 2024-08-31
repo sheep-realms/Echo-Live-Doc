@@ -12,6 +12,10 @@ Echo-Live 内置了多套主题，您可以通过修改配置文件更换主题�
 
 主题文件使用的是广泛运用的 CSS 样式，如有需要，您可以咨询网页或 UI 设计师[定制主题](../dev/theme.md)。
 
+!!! warning "特别提醒"
+
+    为了主题样式的表现正常，请在 OBS 选中对话框（包括历史记录在内的其他前台页面），右键，在弹出菜单中找到 **“混合方式”**，选择 **“关闭 SRGB”**。
+
 ## 更换主题
 打开[配置文件编辑器](config.md#config-editor)，在 “全局” 选项中找到 “全局主题” 项目，此配置值即为主题的 ID，修改即可更换主题，主题 ID 见下表。
 
@@ -21,22 +25,170 @@ Echo-Live 内置了多套主题，您可以通过修改配置文件更换主题�
 
 最后，别忘了保存文件。
 
+### 单独更换主题
+
+如果您不打算更改配置文件，或是想为某个对话框单独设置主题，请见[如何使用 § 如何使用 URL 参数](../main/how-to-use.md#use-url-params)。
+
 ## 主题列表 { id="theme-list" }
-| :material-tag: ID | :material-format-title: 名称 | :material-help-circle: 描述 | :material-script-text: 脚本 |
+
+!!! warning "再次提醒"
+
+    为了主题样式的表现正常，请在 OBS 选中对话框（包括历史记录在内的其他前台页面），右键，在弹出菜单中找到 **“混合方式”**，选择 **“关闭 SRGB”**。
+
+| :material-tag: ID | :material-format-title: 名称 | :material-help-circle: 描述 | :material-resize: 建议尺寸 |
 | - | - | - | - |
-| `vanilla` | 原版 | Echo-Live 的默认主题，几乎没有任何装饰，适用于在画面中以全屏宽度靠下展现。右侧预留了立绘位置，可将立绘覆盖在对话框之上。 | :material-close: 无 |
-| `bubble` | 气泡 | 常见的气泡对话框，具有粗边框和投影，可调整成任意尺寸，没有预留立绘位置。 | :material-close: 无 |
-| `void` | 虚空 | 无背景对话框，仅显示文字。 | :material-close: 无 |
+| `vanilla` | 原版 | Echo-Live 的默认主题，几乎没有任何装饰，适用于在画面中以全屏宽度靠下展现。右侧预留了立绘位置，可将立绘覆盖在对话框之上。 | 1920 × 330 像素 |
+| `bubble` | 气泡 | 常见的气泡对话框，具有粗边框和投影，可调整成任意尺寸，没有预留立绘位置。 | 随意 |
+| `glass` | 玻璃 | GalGame 中常见的渐变背景对话框，适用于在画面中以全屏宽度靠下展现。默认使用深色背景，没有预留立绘位置。 | 1920 × 330 像素 |
+| `void` | 虚空 | 无背景对话框，仅显示文字。 | 随意 |
 
 ## 主题预览
 ### 原版 | Vanilla
 
-![Vanilla](../image/theme/vanilla.jpg){ .theme-review }
+![Vanilla](../image/theme/vanilla.jpg){ loading=lazy .theme-review }
 
 ### 气泡 | Bubble
 
-![Bubble](../image/theme/bubble.jpg){ .theme-review }
+![Bubble](../image/theme/bubble.jpg){ loading=lazy .theme-review }
+
+### 玻璃 | Glass
+
+![Glass](../image/theme/glass.png){ loading=lazy .theme-review }
+
+### 虚空 | Void
+
+![Void](../image/theme/void.png){ loading=lazy .theme-review }
 
 ## 定制主题
 
 参阅[定制主题](../dev/theme.md)。
+
+## 预制的定制主题
+
+!!! warning "重要的话说三次"
+
+    为了主题样式的表现正常，请在 OBS 选中对话框（包括历史记录在内的其他前台页面），右键，在弹出菜单中找到 **“混合方式”**，选择 **“关闭 SRGB”**。
+
+考虑到很多人在定制主题上遇到的困难，我们准备了一些定制主题的预制，您使用这些预制现在变得十分简单：
+
+1. 在下文中挑选您喜欢的预制，编辑[配置](config.md)更改为对应的主题。如果您想为某个对话框单独设置主题，请见[如何使用 § 如何使用 URL 参数](../main/how-to-use.md#use-url-params)。
+2. 复制您选中的预制代码。
+3. 在 OBS 选中对话框（包括历史记录在内的其他前台页面），右键，在弹出菜单中点击 “设置”。
+4. 在 “自定义 CSS” 中粘贴代码（如果里面有内容就清空它），点击 “确定” 按钮。
+
+### 对话框
+
+#### 原版 | Vanilla
+
+=== "浅色半透明"
+
+    ![Vanilla Alpha](../image/theme/custom/vanilla_alpha.png){ loading=lazy .theme-review }
+
+    ``` css
+    :root {
+        /* 对话框背景颜色，如果要设为透明请使用 transparent */
+        --echo-live-bg-color: rgba(255, 255, 255, 0.75);
+    }
+    ```
+
+=== "深色半透明"
+
+    ![Vanilla Alpha Dark](../image/theme/custom/vanilla_alpha_dark.png){ loading=lazy .theme-review }
+
+    ``` css
+    :root {
+        /* 对话框背景颜色，如果要设为透明请使用 transparent */
+        --echo-live-bg-color: rgba(0, 0, 0, 0.6);
+        /* 对话框顶部边框颜色、尺寸、线形，要禁用请设为 unset */
+        --echo-live-border-top: rgba(255,255,255,0.5) 2px solid;
+
+        /* 对话框正文内容颜色 */
+        --echo-live-content-color: #FFF;
+        /* 对话框说话人名字颜色 */
+        --echo-live-username-color: #FFF;
+        /* 对话框底部工具栏内容颜色 */
+        --echo-live-bottom-color: #DDD;
+
+        /* 对话框装饰角标颜色 */
+        --corner-marker-color: rgba(255,255,255,0.5);
+    }
+    ```
+
+#### 玻璃 | Glass
+
+=== "湖泊蓝"
+
+    ![Glass Blue](../image/theme/custom/glass_blue.png){ loading=lazy .theme-review }
+
+    ``` css
+    :root {
+        /* 对话框底部工具栏内容颜色 */
+        --echo-live-bottom-color: #FFF;
+        /* 对话框渐变背景颜色 */
+        --echo-live-bg-gradient-color: rgba(0, 50, 140, 0.75);
+        /* 对话框底部工具栏渐变背景颜色 */
+        --echo-live-bottom-bg-gradient-color: rgba(26, 98, 190, 1);
+    }
+    ```
+
+=== "水晶紫"
+
+    ![Glass Purple](../image/theme/custom/glass_purple.png){ loading=lazy .theme-review }
+
+    ``` css
+    :root {
+        /* 对话框底部工具栏内容颜色 */
+        --echo-live-bottom-color: #FFF;
+        /* 对话框渐变背景颜色 */
+        --echo-live-bg-gradient-color: rgba(65, 58, 140, 0.75);
+        /* 对话框底部工具栏渐变背景颜色 */
+        --echo-live-bottom-bg-gradient-color: rgba(103, 94, 191, 1);
+    }
+    ```
+
+=== "蜜桃粉"
+
+    ![Glass Pink](../image/theme/custom/glass_pink.png){ loading=lazy .theme-review }
+
+    ``` css
+    :root {
+        /* 对话框底部工具栏内容颜色 */
+        --echo-live-bottom-color: #FFF;
+        /* 对话框渐变背景颜色 */
+        --echo-live-bg-gradient-color: rgba(204, 93, 149, 0.75);
+        /* 对话框底部工具栏渐变背景颜色 */
+        --echo-live-bottom-bg-gradient-color: rgba(230, 142, 186, 1);
+    }
+    ```
+
+=== "葡萄红"
+
+    ![Glass Magenta](../image/theme/custom/glass_magenta.png){ loading=lazy .theme-review }
+
+    ``` css
+    :root {
+        /* 对话框底部工具栏内容颜色 */
+        --echo-live-bottom-color: #FFCCBF;
+        /* 对话框渐变背景颜色 */
+        --echo-live-bg-gradient-color: rgba(128, 63, 74, 0.75);
+        /* 对话框底部工具栏渐变背景颜色 */
+        --echo-live-bottom-bg-gradient-color: rgba(178, 94, 115, 1);
+    }
+    ```
+
+=== "咖啡棕"
+
+    ![Glass Coffee](../image/theme/custom/glass_coffee.png){ loading=lazy .theme-review }
+
+    ``` css
+    :root {
+        /* 对话框底部工具栏内容颜色 */
+        --echo-live-bottom-color: #FFF;
+        /* 对话框底部工具栏渐变背景颜色 */
+        --echo-live-bottom-bg-gradient-color: transparent;
+    }
+
+    #echo-live {
+        background-image: linear-gradient(to top, rgba(128, 70, 57, 0.95) 0%, rgba(191, 141, 129, 0.65) 50%, rgba(191, 141, 129, 0) 100%);
+    }
+    ```
