@@ -115,6 +115,7 @@ nav:
   - 音效: custom/sound.md
   - 扩展: custom/extension.md
   - 消息事件: custom/event.md
+  - 打印动效: custom/char-effect.md
   - 语言 / Language: custom/language.md
 - 消息格式:
   - start.js: message/index.md

@@ -30,6 +30,7 @@
 | - | - |
 | `live-common/` | 通用样式文件夹。 |
 | `live-common/base.css` | 前台页面基础样式。 |
+| `live-common/char-effect.css` | 对话框字符打印动效样式。 |
 | `live-common/char-indent.css` | 对话框引用符号缩进样式。 |
 | `live-common/event-effect.css` | 对话框事件动效样式。 |
 | `live-common/font-family.css` | 前台页面字体样式。 |

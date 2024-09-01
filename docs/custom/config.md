@@ -117,6 +117,15 @@
 | `volume` | 0.5 | 音效音量，`1` 为最大。 |
 | `rate` | 1 | 音效播放速度，`1` 为原速。 |
 
+#### 字符打印动效
+前缀：`echolive.print_effect.`
+
+| 配置项 | 预设值 | 描述 |
+| - | - | - |
+| `name` | "none" | 动效名称，可用的动效名称请见[打印动效列表](char-effect.md#list)。 |
+| `duration` | 250 | 动效用时。 |
+| `scale` | 1 | 动效规模乘数。 |
+| `timing_function` | "ease-out" | 动效时间曲线，等效于 CSS 中的 [`easing-function`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/easing-function){ target="_blank" }。 |
 
 #### 新对话入场音效
 前缀：`echolive.next_audio.`

@@ -14,7 +14,7 @@ Echo-Live 内置了多套主题，您可以通过修改配置文件更换主题�
 
 !!! warning "特别提醒"
 
-    为了主题样式的表现正常，请在 OBS 选中对话框（包括历史记录在内的其他前台页面），右键，在弹出菜单中找到 **“混合方式”**，选择 **“关闭 SRGB”**。
+    为了主题样式的表现正常，请在 OBS 选中对话框（包括历史记录在内的其他前台页面），右键，在弹出菜单中找到 **“混合方式”**，选择 **“关闭 sRGB”**。
 
 ## 更换主题
 打开[配置文件编辑器](config.md#config-editor)，在 “全局” 选项中找到 “全局主题” 项目，此配置值即为主题的 ID，修改即可更换主题，主题 ID 见下表。
@@ -33,7 +33,7 @@ Echo-Live 内置了多套主题，您可以通过修改配置文件更换主题�
 
 !!! warning "再次提醒"
 
-    为了主题样式的表现正常，请在 OBS 选中对话框（包括历史记录在内的其他前台页面），右键，在弹出菜单中找到 **“混合方式”**，选择 **“关闭 SRGB”**。
+    为了主题样式的表现正常，请在 OBS 选中对话框（包括历史记录在内的其他前台页面），右键，在弹出菜单中找到 **“混合方式”**，选择 **“关闭 sRGB”**。
 
 | :material-tag: ID | :material-format-title: 名称 | :material-help-circle: 描述 | :material-resize: 建议尺寸 |
 | - | - | - | - |
@@ -67,7 +67,7 @@ Echo-Live 内置了多套主题，您可以通过修改配置文件更换主题�
 
 !!! warning "重要的话说三次"
 
-    为了主题样式的表现正常，请在 OBS 选中对话框（包括历史记录在内的其他前台页面），右键，在弹出菜单中找到 **“混合方式”**，选择 **“关闭 SRGB”**。
+    为了主题样式的表现正常，请在 OBS 选中对话框（包括历史记录在内的其他前台页面），右键，在弹出菜单中找到 **“混合方式”**，选择 **“关闭 sRGB”**。
 
 考虑到很多人在定制主题上遇到的困难，我们准备了一些定制主题的预制，您使用这些预制现在变得十分简单：
 
@@ -192,3 +192,97 @@ Echo-Live 内置了多套主题，您可以通过修改配置文件更换主题�
         background-image: linear-gradient(to top, rgba(128, 70, 57, 0.95) 0%, rgba(191, 141, 129, 0.65) 50%, rgba(191, 141, 129, 0) 100%);
     }
     ```
+
+### 历史记录
+
+（施工中...）
+
+<!-- #### 原版 | Vanilla
+
+=== "浅色半透明"
+
+    ![Vanilla Alpha](../image/theme/custom/vanilla_alpha.png){ loading=lazy .theme-review }
+
+    ``` css
+    :root {
+        /* 历史记录背景颜色，如果要设为透明请使用 transparent */
+        --echo-live-history-bg-color: rgba(238, 238, 238, 0.75);
+    }
+    ```
+
+=== "深色半透明"
+
+    ![Vanilla Alpha Dark](../image/theme/custom/vanilla_alpha_dark.png){ loading=lazy .theme-review }
+
+    ``` css
+    :root {
+        /* 历史记录背景颜色，如果要设为透明请使用 transparent */
+        --echo-live-history-bg-color: rgba(69, 73, 82, 0.75);
+        /* 历史记录标题背景颜色 */
+        --echo-live-history-bg-color-title: #333740;
+        /* 历史记录字体颜色 */
+        --echo-live-history-color: #FFF;
+        /* 历史记录标题字体颜色 */
+        --echo-live-history-color-title: #9C9EA6;
+        /* 历史记录发送时间字体颜色 */
+        --echo-live-history-color-time: #9C9EA6;
+    }
+    ```
+
+#### 玻璃 | Glass
+
+=== "湖泊蓝"
+
+    ![Glass Blue](../image/theme/custom/glass_blue.png){ loading=lazy .theme-review }
+
+    ``` css
+    :root {
+        /* 历史记录渐变背景颜色 */
+        --echo-live-history-bg-gradient-color: rgba(0, 50, 140, 0.75);
+    }
+    ```
+
+=== "水晶紫"
+
+    ![Glass Purple](../image/theme/custom/glass_purple.png){ loading=lazy .theme-review }
+
+    ``` css
+    :root {
+        /* 历史记录渐变背景颜色 */
+        --echo-live-history-bg-gradient-color: rgba(65, 58, 140, 0.75);
+    }
+    ```
+
+=== "蜜桃粉"
+
+    ![Glass Pink](../image/theme/custom/glass_pink.png){ loading=lazy .theme-review }
+
+    ``` css
+    :root {
+        /* 历史记录渐变背景颜色 */
+        --echo-live-history-bg-gradient-color: rgba(204, 93, 149, 0.75);
+    }
+    ```
+
+=== "葡萄红"
+
+    ![Glass Magenta](../image/theme/custom/glass_magenta.png){ loading=lazy .theme-review }
+
+    ``` css
+    :root {
+        /* 历史记录渐变背景颜色 */
+        --echo-live-history-bg-gradient-color: rgba(128, 63, 74, 0.75);
+        /* 历史记录发送时间字体颜色 */
+        --echo-live-history-color-time: #FFCCBF;
+    }
+    ```
+
+=== "咖啡棕"
+
+    ![Glass Coffee](../image/theme/custom/glass_coffee.png){ loading=lazy .theme-review }
+
+    ``` css
+    #echo-live-history {
+        background-image: linear-gradient(to top, rgba(128, 70, 57, 0.95) 0%, rgba(191, 141, 129, 0.65) 50%, rgba(191, 141, 129, 0) 100%);
+    }
+    ``` -->
