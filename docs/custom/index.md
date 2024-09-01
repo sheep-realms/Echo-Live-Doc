@@ -30,6 +30,7 @@
 | - | - |
 | `live-common/` | 通用样式文件夹。 |
 | `live-common/base.css` | 前台页面基础样式。 |
+| `live-common/char-effect.css` | 对话框字符打印动效样式。 |
 | `live-common/char-indent.css` | 对话框引用符号缩进样式。 |
 | `live-common/event-effect.css` | 对话框事件动效样式。 |
 | `live-common/font-family.css` | 前台页面字体样式。 |
@@ -43,19 +44,11 @@
 
 ## :material-database: 数据 { id="data" }
 
-数据文件位于 `res/style/` 文件夹中，和脚本文件位于同一文件夹，下文的路径以此为起点。
-
-| 路径 | 描述 |
-| - | - |
-| `config-define.js` | 配置定义列表。 |
-| `palettes.js` | 拾色器中的色板列表。 |
-| `sounds.js` | 音效列表。 |
-| `text-styles.js` | 文本样式列表，未使用。 |
-| `themes.js` | 主题列表。 |
+数据文件一般位于 `res/data/` 文件夹中，详见[注册表列表](../dev/registry.md#registry-list)
 
 ## :material-script-text: 脚本 { id="script" }
 
-脚本文件位于 `res/script/` 文件夹中，和数据文件位于同一文件夹，下文的路径以此为起点。
+脚本文件位于 `res/script/` 文件夹中，下文的路径以此为起点。
 
 | 路径 | 描述 |
 | - | - |

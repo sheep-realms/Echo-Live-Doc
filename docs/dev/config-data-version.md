@@ -1,6 +1,17 @@
 # 配置文件数据版本历史
 
-## 6（1.4.7~至今）
+## 7（1.5.0~至今）
+
+**新增：**
+
+- `echolive`：
+    - `print_effect`：
+        - `name`、`duration`、`scale`、`timing_function`。
+- `history`：
+    - `message`：
+        - `live_display_hidden_latest_message_show`。
+
+## 6（1.4.7）
 
 **新增：**
 

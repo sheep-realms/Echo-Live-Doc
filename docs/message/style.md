@@ -8,6 +8,7 @@ tags:
   - 背景颜色
   - 字号
   - 字重
+  - 着重号
   - 字间距
   - 字形伸缩
   - 自定义文本样式
@@ -205,6 +206,32 @@ tags:
 === "效果预览"
 
     <span style="font-weight: 100;">我们所经历的每个平凡的日常，也许就是连续发生的奇迹。</span>
+
+## :material-dots-horizontal: 着重号 { id="emphasis" }
+
+<span class="feature-tag" title="最早可用版本" markdown>
+    <span class="icon">:material-tag:</span>
+    <span class="text">1.5.0</span>
+</span>
+
+着重号可以通过 `emphasis` 字段定义，这是一个布尔值，可以在文本下方添加着重号。
+
+=== "代码"
+
+    ``` json linenums="1" hl_lines="5"
+    {
+        "message": {
+            "text": "我们所经历的每个平凡的日常，也许就是连续发生的奇迹。",
+            "style": {
+                "emphasis": true
+            }
+        }
+    }
+    ```
+
+=== "效果预览"
+
+    <span style="text-emphasis: dot; -webkit-text-emphasis: dot; text-emphasis-position: under; -webkit-text-emphasis-position: under;">我们所经历的每个平凡的日常，也许就是连续发生的奇迹。</span>
 
 ## :material-format-letter-spacing: 字间距 { id="letter-spacing" }
 
