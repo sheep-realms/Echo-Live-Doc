@@ -2,6 +2,8 @@
 
 ## 8（1.5.3~至今）
 
+**新增：**
+
 - `advanced`：
     - `broadcast`：
         - `allow_send_duplicate_message`。
