@@ -82,7 +82,7 @@ Echo-Live 内置了多套主题，您可以通过修改配置文件更换主题�
 
 === "浅色半透明"
 
-    ![Vanilla Alpha](../image/theme/custom/vanilla_alpha.png){ loading=lazy .theme-review }
+    ![Vanilla Alpha](../image/theme/custom/live/vanilla_alpha.png){ loading=lazy .theme-review }
 
     ``` css
     :root {
@@ -93,7 +93,7 @@ Echo-Live 内置了多套主题，您可以通过修改配置文件更换主题�
 
 === "深色半透明"
 
-    ![Vanilla Alpha Dark](../image/theme/custom/vanilla_alpha_dark.png){ loading=lazy .theme-review }
+    ![Vanilla Alpha Dark](../image/theme/custom/live/vanilla_alpha_dark.png){ loading=lazy .theme-review }
 
     ``` css
     :root {
@@ -118,7 +118,7 @@ Echo-Live 内置了多套主题，您可以通过修改配置文件更换主题�
 
 === "湖泊蓝"
 
-    ![Glass Blue](../image/theme/custom/glass_blue.png){ loading=lazy .theme-review }
+    ![Glass Blue](../image/theme/custom/live/glass_blue.png){ loading=lazy .theme-review }
 
     ``` css
     :root {
@@ -133,7 +133,7 @@ Echo-Live 内置了多套主题，您可以通过修改配置文件更换主题�
 
 === "水晶紫"
 
-    ![Glass Purple](../image/theme/custom/glass_purple.png){ loading=lazy .theme-review }
+    ![Glass Purple](../image/theme/custom/live/glass_purple.png){ loading=lazy .theme-review }
 
     ``` css
     :root {
@@ -148,7 +148,7 @@ Echo-Live 内置了多套主题，您可以通过修改配置文件更换主题�
 
 === "蜜桃粉"
 
-    ![Glass Pink](../image/theme/custom/glass_pink.png){ loading=lazy .theme-review }
+    ![Glass Pink](../image/theme/custom/live/glass_pink.png){ loading=lazy .theme-review }
 
     ``` css
     :root {
@@ -163,7 +163,7 @@ Echo-Live 内置了多套主题，您可以通过修改配置文件更换主题�
 
 === "葡萄红"
 
-    ![Glass Magenta](../image/theme/custom/glass_magenta.png){ loading=lazy .theme-review }
+    ![Glass Magenta](../image/theme/custom/live/glass_magenta.png){ loading=lazy .theme-review }
 
     ``` css
     :root {
@@ -178,7 +178,7 @@ Echo-Live 内置了多套主题，您可以通过修改配置文件更换主题�
 
 === "咖啡棕"
 
-    ![Glass Coffee](../image/theme/custom/glass_coffee.png){ loading=lazy .theme-review }
+    ![Glass Coffee](../image/theme/custom/live/glass_coffee.png){ loading=lazy .theme-review }
 
     ``` css
     :root {
@@ -195,13 +195,11 @@ Echo-Live 内置了多套主题，您可以通过修改配置文件更换主题�
 
 ### 历史记录
 
-（施工中...）
-
-<!-- #### 原版 | Vanilla
+#### 原版 | Vanilla
 
 === "浅色半透明"
 
-    ![Vanilla Alpha](../image/theme/custom/vanilla_alpha.png){ loading=lazy .theme-review }
+    ![Vanilla Alpha](../image/theme/custom/history/vanilla_alpha.png){ loading=lazy .theme-review }
 
     ``` css
     :root {
@@ -212,7 +210,7 @@ Echo-Live 内置了多套主题，您可以通过修改配置文件更换主题�
 
 === "深色半透明"
 
-    ![Vanilla Alpha Dark](../image/theme/custom/vanilla_alpha_dark.png){ loading=lazy .theme-review }
+    ![Vanilla Alpha Dark](../image/theme/custom/history/vanilla_alpha_dark.png){ loading=lazy .theme-review }
 
     ``` css
     :root {
@@ -233,7 +231,7 @@ Echo-Live 内置了多套主题，您可以通过修改配置文件更换主题�
 
 === "湖泊蓝"
 
-    ![Glass Blue](../image/theme/custom/glass_blue.png){ loading=lazy .theme-review }
+    ![Glass Blue](../image/theme/custom/history/glass_blue.png){ loading=lazy .theme-review }
 
     ``` css
     :root {
@@ -244,7 +242,7 @@ Echo-Live 内置了多套主题，您可以通过修改配置文件更换主题�
 
 === "水晶紫"
 
-    ![Glass Purple](../image/theme/custom/glass_purple.png){ loading=lazy .theme-review }
+    ![Glass Purple](../image/theme/custom/history/glass_purple.png){ loading=lazy .theme-review }
 
     ``` css
     :root {
@@ -255,7 +253,7 @@ Echo-Live 内置了多套主题，您可以通过修改配置文件更换主题�
 
 === "蜜桃粉"
 
-    ![Glass Pink](../image/theme/custom/glass_pink.png){ loading=lazy .theme-review }
+    ![Glass Pink](../image/theme/custom/history/glass_pink.png){ loading=lazy .theme-review }
 
     ``` css
     :root {
@@ -266,7 +264,7 @@ Echo-Live 内置了多套主题，您可以通过修改配置文件更换主题�
 
 === "葡萄红"
 
-    ![Glass Magenta](../image/theme/custom/glass_magenta.png){ loading=lazy .theme-review }
+    ![Glass Magenta](../image/theme/custom/history/glass_magenta.png){ loading=lazy .theme-review }
 
     ``` css
     :root {
@@ -279,10 +277,11 @@ Echo-Live 内置了多套主题，您可以通过修改配置文件更换主题�
 
 === "咖啡棕"
 
-    ![Glass Coffee](../image/theme/custom/glass_coffee.png){ loading=lazy .theme-review }
+    ![Glass Coffee](../image/theme/custom/history/glass_coffee.png){ loading=lazy .theme-review }
 
     ``` css
-    #echo-live-history {
-        background-image: linear-gradient(to top, rgba(128, 70, 57, 0.95) 0%, rgba(191, 141, 129, 0.65) 50%, rgba(191, 141, 129, 0) 100%);
+    :root {
+        /* 历史记录渐变背景颜色 */
+        --echo-live-history-bg-gradient-color: rgba(128, 70, 57, 0.75);
     }
-    ``` -->
+    ```
