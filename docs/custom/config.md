@@ -254,7 +254,9 @@
 | 配置项 | 预设值 | 描述 |
 | - | - | - |
 | `broadcast.allow_name_duplicate` | false | 允许识别名重复。 |
+| `broadcast.allow_send_duplicate_message` | false | 允许发送重复消息。 |
 | `editor.forced_display_split_message` | false | 强制显示 “多行文本分割为消息队列” 选项。 |
 | `editor.history_minimum_breaker_threshold` | 128 | 历史记录底部游标熔断阈值。设为 `-1` 可禁用此机制。 |
 | `settings.display_config_key` | false | 显示配置项键名。 |
+| `settings.display_hidden_option` | false | 显示隐藏选项。 |
 | `settings.speech_synthesis_voices_maximum` | 64 | 讲述人语音资源列表最大显示数量。在某些操作系统中可能会列出大量项目从而影响渲染性能，设为 `-1` 则不设上限。 |
