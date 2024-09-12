@@ -1,6 +1,14 @@
 # 配置文件数据版本历史
 
-## 7（1.5.0~至今）
+## 8（1.5.3~至今）
+
+- `advanced`：
+    - `broadcast`：
+        - `allow_send_duplicate_message`。
+    - `settings`：
+        - `display_hidden_option`。
+
+## 7（1.5.0~1.5.2）
 
 **新增：**
 
