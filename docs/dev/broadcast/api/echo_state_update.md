@@ -29,7 +29,7 @@ Echo-Live 客户端更新 Echo 状态。
 
 ``` javascript title="示例"
 {
-    action: 'error',
+    action: 'echo_state_update',
     /* 这里省略了一部分头部信息 */ 
     data: {
         state: 'play',

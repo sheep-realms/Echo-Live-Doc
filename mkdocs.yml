@@ -191,3 +191,6 @@ nav:
       - dev/registry/echolive/stylesheet.md
       - dev/registry/echolive/system.md
       - dev/registry/echolive/timing_function.md
+- 设计规范:
+  - 命名: design/name.md
+  - 本地化: design/localization.md

@@ -19,7 +19,7 @@ Echo-Live 对话框客户端向历史记录客户端发送正在打印的消息�
 
 ``` javascript title="示例"
 {
-    action: 'error',
+    action: 'echo_printing',
     /* 这里省略了一部分头部信息 */ 
     data: {
         username: '【说话人】',
