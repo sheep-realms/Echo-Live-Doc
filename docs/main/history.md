@@ -6,7 +6,7 @@
 - 06 月 02 日 —— 使用 Echo-Live 创作的首个小剧场视频在 Bilibili 发布，获得了 2 万次观看。
 
 ### 5 月 { id="2024-05" }
-- 05 月 25 日 —— 1.4.0 版本发布，看板娘形象 EchoLiveChan 更名为<ruby>エコー<rt>Echo</rt></ruby><ruby>追音<rt>Otone</rt></ruby>。GitHub 下载量达到 1000 次。
+- 05 月 25 日 —— 1.4.0 版本发布，看板娘形象 EchoLiveChan 更名为<ruby lang="ja"><rb>エコー</rb><rp>（</rp><rt>Echo</rt><rp>）</rp></ruby><ruby><rb>追音</rb><rp>（</rp><rt>Otone</rt><rp>）</rp></ruby>。GitHub 下载量达到 1000 次。
 
 ### 4 月 { id="2024-04" }
 <!-- - 04 月 16 日 —— GitHub 星星数达到 200 颗。 -->

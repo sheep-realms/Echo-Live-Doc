@@ -16,6 +16,11 @@
     display: none!important;
 }
 
+rp {
+    display: inline;
+    font-size: 0;
+}
+
 .feature-tag {
     --color: var(--color-indigo);
     --bg-color: #526cfe1a;
@@ -87,8 +92,24 @@ ruby>span {
     color: #FFC105;
 }
 
+.color-green {
+    color: #4cae4f;
+}
+
 .color-indigo {
     color: var(--color-indigo);
+}
+
+.text-light {
+    color: var(--md-default-fg-color--light);
+}
+
+.text-lighter {
+    color: var(--md-default-fg-color--lighter);
+}
+
+.text-lightest {
+    color: var(--md-default-fg-color--lightest);
 }
 
 img.pixel {
