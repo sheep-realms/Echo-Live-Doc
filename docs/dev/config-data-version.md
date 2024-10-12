@@ -1,6 +1,18 @@
 # 配置文件数据版本历史
 
-## 8（1.5.3~至今）
+## 9（1.5.4~至今）
+
+**新增：**
+
+- `global`：
+    - `touchscreen_layout`、`thin_scrollbar`。
+- `echolive`：
+    - `layout`：
+        - `username_text_align_right`、`diplay_controller`。
+- `accessible`：
+    - `font_size`、`unlock_page_width`。
+
+## 8（1.5.3）
 
 **新增：**
 

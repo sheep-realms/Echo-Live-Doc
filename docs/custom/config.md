@@ -60,7 +60,9 @@
 | `theme` | "vanilla" | 全局主题，控制前台页面的主题。可用的主题请见[主题列表](theme.md#theme-list)。 |
 | `theme_script_enable` | false | 启用全局主题脚本。 |
 | `color_scheme` | "auto" | 后台页面配色方案，可选择 `auto`（跟随系统）、`light`（浅色）和 `dark`（深色）。 |
+| `touchscreen_layout` | false | 启用触屏布局。 |
 | `controller_layout_reverse` | false | 反转控制器按钮布局。根据阅读方向将重要按钮放置于最先被阅读的位置。 |
+| `thin_scrollbar` | false | 启用细滚动条。 |
 
 ### :material-code-braces-box: Echo 相关配置
 前缀：`echo.`
@@ -78,6 +80,14 @@
 | - | - | - |
 | `live_theme` | "" | 对话框主题，留空则使用全局主题。可用的主题请见[主题列表](theme.md#theme-list)。 |
 | `live_theme_script_enable` | false | 启用主题脚本。 |
+
+#### 布局
+前缀：`echolive.layout.`
+
+| 配置项 | 预设值 | 描述 |
+| - | - | - |
+| `username_text_align_right` | false | 说话人靠右对齐。 |
+| `diplay_controller` | true | 显示底部控制栏。 |
 
 #### 广播
 前缀：`echolive.broadcast.`
@@ -232,11 +242,13 @@
 | `remove_continuous_duplicate` | true | 去除连续的重复消息。如果场景中有多个对话框同时接收消息，启用此项可避免重复记录历史消息。 |
 | `latest_message_hide` | true | 隐藏最新的历史记录。 |
 
-### :material-wheelchair-accessibility: 无障碍相关配置
+### :material-wheelchair-accessibility: 可访问性相关配置
 前缀：`echolive.accessible.`
 
 | 配置项 | 预设值 | 描述 |
 | - | - | - |
+| `font_size` | 16 | 字体大小。 |
+| `unlock_page_width` | false | 解锁页面宽度。 |
 | `high_contrast` | false | 高对比度。 |
 | `high_contrast_outline_color` | "#00E9FF" | 焦点高亮边框颜色。 |
 | `high_contrast_outline_size` | "2px" | 焦点高亮边框尺寸。 |
