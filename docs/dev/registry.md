@@ -36,7 +36,7 @@
 
 例如有一个 `example:test` 注册表，它在设置值时会尝试从 `example:root` 读取默认值。
 
-如果 `example:root` 中的注册表数据指定了继承的注册表（即填写了 `inherit`），则会尝试从读取被继承的注册表的默认值，后续的继承以此类推。
+如果 `example:root` 中的注册表数据指定了继承的注册表（即填写了 `inherit` 字段），则会尝试读取被继承的注册表的默认值，后续的继承以此类推。
 
 ## :material-sign-direction: 运行流程
 
