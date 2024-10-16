@@ -17,3 +17,14 @@
 ## :material-code-json: 默认值
 
 该注册表未指定默认值。
+
+## :material-code-json: 预期值
+
+该注册表预期写入 Object 类型的数据，包含以下内容：
+
+| 键名 | 描述 |
+| - | - |
+| `name` | 注册表名，包含命名空间，没有命名空间将使用 `echolive` 作为命名空间。 |
+| `unique_key` | 注册表的唯一键名。 |
+| `default_data` | 注册表项的默认值。 |
+| `inherit` | 继承的注册表名。填写此值将会忽略 `default_data` 并从指定的注册表继承默认值。 |
