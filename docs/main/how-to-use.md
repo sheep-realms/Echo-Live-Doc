@@ -77,6 +77,14 @@ Echo-Live 无需运行安装程序，开箱即用。
 
 ![对话框状态仪表板](../image/how-to-use/client_state_panel_01.png){ .img-light-hyper }
 
+您可以使用右键（触屏设备长按）为对话框添加标记，标记会显示在右侧，有以下几种标记：
+
+- 取消标记：无效果。
+- :material-flag: 已选中：此时未被选中的对话框将不会收到消息。
+- :material-cancel: 已排除：不会收到任何消息。
+
+另外，仅接收定向广播的对话框会在默认情况下显示一个半隐的禁止图标 <span style="opacity: 0.35;" markdown>:material-cancel:</span>。启用高对比度时，禁止图标 <span style="transform: rotate(90deg); display: inline-block;" markdown>:material-cancel:</span> 会旋转 90 度以便和标记排除状态区分。
+
 当对话框正在打印消息时，仪表板上对应的方块会显示 :material-timer-sand: 沙漏图标。
 
 如果对话框收到了多条消息并且至少有一条消息未打印，将会在空闲时显示 :material-message-processing: 气泡图标。此时点击对应的方块即可打印下一条消息。
@@ -139,6 +147,7 @@ file:///D:/Echo-Live/live.html?theme=void
 | 参数名 | 描述 | 可用范围 |
 | - | - | - |
 | `name` | 对话框的识别名。 | 对话框（`live.html`） |
+| `targeted` | 仅接收定向广播，填写任意内容即可生效。 | 对话框（`live.html`） |
 | `theme` | 设置主题。可用的主题请见[主题列表](../custom/theme.md#theme-list)。 | 所有前台页面 |
 
 ## :material-cog: 工作模式

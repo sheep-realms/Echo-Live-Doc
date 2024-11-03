@@ -1,6 +1,24 @@
 # 配置文件数据版本历史
 
-## 9（1.5.4~至今）
+## 10（1.5.5~至今）
+
+**新增：**
+
+- `editor`：
+    - `websocket`：
+        - `enable`、`url`、`auto_url`、`reconnect_limit`。
+- `advanced`：
+    - `performance`：
+        - `foreach_text_style_by_message_data`、`row_search_threshold`。
+    - `device`：
+        - `enable`。
+
+**移动：**
+
+- `accessible` 移动至 `accessibility`，其中：
+    - `drotanopia_and_deuteranopia` 移动至 `protanopia_and_deuteranopia`。
+
+## 9（1.5.4）
 
 **新增：**
 

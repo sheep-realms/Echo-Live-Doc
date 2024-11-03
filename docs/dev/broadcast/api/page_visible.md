@@ -20,3 +20,10 @@ Echo-Live 客户端页面重新可见时发送。
     data: {}
 }
 ```
+
+## :material-history: 历史
+
+| 版本 | 描述 |
+| - | - |
+| 1.2.2 | 加入了 `page_visible` API。 |
+| 1.3.0 | 因头部信息中已包含，移除了 `uuid` 字段。 |

@@ -160,7 +160,7 @@ nav:
       - dev/broadcast/api/echo_printing.md
       - dev/broadcast/api/echo_state_update.md
       - dev/broadcast/api/error.md
-      - dev/broadcast/api/error_unknow.md
+      - dev/broadcast/api/error_unknown.md
       - dev/broadcast/api/hello.md
       - dev/broadcast/api/history_clear.md
       - dev/broadcast/api/live_display_update.md
@@ -190,6 +190,7 @@ nav:
       - dev/registry/echolive/sound.md
       - dev/registry/echolive/stylesheet.md
       - dev/registry/echolive/system.md
+      - dev/registry/echolive/text_style.md
       - dev/registry/echolive/timing_function.md
 - 设计规范:
   - 命名: design/name.md

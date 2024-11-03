@@ -1,4 +1,4 @@
-# error_unknow
+# error_unknown
 
 <span class="feature-tag" title="最早可用版本" markdown>
     <span class="icon">:material-tag:</span>
@@ -23,7 +23,7 @@ Echo-Live 客户端发送未捕获错误的错误报告。
 
 ``` javascript title="示例"
 {
-    action: 'error_unknow',
+    action: 'error_unknown',
     /* 这里省略了一部分头部信息 */ 
     data: {
         message: 'SyntaxError: Missing initializer in const declaration\n    at <anonymous>:3:8',
@@ -33,3 +33,10 @@ Echo-Live 客户端发送未捕获错误的错误报告。
     }
 }
 ```
+
+## :material-history: 历史
+
+| 版本 | 描述 |
+| - | - |
+| 1.3.0 | 加入了 `error_unknow` API。 |
+| 1.5.5 | 修正了拼写错误，API 名称由 `error_unknow` 更改为 `error_unknown`。 |
