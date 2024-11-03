@@ -56,7 +56,7 @@
 
 | 配置项 | 预设值 | 描述 |
 | - | - | - |
-| `language` | "zho-Hans" | 显示语言。可用的配置值见[语言列表](language.md#list)。 |
+| `language` | "zho-Hans" | 界面语言。可用的配置值见[语言列表](language.md#list)。 |
 | `theme` | "vanilla" | 全局主题，控制前台页面的主题。可用的主题请见[主题列表](theme.md#theme-list)。 |
 | `theme_script_enable` | false | 启用全局主题脚本。 |
 | `color_scheme` | "auto" | 后台页面配色方案，可选择 `auto`（跟随系统）、`light`（浅色）和 `dark`（深色）。 |
@@ -198,6 +198,16 @@
 | `output_after` | ");" | 在输出内容之后插入的内容。 |
 | `ontput_after_enable` | 1 | 启用上述功能，`0` 为禁用，`1` 为启用。 |
 
+#### WebSocket 
+前缀：`editor.websocket.`
+
+| 配置项 | 预设值 | 描述 |
+| - | - | - |
+| `enable` | false | 启用 WebSocket。广播模式下启用 WebSocket 可连接至服务器以从通过第三方软件发送消息。 |
+| `url` | "ws://127.0.0.1:3000" | WebSocket 连接地址。 |
+| `auto_url` | true | 自动设置连接地址。通过 HTTP(S) 协议访问编辑器时，直接使用访问地址作为连接地址，无需手动设置。 |
+| `reconnect_limit` | 5 | WebSocket 最大重连尝试次数。 |
+
 #### 拾色器
 前缀：`editor.color_picker.`
 
@@ -243,7 +253,7 @@
 | `latest_message_hide` | true | 隐藏最新的历史记录。 |
 
 ### :material-wheelchair-accessibility: 可访问性相关配置
-前缀：`echolive.accessible.`
+前缀：`echolive.accessibility.`
 
 | 配置项 | 预设值 | 描述 |
 | - | - | - |
@@ -253,7 +263,7 @@
 | `high_contrast_outline_color` | "#00E9FF" | 焦点高亮边框颜色。 |
 | `high_contrast_outline_size` | "2px" | 焦点高亮边框尺寸。 |
 | `high_contrast_outline_style` | "solid" | 焦点高亮边框样式。 |
-| `drotanopia_and_deuteranopia` | false | 红绿色盲。 |
+| `protanopia_and_deuteranopia` | false | 红绿色盲。 |
 | `link_underline` | false | 总是显示链接下划线。 |
 | `animation_disable` | false | 禁用动画。 |
 | `power_saving_mode` | false | 禁用高开销效果。 |
@@ -272,3 +282,6 @@
 | `settings.display_config_key` | false | 显示配置项键名。 |
 | `settings.display_hidden_option` | false | 显示隐藏选项。 |
 | `settings.speech_synthesis_voices_maximum` | 64 | 讲述人语音资源列表最大显示数量。在某些操作系统中可能会列出大量项目从而影响渲染性能，设为 `-1` 则不设上限。 |
+| `performance.foreach_text_style_by_message_data` | false | 基于消息数据遍历文本样式。 |
+| `performance.row_search_threshold` | 1 | 横向搜索触发阈值。 |
+| `device.enable` | true | 启用硬件设备控制。 |

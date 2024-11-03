@@ -16,7 +16,8 @@
 | :material-tag: 音效 ID | :material-help-circle: 描述 |
 | - | - |
 | `typewriter` | 传统打字机的机械按键声。 |
-| `typewriter_loop` | 同上，但是准备了10种不同的音频随机播放。 |
+| `typewriter_loop` | 同上，但是准备了 10 种不同的音频随机播放。 |
+| `pencil` | 铅笔在纸上写字，包含 12 种不同的音频。 |
 | `sys001` | 清脆短促的系统提示音。 |
 | `sys002` | 简单调制的系统提示音。 |
 | `sys003` | 冒泡系统提示音。 |
@@ -25,6 +26,7 @@
 | :material-tag: 音效名 | :material-help-circle: 描述 |
 | - | - |
 | `enter` | 传统打字机按下回车键。 |
+| `paper` | 书本翻页。 |
 
 ## :material-import: 添加音效
 建议您使用[扩展](extension.md)导入音效。

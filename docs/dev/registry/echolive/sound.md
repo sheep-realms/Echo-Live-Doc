@@ -19,6 +19,15 @@
 ``` js
 {
     name: undefined,
-    path: undefined
+    path: undefined,
+    type: 'print',
+    allow_duplicate: false
 }
 ```
+
+## :material-history: 历史
+
+| 版本 | 描述 |
+| - | - |
+| 1.5.0 | 加入了 `echolive:sound` 注册表。 |
+| 1.5.5 | 新增 `type` 字段，默认值为 `"print"`。<br>新增 `allow_duplicate` 字段，默认值为 `false`。 |

@@ -65,4 +65,5 @@
 | [`echolive:sound`](registry/echolive/sound.md) | `res/data/sound.js` | 音效信息。 |
 | [`echolive:stylesheet`](registry/echolive/stylesheet.md) | 无 | 未使用，计划用于加载样式表。 |
 | [`echolive:system`](registry/echolive/system.md) | 无 | 与注册表相关的系统信息，仅使用特定的注册表键。 |
+| [`echolive:text_style`](registry/echolive/text_style.md) | `res/data/text_style.js` | [消息格式](../message/style.md)中的样式字段。 |
 | [`echolive:timing_function`](registry/echolive/timing_function.md) | `res/data/timing_function.js` | 动效时间曲线。 |
