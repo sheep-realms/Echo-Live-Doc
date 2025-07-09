@@ -4,9 +4,13 @@
     <span class="icon">:material-tag:</span>
     <span class="text">1.2.1</span>
 </span>
-<span class="feature-tag" title="终端类型" markdown>
-    <span class="icon">:material-application-braces:</span>
+<span class="feature-tag" title="出站终端类型" markdown>
+    <span class="icon">:material-arrow-up:</span>
     <span class="text">服务器</span>
+</span>
+<span class="feature-tag" title="入站终端类型" markdown>
+    <span class="icon">:material-arrow-down:</span>
+    <span class="text">对话框</span>
 </span>
 
 发送消息。

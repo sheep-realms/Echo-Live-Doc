@@ -28,6 +28,7 @@ theme:
   features:
     - content.code.annotate
     - content.code.copy
+    - content.tooltips
     # - content.tabs.link
     # - header.autohide
     # - navigation.expand
@@ -47,6 +48,7 @@ theme:
 
 markdown_extensions:
   - admonition
+  - abbr
   - attr_list
   - md_in_html
   - tables
@@ -105,9 +107,11 @@ nav:
   - 配置要求: main/computer_requirement.md
   - 安全须知: main/security.md
   - 无障碍使用指南: main/accessible.md
-  - 授权协议与声明: main/copyright.md
   - 创作指导: main/create-guide.md
   - 历史记录: main/history.md
+  - 法律信息:
+    - 授权协议与声明: main/copyright.md
+    - 虚拟形象授权协议: main/misc/license-echo-otone.md
 - 客制化:
   - 总览: custom/index.md
   - 配置: custom/config.md
@@ -130,6 +134,10 @@ nav:
   - 自定义数据: message/data.md
   - 多个文本段落: message/paragraph.md
   - 消息队列: message/message-list.md
+  - 形象: message/character.md
+- 参考文档:
+  - 搜索: reference/search.md
+  - URL 参数: reference/url-params.md
 - 开发文档:
   - Echo: dev/echo.md
   - 定制主题: dev/theme.md
@@ -168,15 +176,18 @@ nav:
       - dev/broadcast/api/page_hidden.md
       - dev/broadcast/api/page_visible.md
       - dev/broadcast/api/ping.md
+      - dev/broadcast/api/set_avatar.md
       - dev/broadcast/api/set_live_display.md
       - dev/broadcast/api/set_theme.md
       - dev/broadcast/api/set_theme_style_url.md
       - dev/broadcast/api/shutdown.md
       - dev/broadcast/api/websocket_close.md
+      - dev/broadcast/api/websocket_heartbeat.md
   - 注册表:
     - 概览: dev/registry.md
     - 注册表列表:
       - dev/registry/echolive/root.md
+      - dev/registry/echolive/avatar.md
       - dev/registry/echolive/border_style.md
       - dev/registry/echolive/emoji.md
       - dev/registry/echolive/emoji_namespace.md
@@ -192,6 +203,11 @@ nav:
       - dev/registry/echolive/system.md
       - dev/registry/echolive/text_style.md
       - dev/registry/echolive/timing_function.md
+  - Hook:
+    - 概览: dev/hook.md
+    - 类:
+      - dev/hook/class/EchoLiveHook.md
+      - dev/hook/class/EchoLiveHookUnit.md
 - 设计规范:
   - 命名: design/name.md
   - 本地化: design/localization.md

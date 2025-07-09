@@ -34,6 +34,7 @@ Echo-Live 已为以下自定义数据设计了交互：
 | 参数名 | 预期类型 | 描述 |
 | - | - | - |
 | `action` | Object | 见[行为](#action)。 |
+| `character` | Object | 见[形象](character.md)。 |
 | `emoji` | String | 见[表情](#emoji)。 |
 | `image` | Object | 见[图片](#image)。 |
 | `username` | String | 变更说话人名称。 |

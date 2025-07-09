@@ -63,6 +63,7 @@
 | `touchscreen_layout` | false | 启用触屏布局。 |
 | `controller_layout_reverse` | false | 反转控制器按钮布局。根据阅读方向将重要按钮放置于最先被阅读的位置。 |
 | `thin_scrollbar` | false | 启用细滚动条。 |
+| `live_font_weight` | "inherit" | 前台默认字重。 |
 
 ### :material-code-braces-box: Echo 相关配置
 前缀：`echo.`
@@ -207,6 +208,7 @@
 | `url` | "ws://127.0.0.1:3000" | WebSocket 连接地址。 |
 | `auto_url` | true | 自动设置连接地址。通过 HTTP(S) 协议访问编辑器时，直接使用访问地址作为连接地址，无需手动设置。 |
 | `reconnect_limit` | 5 | WebSocket 最大重连尝试次数。 |
+| `disable_broadcast` | false | 启用 WebSocket 时禁用广播频道。 |
 
 #### 拾色器
 前缀：`editor.color_picker.`
@@ -227,7 +229,7 @@
 
 ### :material-history: 历史记录相关配置
 #### 主题样式
-前缀：`echolive.style.`
+前缀：`history.style.`
 
 | 配置项 | 预设值 | 描述 |
 | - | - | - |
@@ -235,7 +237,7 @@
 | `history_theme_script_enable` | false | 启用主题脚本。 |
 
 #### 布局
-前缀：`echolive.layout.`
+前缀：`history.layout.`
 
 | 配置项 | 预设值 | 描述 |
 | - | - | - |
@@ -245,15 +247,36 @@
 | `display_time` | true | 显示发送时间。 |
 
 #### 消息
-前缀：`echolive.message.`
+前缀：`history.message.`
 
 | 配置项 | 预设值 | 描述 |
 | - | - | - |
 | `remove_continuous_duplicate` | true | 去除连续的重复消息。如果场景中有多个对话框同时接收消息，启用此项可避免重复记录历史消息。 |
 | `latest_message_hide` | true | 隐藏最新的历史记录。 |
 
+### :material-account-box: 形象播放器相关配置
+
+#### 默认形象
+前缀：`character.avatar.`
+
+| 配置项 | 预设值 | 描述 |
+| - | - | - |
+| `name` | "echo_otone" | 形象名称。 |
+| `action` | "" | 动作名称。 |
+| `scene` | "" | 镜头名称。 |
+
+#### 形象切换动效
+前缀：`character.avatar_switch_effect.`
+
+| 配置项 | 预设值 | 描述 |
+| - | - | - |
+| `name` | "fade-in" | 动效名称。 |
+| `duration` | 250 | 动效用时。 |
+| `scale` | 1 | 动效规模乘数。 |
+| `timing_function` | "ease-out" | 动效时间曲线。 |
+
 ### :material-wheelchair-accessibility: 可访问性相关配置
-前缀：`echolive.accessibility.`
+前缀：`accessibility.`
 
 | 配置项 | 预设值 | 描述 |
 | - | - | - |
@@ -271,12 +294,14 @@
 ### :material-cog: 高级设置
 除非您知道您在干什么，否则请不要动这里的设置。
 
-前缀：`echolive.advanced.`
+前缀：`advanced.`
 
 | 配置项 | 预设值 | 描述 |
 | - | - | - |
 | `broadcast.allow_name_duplicate` | false | 允许识别名重复。 |
 | `broadcast.allow_send_duplicate_message` | false | 允许发送重复消息。 |
+| `broadcast.websocket_heartbeat_backoff_scale` | 1 | WebSocket 心跳包并发退避比率。 |
+| `broadcast.websocket_heartbeat_duration` | 20000 | WebSocket 心跳包间隔。 |
 | `editor.forced_display_split_message` | false | 强制显示 “多行文本分割为消息队列” 选项。 |
 | `editor.history_minimum_breaker_threshold` | 128 | 历史记录底部游标熔断阈值。设为 `-1` 可禁用此机制。 |
 | `settings.display_config_key` | false | 显示配置项键名。 |
