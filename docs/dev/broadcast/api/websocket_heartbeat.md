@@ -1,31 +1,27 @@
-# set_theme
+# websocket_heartbeat
 
 <span class="feature-tag" title="最早可用版本" markdown>
     <span class="icon">:material-tag:</span>
-    <span class="text">1.2.5</span>
+    <span class="text">1.6.0</span>
 </span>
 <span class="feature-tag" title="出站终端类型" markdown>
     <span class="icon">:material-arrow-up:</span>
-    <span class="text">服务器</span>
+    <span class="text">所有客户端</span>
 </span>
 <span class="feature-tag" title="入站终端类型" markdown>
     <span class="icon">:material-arrow-down:</span>
-    <span class="text">对话框</span>
+    <span class="text">WebSocket 服务器</span>
 </span>
 
-设置 Echo-Live 的主题。
+向 WebSocket 服务器发送心跳包。
 
 ## :material-send: 发送数据
-| 键名 | 类型 | 预期值 | 描述 |
-| - | - | - | - |
-| `name` | String | 主题名称 | 已定义的主题名称。 |
+此动作不需要发送任何数据。
 
 ``` javascript title="示例"
 {
-    action: 'set_theme',
+    action: 'websocket_heartbeat',
     /* 这里省略了一部分头部信息 */
-    data: {
-        name: 'bubble'
-    }
+    data: {}
 }
 ```

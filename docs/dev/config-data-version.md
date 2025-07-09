@@ -1,6 +1,24 @@
 # 配置文件数据版本历史
 
-## 10（1.5.5~至今）
+## 11（1.6.0~至今）
+
+**新增：**
+
+- `global`：
+    - `live_font_weight`。
+- `editor`：
+    - `websocket`：
+        - `disable_broadcast`。
+- `character`：
+    - `avatar`：
+        - `name`、`action`、`scene`。
+    - `avatar_switch_effect`：
+        - `name`、`duration`、`scale`、`timing_function`。
+- `advanced`：
+    - `broadcast`：
+        - `websocket_heartbeat_backoff_scale`、`websocket_heartbeat_duration`。
+
+## 10（1.5.5）
 
 **新增：**
 

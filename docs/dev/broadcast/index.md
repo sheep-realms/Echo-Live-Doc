@@ -1,4 +1,4 @@
-# 关于广播
+# 广播
 Echo-Live 中的广播是一种基于 [Broadcast Channel API](https://developer.mozilla.org/zh-CN/docs/Web/API/Broadcast_Channel_API){ target="_blank" } 的浏览器内网页之间的通信技术，利用此技术可以实现在 OBS 的自定义浏览器停靠窗口向场景中的浏览器源发送数据的功能。
 
 在 Echo-Live 中，由 `EchoLiveBroadcast` 类负责处理广播消息。

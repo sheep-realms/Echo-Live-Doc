@@ -17,3 +17,21 @@
     <meta name="twitter:image" content="https://sheep-realms.github.io/Echo-Live-Doc/image/social.png">
     <meta name="twitter:image:alt" content="标题：Echo-Live 帮助文档。描述：一款基于 Echo 的用于无声系虚拟主播直播的仿视觉小说对话框 OBS 插件。">
 {% endblock %}
+
+{% block content %}
+    {{ super() }}
+    <div
+        class="sp-content-footer"
+        style="
+            text-align: center;
+            border-top: .05rem solid var(--md-default-fg-color--lightest);
+            margin-top: 25vh;
+            font-size: 14px;
+            color: var(--md-default-fg-color--light);
+            padding-top: 0.5rem;
+        "
+    >
+        <p>Echo-Live 目前仍在不断开发新功能，本文档有时不能保证与 Echo-Live 一同更新，具有一定的滞后性。</p>
+        <p>如果您在阅读本文档的过程中有感到困惑的地方，请直接与开发者联系。</p>
+    </div>
+{% endblock %}
