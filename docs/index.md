@@ -115,7 +115,7 @@ Echo-Live 是一款基于 Echo 的用于无声系虚拟主播直播的仿视觉�
 <div class="friendship-link" markdown>
 
 - [:material-post-outline: 橘橘博客](https://nblog.nekoorange.cn/){ target="_blank" }
-- [:fontawesome-brands-github: 祐星技术研究社](https://github.com/YouxingClub){ target="_blank" }
+- [:fontawesome-brands-github: 祐星技术研究社](https://github.com/ElicaseTech){ target="_blank" }
 - [:material-layers: 存档计划](https://lakeus.xyz/){ target="_blank" }
 - [:material-numeric-9-circle-outline: BakaXL](https://www.bakaxl.com/){ target="_blank" }
 
