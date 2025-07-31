@@ -1,6 +1,22 @@
 # 配置文件数据版本历史
 
-## 11（1.6.0~至今）
+## 12（1.6.2~至今）
+
+**新增：**
+
+- `global`：
+    - `theme_variant`。
+- `echolive`：
+    - `style`：
+        - `live_theme_variant`。
+- `history`：
+    - `style`：
+        - `history_theme_variant`。
+- `advanced`：
+    - `obs_api`：
+        - `allow_scene_name_set_attribute`、`echolive_mini_size_coefficient`。
+
+## 11（1.6.0~1.6.1）
 
 **新增：**
 
