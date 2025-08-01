@@ -58,6 +58,7 @@
 | - | - | - |
 | `language` | "zho-Hans" | 界面语言。可用的配置值见[语言列表](language.md#list)。 |
 | `theme` | "vanilla" | 全局主题，控制前台页面的主题。可用的主题请见[主题列表](theme.md#theme-list)。 |
+| `theme_variant` | "" | 全局主题变体。一些主题具有多种样式变体，如更换配色方案、调整不透明度等。留空则使用默认样式。 |
 | `theme_script_enable` | false | 启用全局主题脚本。 |
 | `color_scheme` | "auto" | 后台页面配色方案，可选择 `auto`（跟随系统）、`light`（浅色）和 `dark`（深色）。 |
 | `touchscreen_layout` | false | 启用触屏布局。 |
@@ -80,6 +81,7 @@
 | 配置项 | 预设值 | 描述 |
 | - | - | - |
 | `live_theme` | "" | 对话框主题，留空则使用全局主题。可用的主题请见[主题列表](theme.md#theme-list)。 |
+| `live_theme_variant` | "" | 对话框主题变体。留空则使用全局主题变体。 |
 | `live_theme_script_enable` | false | 启用主题脚本。 |
 
 #### 布局
@@ -234,6 +236,7 @@
 | 配置项 | 预设值 | 描述 |
 | - | - | - |
 | `history_theme` | "" | 历史记录主题，留空则使用全局主题。可用的主题请见[主题列表](theme.md#theme-list)。 |
+| `history_theme_variant` | "" | 历史记录主题变体。留空则使用全局主题变体。 |
 | `history_theme_script_enable` | false | 启用主题脚本。 |
 
 #### 布局
@@ -310,3 +313,5 @@
 | `performance.foreach_text_style_by_message_data` | false | 基于消息数据遍历文本样式。 |
 | `performance.row_search_threshold` | 1 | 横向搜索触发阈值。 |
 | `device.enable` | true | 启用硬件设备控制。 |
+| `obs_api.allow_scene_name_set_attribute` | true | 允许场景名称控制页面属性。通过在 OBS 场景名称末尾写入像 `[color=dark]` 这样的键值对来更改页面属性，以便于在不同的场景中应用不同的样式。 |
+| `obs_api.echolive_mini_size_coefficient` | true | 对话框迷你尺寸计算系数。通过在 OBS 场景名称末尾写入 `[mini]` 即可启用对话框的迷你尺寸，迷你尺寸仅在部分主题中可用。 |
