@@ -104,6 +104,7 @@ foo:(bar, baz, "hello world")
 | `boolean` | 布尔值，仅 `true` 和 `false` 两种状态。 |
 | `boolean.bit` | 比特型布尔值，仅 `1` 和 `0` 两种状态。 |
 | `string` | 字符串。 |
+| `string.multiline` | 多行文本字符串。 |
 | `number` | 数字 |
 | `special.all_or_array_string` | 特殊配置，用于值可能是 `all` 或字符串数组的配置。 |
 | `special.fontsize` | 特殊配置，用于字体大小配置。 |
