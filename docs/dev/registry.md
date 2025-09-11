@@ -58,6 +58,7 @@
 | [`echolive:emoji_namespace`](registry/echolive/emoji_namespace.md) | 无 | 表情包命名空间的重定向表，在编辑器中加载表情包时自动写入。 |
 | [`echolive:language`](registry/echolive/language.md) | `lang/*.js` | 本地化数据，一般情况下最多只有源语言和配置选择的语言。 |
 | [`echolive:language_index`](registry/echolive/language_index.md) | `lang/index.js` | 本地化索引表，包含所有可用的本地化数据的基本信息。 |
+| [`echolive:live_controller`](registry/echolive/live_controller.md) | `res/data/live_controller.js` | 对话框的控制栏。 |
 | [`echolive:live_theme`](registry/echolive/live_theme.md) | `res/data/live_theme.js` | 前台页面主题信息。 |
 | [`echolive:palette`](registry/echolive/palette.md) | `res/data/palette.js` | 编辑器中的调色板。 |
 | [`echolive:print_effect`](registry/echolive/print_effect.md) | `res/data/print_effect.js` | 字符打印动效。 |

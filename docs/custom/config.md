@@ -91,6 +91,7 @@
 | - | - | - |
 | `username_text_align_right` | false | 说话人靠右对齐。 |
 | `diplay_controller` | true | 显示底部控制栏。 |
+| `controller` | "new_icon" | 控制栏内容。 |
 
 #### 广播
 前缀：`echolive.broadcast.`
