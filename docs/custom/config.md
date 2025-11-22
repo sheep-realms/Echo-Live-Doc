@@ -175,6 +175,14 @@
 | `speech_emoji` | false | 读出表情符号。 |
 | `ignored_characters` | "" | 忽略的字符。 |
 
+#### 消息过滤器
+前缀：`echolive.filter.`
+
+| 配置项 | 预设值 | 描述 |
+| - | - | - |
+| `enable` | true | 启用过滤器。启用后，Echo-Live 会在收到消息时运行已注册的过滤器。 |
+| `duplicate_chinese_mood_symbol_slice_enable` | true | 连续重复的中文语气符号切片过滤器。将连续重复的中文语气符号切分为不连续的语义单元，以修复连续使用符号产生意外折行的问题。 |
+
 ### :material-pencil-circle: 编辑器相关配置
 #### 功能
 前缀：`editor.function.`
@@ -285,6 +293,7 @@
 | 配置项 | 预设值 | 描述 |
 | - | - | - |
 | `font_size` | 16 | 字体大小。 |
+| `use_short_language_iso_code` | false | 使用短 ISO 语言代码。 |
 | `unlock_page_width` | false | 解锁页面宽度。 |
 | `high_contrast` | false | 高对比度。 |
 | `high_contrast_outline_color` | "#00E9FF" | 焦点高亮边框颜色。 |
@@ -294,6 +303,7 @@
 | `link_underline` | false | 总是显示链接下划线。 |
 | `animation_disable` | false | 禁用动画。 |
 | `power_saving_mode` | false | 禁用高开销效果。 |
+| `send_on_enter` | false | 按 Enter 键发送消息。 |
 
 ### :material-cog: 高级设置
 除非您知道您在干什么，否则请不要动这里的设置。

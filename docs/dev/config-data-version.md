@@ -1,6 +1,16 @@
 # 配置文件数据版本历史
 
-## 13（1.6.5~至今）
+## 14（1.6.8~至今）
+
+**新增：**
+
+- `echolive`：
+    - `filter`:
+        - `enable`、`duplicate_chinese_mood_symbol_slice_enable`
+- `accessibility`：
+    - `use_short_language_iso_code`、`send_on_enter`
+
+## 13（1.6.5~1.6.7）
 
 **新增：**
 
