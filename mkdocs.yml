@@ -195,6 +195,7 @@ nav:
       - dev/registry/echolive/language_index.md
       - dev/registry/echolive/live_controller.md
       - dev/registry/echolive/live_theme.md
+      - dev/registry/echolive/message_filter.md
       - dev/registry/echolive/palette.md
       - dev/registry/echolive/print_effect.md
       - dev/registry/echolive/script.md

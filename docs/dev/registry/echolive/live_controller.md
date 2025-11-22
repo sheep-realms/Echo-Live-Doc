@@ -1,4 +1,4 @@
-# echolive:live_theme
+# echolive:live_controller
 
 <span class="feature-tag" title="最早可用版本" markdown>
     <span class="icon">:material-tag:</span>
