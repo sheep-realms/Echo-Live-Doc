@@ -28,3 +28,5 @@
 | `unique_key` | 注册表的唯一键名。 |
 | `default_data` | 注册表项的默认值。 |
 | `inherit` | 继承的注册表名。填写此值将会忽略 `default_data` 并从指定的注册表继承默认值。 |
+| `sync` | 是否为同步注册表。 |
+| `is_function` | 是否为函数注册表。此值为 `true` 时 `sync` 字段将失效。 |
