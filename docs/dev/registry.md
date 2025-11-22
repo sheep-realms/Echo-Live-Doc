@@ -66,6 +66,7 @@
 | [`echolive:language_index`](registry/echolive/language_index.md) | `lang/index.js` | 本地化索引表，包含所有可用的本地化数据的基本信息。 |
 | [`echolive:live_controller`](registry/echolive/live_controller.md) | `res/data/live_controller.js` | 对话框的控制栏。 |
 | [`echolive:live_theme`](registry/echolive/live_theme.md) | `res/data/live_theme.js` | 前台页面主题信息。 |
+| [`echolive:message_filter`](registry/echolive/message_filter.md) | `res/data/message_filter.js` | 对话框消息过滤器。 |
 | [`echolive:palette`](registry/echolive/palette.md) | `res/data/palette.js` | 编辑器中的调色板。 |
 | [`echolive:print_effect`](registry/echolive/print_effect.md) | `res/data/print_effect.js` | 字符打印动效。 |
 | [`echolive:script`](registry/echolive/script.md) | 无 | 未使用，计划用于加载脚本。 |
