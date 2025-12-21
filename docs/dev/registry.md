@@ -72,6 +72,8 @@
 | [`echolive:script`](registry/echolive/script.md) | 无 | 未使用，计划用于加载脚本。 |
 | [`echolive:settings_data`](registry/echolive/settings_data.md) | `res/data/settings_about_link.js`、<br>`res/data/settings_navigation.js` | 配置文件编辑器的菜单、关于页面链接等数据，仅使用特定的注册表键。 |
 | [`echolive:sound`](registry/echolive/sound.md) | `res/data/sound.js` | 音效信息。 |
+| [`echolive:statistic`](registry/echolive/statistic.md) | `res/data/statistic.js` | 统计项。 |
+| [`echolive:statistic_method`](registry/echolive/statistic_method.md) | `res/data/statistic_method.js` | 统计项方法。 |
 | [`echolive:stylesheet`](registry/echolive/stylesheet.md) | 无 | 未使用，计划用于加载样式表。 |
 | [`echolive:system`](registry/echolive/system.md) | 无 | 与注册表相关的系统信息，仅使用特定的注册表键。 |
 | [`echolive:text_style`](registry/echolive/text_style.md) | `res/data/text_style.js` | [消息格式](../message/style.md)中的样式字段。 |

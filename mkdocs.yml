@@ -201,6 +201,8 @@ nav:
       - dev/registry/echolive/script.md
       - dev/registry/echolive/settings_data.md
       - dev/registry/echolive/sound.md
+      - dev/registry/echolive/statistic.md
+      - dev/registry/echolive/statistic_method.md
       - dev/registry/echolive/stylesheet.md
       - dev/registry/echolive/system.md
       - dev/registry/echolive/text_style.md
