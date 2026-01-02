@@ -38,6 +38,12 @@
 
 如果 `example:root` 中的注册表数据指定了继承的注册表（即填写了 `inherit` 字段），则会尝试读取被继承的注册表的默认值，后续的继承以此类推。
 
+### 函数注册表
+
+在 `root` 注册表中定义注册表时，将字段 `is_function` 值设为 `true` 可创建函数注册表。这种情况下，字段 `sync` 将会失效。
+
+函数注册表只能用于存储函数数据，常规注册表无法储存函数数据。
+
 ## :material-sign-direction: 运行流程
 
 注册表的运行流程分为以下几个阶段：
@@ -58,12 +64,16 @@
 | [`echolive:emoji_namespace`](registry/echolive/emoji_namespace.md) | 无 | 表情包命名空间的重定向表，在编辑器中加载表情包时自动写入。 |
 | [`echolive:language`](registry/echolive/language.md) | `lang/*.js` | 本地化数据，一般情况下最多只有源语言和配置选择的语言。 |
 | [`echolive:language_index`](registry/echolive/language_index.md) | `lang/index.js` | 本地化索引表，包含所有可用的本地化数据的基本信息。 |
+| [`echolive:live_controller`](registry/echolive/live_controller.md) | `res/data/live_controller.js` | 对话框的控制栏。 |
 | [`echolive:live_theme`](registry/echolive/live_theme.md) | `res/data/live_theme.js` | 前台页面主题信息。 |
+| [`echolive:message_filter`](registry/echolive/message_filter.md) | `res/data/message_filter.js` | 对话框消息过滤器。 |
 | [`echolive:palette`](registry/echolive/palette.md) | `res/data/palette.js` | 编辑器中的调色板。 |
 | [`echolive:print_effect`](registry/echolive/print_effect.md) | `res/data/print_effect.js` | 字符打印动效。 |
 | [`echolive:script`](registry/echolive/script.md) | 无 | 未使用，计划用于加载脚本。 |
 | [`echolive:settings_data`](registry/echolive/settings_data.md) | `res/data/settings_about_link.js`、<br>`res/data/settings_navigation.js` | 配置文件编辑器的菜单、关于页面链接等数据，仅使用特定的注册表键。 |
 | [`echolive:sound`](registry/echolive/sound.md) | `res/data/sound.js` | 音效信息。 |
+| [`echolive:statistic`](registry/echolive/statistic.md) | `res/data/statistic.js` | 统计项。 |
+| [`echolive:statistic_method`](registry/echolive/statistic_method.md) | `res/data/statistic_method.js` | 统计项方法。 |
 | [`echolive:stylesheet`](registry/echolive/stylesheet.md) | 无 | 未使用，计划用于加载样式表。 |
 | [`echolive:system`](registry/echolive/system.md) | 无 | 与注册表相关的系统信息，仅使用特定的注册表键。 |
 | [`echolive:text_style`](registry/echolive/text_style.md) | `res/data/text_style.js` | [消息格式](../message/style.md)中的样式字段。 |

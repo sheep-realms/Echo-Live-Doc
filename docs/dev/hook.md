@@ -98,6 +98,8 @@ echoLiveSystem.hook.create('broadcast_terminal_post_message', e => {
 | 名称 | 描述 |
 | - | - |
 | `echolive_portal_init` | 对话框初始化完成。 |
+| `echolive_portal_message_filter_before` | 消息过滤器运行前。 |
+| `echolive_portal_message_filter_after` | 消息过滤器运行后。 |
 
 #### 历史记录
 
