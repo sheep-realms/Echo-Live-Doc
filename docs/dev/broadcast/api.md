@@ -35,6 +35,7 @@ Echo-Live 的广播数据是一种 Object 类型的数据，内容如下：
 | `uuid` | String | UUID | 终端的 UUID。 |
 | `type` | String | 发送者类型 | 见下文。 |
 | `timestamp` | Number | 时间戳 | 消息发送时的时间戳。 |
+| `expand` | Object | 对象 | 额外元数据，可能不存在。目前尚无实际作用。 |
 
 ### from 中的 type 参数
 `type` 参数可以是以下值：
