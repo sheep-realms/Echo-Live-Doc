@@ -1,6 +1,6 @@
 # 如何更新
 
-Echo-Live 没有自动更新机制，您需要前往 [GitHub](https://github.com/sheep-realms/Echo-Live/releases){ target="_blank" } 手动检查更新。
+Echo-Live 自 1.6.11 版本起内置了更新检查，但不会自动下载更新。您需要前往 [GitHub](https://github.com/sheep-realms/Echo-Live/releases){ target="_blank" } 手动下载更新。
 
 ## 第一步：覆盖文件
 
@@ -29,3 +29,5 @@ Echo-Live 没有自动更新机制，您需要前往 [GitHub](https://github.com
 ## 第三步：更改其他自定义内容
 
 如果您更改了一些文件，例如主题样式，很抱歉目前不支持对这些更改进行自动升级，请您手动修改。
+
+建议您通过在 OBS 中设置自定义 CSS 的方式来对主题样式进行自定义，详见[主题](../custom/theme.md)。

@@ -29,7 +29,7 @@ Echo-Live 无需运行安装程序，开箱即用。
     - Echo-Live → 广播 → 启用 WebSocket：开启；
     - 编辑器 → WebSocket → 启用 WebSocket：开启。
 2. 配置修改完成后点击底部的 “保存” 按钮保存配置文件。配置文件是 Echo-Live 根目录中的 `config.js`，用编辑后的配置文件覆盖它。
-3. 前往 [Echo-Live WebSocket Server](https://github.com/sheep-realms/Echo-Live-WebSocket-Server) GitHub 仓库，[下载](https://github.com/sheep-realms/Echo-Live-WebSocket-Server/releases)最新版本，并根据仓库自述文件中的指引完成安装。
+3. 前往 [Echo-Live WebSocket Server](https://github.com/sheep-realms/Echo-Live-WebSocket-Server){ target="_blank" } GitHub 仓库，[下载](https://github.com/sheep-realms/Echo-Live-WebSocket-Server/releases){ target="_blank" }最新版本，并根据仓库自述文件中的指引完成安装。
 
 ### 方法三：通过轮询传递消息
 如果因 OBS 更新等原因导致上述方法失效，请尝试此方法。
