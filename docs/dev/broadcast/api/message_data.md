@@ -16,7 +16,7 @@
 发送消息。
 
 ## :material-send: 发送数据
-此动作发送的数据是类似于 `start.js` 中的[消息格式](/message/)。
+此动作发送的数据是类似于 `start.js` 中的[消息格式](../../../message/index.md)。
 
 ``` javascript title="示例"
 {
