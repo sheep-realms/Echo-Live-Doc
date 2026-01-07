@@ -5,4 +5,4 @@
 | - | - |
 | [`master`](https://github.com/sheep-realms/Echo-Live/tree/master) | 主分支，仅在发布更新时合并分支。请勿对此分支提交 PR。 |
 | [`dev`](https://github.com/sheep-realms/Echo-Live/tree/dev) | 开发分支，主要的开发更改都提交至此分支。 |
-| [`dev-character`](https://github.com/sheep-realms/Echo-Live/tree/dev-character) | 立绘互动功能开发分支。立绘互动功能开发受到了一些阻碍且开发周期较长，为了不影响主要功能的开发进度而设立此分支。 |
+| `dev-*` | 长开发周期特性分支。当一个新特性需要较长的开发周期时，为了不影响整体开发进度，需要创建新分支。 |
