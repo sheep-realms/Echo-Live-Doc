@@ -189,6 +189,8 @@ nav:
       - dev/registry/echolive/root.md
       - dev/registry/echolive/avatar.md
       - dev/registry/echolive/border_style.md
+      - dev/registry/echolive/editor_controller.md
+      - dev/registry/echolive/editor_controller_method.md
       - dev/registry/echolive/emoji.md
       - dev/registry/echolive/emoji_namespace.md
       - dev/registry/echolive/language.md

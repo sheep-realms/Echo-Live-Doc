@@ -60,6 +60,8 @@
 | [`echolive:root`](registry/echolive/root.md) | `res/data/root.js` | 注册表实例创建时创建的第一个注册表，用于在初始化阶段创建其他注册表，并为注册表值提供默认值。 |
 | [`echolive:avatar`](registry/echolive/avatar.md) | `res/data/avatar.js` | 虚拟形象，用于形象播放器。 |
 | [`echolive:border_style`](registry/echolive/border_style.md) | `res/data/border_style.js` | CSS 中所有边框样式，为[配置文件编辑器](../custom/config.md#config-editor)提供候选值。 |
+| [`echolive:editor_controller`](registry/echolive/editor_controller.md) | `res/data/editor_controller.js` | 编辑器中的控制栏。 |
+| [`echolive:editor_controller_method`](registry/echolive/editor_controller_method.md) | `res/data/editor_controller_method.js` | 编辑器控制栏自定义方法。 |
 | [`echolive:emoji`](registry/echolive/emoji.md) | `res/data/emoji.js` | 编辑器中的表情包。 |
 | [`echolive:emoji_namespace`](registry/echolive/emoji_namespace.md) | 无 | 表情包命名空间的重定向表，在编辑器中加载表情包时自动写入。 |
 | [`echolive:language`](registry/echolive/language.md) | `lang/*.js` | 本地化数据，一般情况下最多只有源语言和配置选择的语言。 |
