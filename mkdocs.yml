@@ -138,6 +138,7 @@ nav:
 - 参考文档:
   - 搜索: reference/search.md
   - URL 参数: reference/url-params.md
+  - 数值提供器: reference/number-provider.md
 - 开发文档:
   - Echo: dev/echo.md
   - 定制主题: dev/theme.md
