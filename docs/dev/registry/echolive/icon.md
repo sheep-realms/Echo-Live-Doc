@@ -1,11 +1,11 @@
-# echolive:border_style
+# echolive:icon
 
 <span class="feature-tag" title="最早可用版本" markdown>
     <span class="icon">:material-tag:</span>
-    <span class="text">1.5.0</span>
+    <span class="text">1.6.0</span>
 </span>
 
-注册边框样式，作为配置文件编辑器中部分配置项的候选值。
+SVG 图标。
 
 ## :material-list-box-outline: 属性
 
@@ -18,8 +18,8 @@
 
 ``` js
 {
-    name: undefined,
-    value: undefined
+    name: 'missingno',
+    content: ''
 }
 ```
 
@@ -27,8 +27,8 @@
 
 ### `name`
 
-边框样式名称。通常与 `value` 字段一致。
+图标名称。
 
-### `value`
+### `content`
 
-边框样式的 CSS 值。
+图标内容。
