@@ -20,13 +20,26 @@
 
 ## :material-code-json: 预期值
 
-该注册表预期写入 Object 类型的数据，包含以下内容：
+### `name`
 
-| 键名 | 描述 |
-| - | - |
-| `name` | 注册表名，包含命名空间，没有命名空间将使用 `echolive` 作为命名空间。 |
-| `unique_key` | 注册表的唯一键名。 |
-| `default_data` | 注册表项的默认值。 |
-| `inherit` | 继承的注册表名。填写此值将会忽略 `default_data` 并从指定的注册表继承默认值。 |
-| `sync` | 是否为同步注册表。 |
-| `is_function` | 是否为函数注册表。此值为 `true` 时 `sync` 字段将失效。 |
+注册表名，包含命名空间，未指定命名空间将使用 `echolive` 作为命名空间。
+
+### `unique_key`
+
+注册表的唯一键名。
+
+### `default_data`
+
+注册表项的默认值。
+
+### `inherit`
+
+继承的注册表名。填写此值将会忽略 `default_data` 并从指定的注册表继承默认值。
+
+### `sync`
+
+是否为同步注册表。
+
+### `is_function`
+
+是否为函数注册表。此值为 `true` 时 `sync` 字段将失效。

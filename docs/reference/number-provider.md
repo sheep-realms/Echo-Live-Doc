@@ -6,14 +6,14 @@
 
 数值提供器的类型由 `type` 字段定义，可能不存在，默认为 `uniform`。
 
-### binomial
+### `binomial`
 
 当 `type` 取值为 `binomial` 时，数值提供器返回服从二项分布的随机数。
 
 - `n`：（数值或数值提供器）进行独立重复的[伯努利试验](https://zh.wikipedia.org/wiki/伯努利试验){ target="_blank" }的次数，默认为 0。
 - `p`：（数值或数值提供器）每次试验的成功概率，取值 0 ~ 1，默认为 0。
 
-### config
+### `config`
 
 当 `type` 取值为 `config` 时，数值提供器返回配置文件中的数值。当读取到的配置项并非数值（包括未定义）且不可被转换为数值时视为读取失败。
 
@@ -24,19 +24,19 @@
 - `config`：（字符串）配置项名称。
 - `fallback`：（数值或数值提供器）当读取失败时提供的回退值。
 
-### constant
+### `constant`
 
 当 `type` 取值为 `constant` 时，数值提供器返回常数。
 
 - `value`：（数值）一个任意的确切数值。
 
-### summands
+### `summands`
 
 当 `type` 取值为 `summands` 时，数值提供器返回若干数值提供器的和。
 
 - `summands`：（数值提供器数组）要作和的数值提供器。
 
-### uniform
+### `uniform`
 
 当 `type` 取值为 `uniform` 时，数值提供器返回两个值（含）之间均匀分布的随机数。
 
