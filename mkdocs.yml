@@ -73,8 +73,8 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true 
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
   - glightbox
@@ -139,6 +139,7 @@ nav:
   - 搜索: reference/search.md
   - URL 参数: reference/url-params.md
   - 本地化文本组件: reference/text-component.md
+  - 参考元数据组件: reference/reference-component.md
   - 数值提供器: reference/number-provider.md
 - 开发文档:
   - Echo: dev/echo.md
