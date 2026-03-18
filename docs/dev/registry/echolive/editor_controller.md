@@ -45,7 +45,7 @@
 
 ### `title`
 
-控制器标题，用于其显示名称，支持使用[本地化文本组件](../../../reference/text-component.md)。
+控制器标题，用于其显示名称，支持使用[本地化文本组件](../../../reference/text-component.md)，本地化键名前缀为 `editor.format.`。
 
 ### `icon`
 
@@ -66,7 +66,7 @@
 
 - `type`：行为名称，可以是以下值：
     - `insert_text_at_cursor`：在光标处插入文本。
-    - `show_popups`：显示悬浮窗。
+    - `show_popups`：呼出悬浮窗。
     - `none`：什么也不做。
 - `value`：行为参数。
     - 当 `type` 值为 `insert_text_at_cursor` 时，有以下字段：
