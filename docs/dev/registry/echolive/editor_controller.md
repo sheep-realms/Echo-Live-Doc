@@ -55,10 +55,12 @@
 
 激活控制器可用的快捷键，包含以下字段：
 
-- `keys`：按键名称（基于 `KeyboardEvent.code`），支持组合键。该字段中应忽略 `Ctrl`，因为无论如何该按键都会被要求按下。示例如下：
+- `keys`：按键名称（基于 `KeyboardEvent.code`），支持组合键，`Shift`、`Alt` 应按此顺序选择填入。该字段中应忽略 `Ctrl`，因为无论如何该按键都会被要求按下。示例如下：
     - `ArrowUp` 表示 <kbd>Ctrl</kbd> + <kbd>↑</kbd>；
     - `Shift+KeyS` 表示 <kbd>Ctrl</kbd> + <kbd>⇧ Shift</kbd> + <kbd>S</kbd>。
 - `description`：快捷键描述，用于在控制器鼠标悬停提示中提示快捷键。
+
+另外，当定义了 `alt_action` 字段时，会自动添加对 <kbd>Alt</kbd> 键的绑定。
 
 ### `action`
 
@@ -67,6 +69,7 @@
 - `type`：行为名称，可以是以下值：
     - `insert_text_at_cursor`：在光标处插入文本。
     - `show_popups`：呼出悬浮窗。
+    - `show_popups_set_option`：呼出悬浮窗并设置选项。
     - `none`：什么也不做。
 - `value`：行为参数。
     - 当 `type` 值为 `insert_text_at_cursor` 时，有以下字段：
@@ -81,7 +84,21 @@
     - 当 `type` 值为 `show_popups` 时，有以下字段：
         - `id`：悬浮窗的 ID。
         - `focus`：显示悬浮窗后需要聚焦的元素选择器字符串。
+    - 当 `type` 值为 `insert_text_at_cursor` 时，有以下字段：
+        - 同 `show_popups` 中的字段。
+        - `option`：选项值。
+
+### `alt_action`
+
+控制器以额外选项模式触发（通常由按住 <kbd>Alt</kbd> 键触发）后的行为，包含字段与 `action` 一致。
 
 ## :material-lightbulb-on: 你知道吗
 
 - 此注册表中定义了一个名为 `disabled_save` 的不可见控制器，其行为是什么也不做，以此来阻止按下 <kbd>Ctrl</kbd> + <kbd>S</kbd> 时的浏览器默认行为。
+
+## :material-history: 历史
+
+| 版本 | 描述 |
+| - | - |
+| 1.7.4 | 加入了 `echolive:editor_controller` 注册表。 |
+| 1.7.8 | 新增 `alt_action` 字段。<br>新增 `show_popups_set_option` 行为。 |

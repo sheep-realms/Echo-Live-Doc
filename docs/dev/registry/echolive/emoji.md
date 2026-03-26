@@ -131,7 +131,7 @@
 
 - `title`：分组标题，用于其显示名称，支持使用[本地化文本组件](../../../reference/text-component.md)，本地化键名前缀为 `emoji.<path.translate>group.`。
 
-## 历史
+## :material-history: 历史
 
 | 版本 | 描述 |
 | - | - |
