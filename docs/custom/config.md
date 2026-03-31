@@ -197,19 +197,6 @@
 | `log_line_maximum` | 512 | 日志行数上限。设为 `-1` 则不设上限。 |
 | `images_cache_maximum` | 64 | 自定义消息图片缓存数上限。设为 `-1` 则不设上限。 |
 
-#### 表单预填充
-前缀：`editor.form.`
-
-| 配置项 | 预设值 | 描述 |
-| - | - | - |
-| `username` | "" | 初始说话人。 |
-| `quote_before` | "「" | 引用符号（开头）。 |
-| `quote_after` | "」" | 引用符号（结尾）。 |
-| `output_before` | "echolive.send(" | 在输出内容之前插入的内容。 |
-| `ontput_before_enable` | 1 | 启用上述功能，`0` 为禁用，`1` 为启用。 |
-| `output_after` | ");" | 在输出内容之后插入的内容。 |
-| `ontput_after_enable` | 1 | 启用上述功能，`0` 为禁用，`1` 为启用。 |
-
 #### WebSocket 
 前缀：`editor.websocket.`
 
@@ -227,6 +214,7 @@
 | 配置项 | 预设值 | 描述 |
 | - | - | - |
 | `palette` | "all" | 拾色器中启用的色板。设为 `all` 视为启用所有可用色板，否则类型为数组，数组元素为字符串，填写需要启用的色板名称，可排序。 |
+| `recently_auto_sort` | true | 最近使用色板重新排序。 |
 | `color_contrast_enable` | false | 拾色器是否启用 WCAG 颜色对比度测试面板。 |
 | `color_contrast_background_color` | "#ffffff" | 拾色器 WCAG 颜色对比度测试面板参考背景色。仅支持十六进制颜色码，背景色的 Alpha 通道会被忽略。 |
 | `color_contrast_threshold` | 3.8 | 拾色器 WCAG 颜色对比度测试面板对比度参考阈值。 |
@@ -237,6 +225,19 @@
 | 配置项 | 预设值 | 描述 |
 | - | - | - |
 | `emoji` | "all" | 表情选择器中启用的表情包。设为 `all` 视为启用所有可用表情包，否则类型为数组，数组元素为字符串，填写需要启用的表情包名称，可排序。 |
+
+#### 表单预填充
+前缀：`editor.form.`
+
+| 配置项 | 预设值 | 描述 |
+| - | - | - |
+| `username` | "" | 初始说话人。 |
+| `quote_before` | "「" | 引用符号（开头）。 |
+| `quote_after` | "」" | 引用符号（结尾）。 |
+| `output_before` | "echolive.send(" | 在输出内容之前插入的内容。 |
+| `ontput_before_enable` | 1 | 启用上述功能，`0` 为禁用，`1` 为启用。 |
+| `output_after` | ");" | 在输出内容之后插入的内容。 |
+| `ontput_after_enable` | 1 | 启用上述功能，`0` 为禁用，`1` 为启用。 |
 
 ### :material-history: 历史记录相关配置
 #### 主题样式

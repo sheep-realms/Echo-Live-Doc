@@ -74,6 +74,8 @@
 | [`echolive:print_effect`](registry/echolive/print_effect.md) | `res/data/print_effect.js` | 字符打印动效。 |
 | [`echolive:script`](registry/echolive/script.md) | 无 | 未使用，计划用于加载脚本。 |
 | [`echolive:settings_data`](registry/echolive/settings_data.md) | `res/data/settings_about_link.js`、<br>`res/data/settings_navigation.js` | 配置文件编辑器的菜单、关于页面链接等数据，仅使用特定的注册表键。 |
+| [`echolive:slot_settings_wrapper_after`](registry/echolive/slot_settings_wrapper_after.md) | `res/data/slot_settings_wrapper_after.js` | 配置文件编辑器配置项尾部插槽。 |
+| [`echolive:slot_settings_wrapper_before`](registry/echolive/slot_settings_wrapper_before.md) | `res/data/slot_settings_wrapper_before.js` | 配置文件编辑器配置项头部插槽。 |
 | [`echolive:sound`](registry/echolive/sound.md) | `res/data/sound.js` | 音效信息。 |
 | [`echolive:statistic`](registry/echolive/statistic.md) | `res/data/statistic.js` | 统计项。 |
 | [`echolive:statistic_method`](registry/echolive/statistic_method.md) | `res/data/statistic_method.js` | 统计项方法。 |
