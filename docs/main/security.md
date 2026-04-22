@@ -17,7 +17,7 @@
 
 ## :material-puzzle: Echo-Live 扩展 { id="extension" }
 
-Echo-Live 的扩展仅作规范导入分享资源之用，虽然目前仅支持增加额外音频资源和主题，但实际上可以被用来做任何事，因此请不要安装来路不明的扩展。
+Echo-Live 的扩展仅作规范导入分享资源之用，实际上可以被用来做任何事，因此请不要安装来路不明的扩展。
 
 ## :material-tshirt-crew: Echo-Live 主题 { id="theme" }
 

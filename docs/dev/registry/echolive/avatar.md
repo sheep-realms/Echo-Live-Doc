@@ -2,7 +2,7 @@
 
 <span class="feature-tag" title="最早可用版本" markdown>
     <span class="icon">:material-tag:</span>
-    <span class="text">待定</span>
+    <span class="text">1.6.0</span>
 </span>
 
 注册形象，以供形象播放器使用。

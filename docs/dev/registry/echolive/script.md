@@ -19,7 +19,12 @@
 ``` js
 {
     name: undefined,
-    path: undefined,
-    page: 'all'
+    id: undefined,
+    domain: undefined,
+    async: false,
+    defer: false,
+    insert_body: false,
+    dependencies: undefined,
+    src: ''
 }
 ```
