@@ -64,6 +64,7 @@
 | [`echolive:editor_controller_method`](registry/echolive/editor_controller_method.md) | `res/data/editor_controller_method.js` | 编辑器控制栏自定义方法。 |
 | [`echolive:emoji`](registry/echolive/emoji.md) | `res/data/emoji.js` | 编辑器中的表情包。 |
 | [`echolive:emoji_namespace`](registry/echolive/emoji_namespace.md) | 无 | 表情包命名空间的重定向表，在编辑器中加载表情包时自动写入。 |
+| [`echolive:extension`](registry/echolive/extension.md) | | 扩展包。 |
 | [`echolive:icon`](registry/echolive/icon.md) | `res/data/icon.js` | SVG 图标。 |
 | [`echolive:language`](registry/echolive/language.md) | `lang/*.js` | 本地化数据，一般情况下最多只有源语言和配置选择的语言。 |
 | [`echolive:language_index`](registry/echolive/language_index.md) | `lang/index.js` | 本地化索引表，包含所有可用的本地化数据的基本信息。 |
@@ -74,6 +75,8 @@
 | [`echolive:print_effect`](registry/echolive/print_effect.md) | `res/data/print_effect.js` | 字符打印动效。 |
 | [`echolive:script`](registry/echolive/script.md) | 无 | 未使用，计划用于加载脚本。 |
 | [`echolive:settings_data`](registry/echolive/settings_data.md) | `res/data/settings_about_link.js`、<br>`res/data/settings_navigation.js` | 配置文件编辑器的菜单、关于页面链接等数据，仅使用特定的注册表键。 |
+| [`echolive:slot_settings_wrapper_after`](registry/echolive/slot_settings_wrapper_after.md) | `res/data/slot_settings_wrapper_after.js` | 配置文件编辑器配置项尾部插槽。 |
+| [`echolive:slot_settings_wrapper_before`](registry/echolive/slot_settings_wrapper_before.md) | `res/data/slot_settings_wrapper_before.js` | 配置文件编辑器配置项头部插槽。 |
 | [`echolive:sound`](registry/echolive/sound.md) | `res/data/sound.js` | 音效信息。 |
 | [`echolive:statistic`](registry/echolive/statistic.md) | `res/data/statistic.js` | 统计项。 |
 | [`echolive:statistic_method`](registry/echolive/statistic_method.md) | `res/data/statistic_method.js` | 统计项方法。 |
