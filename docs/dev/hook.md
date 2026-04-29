@@ -1,10 +1,5 @@
 # Hook
 
-<span class="feature-tag" title="开发中特性" markdown>
-    <span class="icon">:material-update:</span>
-    <span class="text">开发中特性</span>
-</span>
-
 Hook 是一种在程序运行过程的特定节点注入代码的机制，方便进行二次开发。
 
 Echo-Live 中使用 [`EchoLiveHook`](hook/class/EchoLiveHook.md) 类管理 Hook，您可以通过实例 `echoLiveSystem.hook` 访问到它。

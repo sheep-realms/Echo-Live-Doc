@@ -221,6 +221,12 @@ nav:
     - 类:
       - dev/hook/class/EchoLiveHook.md
       - dev/hook/class/EchoLiveHookUnit.md
+- 扩展开发:
+  - 简介: extension/index.md
+  - 快速开始: extension/quick-start.md
+  - 参考:
+    - 扩展数据格式版本: extension/reference/schema-version.md
+    - 注册器 Hook: extension/reference/register-hook.md
 - 设计规范:
   - 命名: design/name.md
   - 本地化: design/localization.md
