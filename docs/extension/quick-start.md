@@ -129,7 +129,7 @@ extensionManager.load({
 
 然后，为它添加 `john_smith` 这个新的边框样式：
 
-``` javascript title="main.js" linenums="1" hl_lines="14 15"
+``` javascript title="main.js" linenums="1" hl_lines="14 15 16 17"
 extensionManager.load({
     meta: {
         title: "John Smith",
@@ -143,14 +143,18 @@ extensionManager.load({
             {
                 registry: "echolive:border_style"，
                 value: {
-                    name: "john_smith",
-                    value: "john_smith"
+                    "john_smith": {
+                        name: "john_smith",
+                        value: "john_smith"
+                    }
                 }
             }
         ]
     }
 });
 ```
+
+<p style="color: var(--md-default-fg-color--light);">呃...... 这个看起来有些奇怪？没事，你会习惯的。</p>
 
 至此，我们已经完成了一个简单的扩展。保存好你的扩展，去注册表查看器看看你的成果吧！
 
