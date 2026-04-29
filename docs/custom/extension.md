@@ -15,4 +15,4 @@ Echo-Live 支持扩展，可用于增加额外资源。
 
 ## :material-code-tags: 开发
 
-（等扩展功能完善后再写）
+请见[制作扩展](../extension/index.md)。
