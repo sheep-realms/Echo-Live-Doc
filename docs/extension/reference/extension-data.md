@@ -5,7 +5,7 @@
 ## 结构
 
 - `meta`：扩展元数据。
-    - `title`：扩展标题，支持[本地化文本组件](../../reference/text-component.md)，本地化键前缀为 `extension.`。
+    - `title`：扩展标题，支持[本地化文本组件](../../reference/text-component.md)，本地化键前缀为 `extension.<扩展名称>.`。
     - `name`：扩展识别名，应与扩展文件夹名称一致。
     - `schema_version`：扩展所使用的注册数据格式版本，由 3 个数字组成的数组，每个数字的含义依次为：
         - 主版本号：恒为 2。扩展主版本号与内置主版本号不一致将无法载入。
@@ -14,7 +14,7 @@
     - `extension_version`：扩展自身版本号，格式为字符串。
     - `icon`：扩展图标，从注册表 [`echolive:icon`](../../dev/registry/echolive/icon.md) 中取值，默认为 `material:puzzle`。
     - `cover`：扩展封面图像地址，以扩展自身文件夹为起点。设置扩展封面将会覆盖扩展图标。
-    - `description`：扩展描述，支持[本地化文本组件](../../reference/text-component.md)，本地化键前缀为 `extension.`。
+    - `description`：扩展描述，支持[本地化文本组件](../../reference/text-component.md)，本地化键前缀为 `extension.<扩展名称>.`。
     - `project_url`：扩展的项目 URL 地址。
     - `author`：作者，支持[参考元数据组件](../../reference/reference-component.md)，本地化键前缀为 `extension.<扩展名称>.`。
     - `license`：授权协议，支持[参考元数据组件](../../reference/reference-component.md)，本地化键前缀为 `extension.<扩展名称>.`。
