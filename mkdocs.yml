@@ -225,7 +225,7 @@ nav:
   - 简介: extension/index.md
   - 快速开始: extension/quick-start.md
   - 参考:
-    - 扩展数据格式版本: extension/reference/schema-version.md
+    - 扩展数据格式: extension/reference/extension-data.md
     - 注册器 Hook: extension/reference/register-hook.md
 - 设计规范:
   - 命名: design/name.md
