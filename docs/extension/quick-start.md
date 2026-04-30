@@ -26,8 +26,7 @@ extensionManager.load({
         title: "John Smith",
         // 扩展识别名，应与文件夹名称一致
         name: "john_smith",
-        // 扩展所使用的注册数据格式版本
-        // 请注意查看参考列表中扩展数据格式版本与 Echo-Live 版本的对应关系
+        // 扩展所使用的扩展数据格式版本
         schema_version: [2, 0, 1],
         // 扩展自身版本号
         extension_version: "1.0.0",
@@ -36,6 +35,10 @@ extensionManager.load({
     }
 });
 ```
+
+!!! note "关于扩展数据格式版本"
+
+    请参考[扩展数据格式](reference/extension-data.md)，确保您所使用的扩展数据格式版本与 Echo-Live 版本匹配。
 
 这样，扩展便完成了注册..... 吗？
 
