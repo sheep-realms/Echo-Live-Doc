@@ -170,6 +170,7 @@ nav:
       - dev/broadcast/api/echo_next.md
       - dev/broadcast/api/echo_printing.md
       - dev/broadcast/api/echo_state_update.md
+      - dev/broadcast/api/editor_typing.md
       - dev/broadcast/api/error.md
       - dev/broadcast/api/error_unknown.md
       - dev/broadcast/api/hello.md
