@@ -216,6 +216,7 @@ nav:
       - dev/registry/echolive/system.md
       - dev/registry/echolive/text_style.md
       - dev/registry/echolive/timing_function.md
+      - dev/registry/echolive/typing_label.md
   - Hook:
     - 概览: dev/hook.md
     - 类:

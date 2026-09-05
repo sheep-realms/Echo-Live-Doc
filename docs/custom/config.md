@@ -162,6 +162,16 @@
 | `hidden_time` | 1000 | 隐去动画用时，单位毫秒。 |
 | `show_time` | 500 | 显现动画用时，单位毫秒。 |
 
+#### 输入提示
+前缀：`echolive.typing.`
+
+| 配置项 | 预设值 | 描述 |
+| - | - | - |
+| `enable` | false | 启用输入提示。启用后，当编辑器正在输入时，对话框底部的控制栏会被替换为输入提示消息。 |
+| `username_enable` | false | 在输入提示消息中显示说话人，这在多人联动时很有用。 |
+| `max_username_length` | 16 | 说话人名称的最大长度，超出此长度的部分会被截断。 |
+| `label` | "typing" | 消息内容。 |
+
 #### 讲述人
 前缀：`echolive.speech_synthesis.`
 

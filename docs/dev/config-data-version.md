@@ -1,6 +1,14 @@
 # 配置文件数据版本历史
 
-## 15（1.7.10~至今）
+## 16（1.8.7~至今）
+
+**新增：**
+
+- `echolive`：
+    - `typing`：
+        - `enable`、`username_enable`、`max_username_length`、`label`
+
+## 15（1.7.10~1.8.6）
 
 **新增：**
 
