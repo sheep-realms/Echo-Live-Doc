@@ -134,6 +134,7 @@ nav:
   - 自定义数据: message/data.md
   - 多个文本段落: message/paragraph.md
   - 消息队列: message/message-list.md
+  - 子轨道: message/track.md
   - 形象: message/character.md
 - 参考文档:
   - 搜索: reference/search.md

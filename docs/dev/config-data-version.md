@@ -1,6 +1,16 @@
 # 配置文件数据版本历史
 
-## 16（1.8.7~至今）
+## 17（1.9.0~至今）
+
+**新增：**
+
+- `echolive`：
+    - `print_audio`：
+        - `subtrack_volume`、`subtrack_rate`
+    - `speech_synthesis`：
+        - `speech_subtrack`
+
+## 16（1.8.7~1.8.13）
 
 **新增：**
 
@@ -21,7 +31,7 @@
 **新增：**
 
 - `echolive`：
-    - `filter`:
+    - `filter`：
         - `enable`、`duplicate_chinese_mood_symbol_slice_enable`
 - `accessibility`：
     - `use_short_language_iso_code`、`send_on_enter`
@@ -31,7 +41,7 @@
 **新增：**
 
 - `echolive`：
-    - `layout`:
+    - `layout`：
         - `controller`
 
 ## 12（1.6.2~1.6.4）
