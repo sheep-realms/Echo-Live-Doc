@@ -130,6 +130,8 @@
 | `name` | "typewriter_loop" | 音效名称，详见[音效列表](sound.md#list)。 |
 | `volume` | 0.5 | 音效音量，`1` 为最大。 |
 | `rate` | 1 | 音效播放速度，`1` 为原速。 |
+| `subtrack_volume` | 0.15 | 当主轨道打印结束且子轨道仍在打印时的音量。 |
+| `subtrack_rate` | 1 | 当主轨道打印结束且子轨道仍在打印时的播放速度。 |
 
 #### 字符打印动效
 前缀：`echolive.print_effect.`
@@ -183,6 +185,7 @@
 | `rate` | 1 | 语速，`1` 为原速。 |
 | `delay` | 0 | 延迟，单位毫秒。 |
 | `speech_emoji` | false | 读出表情符号。 |
+| `speech_subtrack` | false | 读出子轨道。 |
 | `ignored_characters` | "" | 忽略的字符。 |
 
 #### 消息过滤器

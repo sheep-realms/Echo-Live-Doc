@@ -9,6 +9,8 @@ tags:
   - 字号
   - 字重
   - 着重号
+  - 上标
+  - 下标
   - 字间距
   - 字形伸缩
   - 文本投影
@@ -233,6 +235,54 @@ tags:
 === "效果预览"
 
     <span style="text-emphasis: dot; -webkit-text-emphasis: dot; text-emphasis-position: under; -webkit-text-emphasis-position: under;">我们所经历的每个平凡的日常，也许就是连续发生的奇迹。</span>
+
+## :material-format-superscript: 上标 { id="super" }
+
+上标可以通过 `super` 字段定义，这是一个布尔值，可以使文本靠上对齐并缩小字号。
+
+=== "代码"
+
+    ``` json linenums="1" hl_lines="7"
+    {
+        "message": [
+            "我们所经历的每个平凡的日常，也许就是连续发生的奇迹。"
+            {
+                "text": "[注1]",
+                "style": {
+                    "spuer": true
+                }
+            }
+        ]
+    }
+    ```
+
+=== "效果预览"
+
+    <span>我们所经历的每个平凡的日常，也许就是连续发生的奇迹。<sup>[注1]</sup></span>
+
+## :material-format-subscript: 下标 { id="sub" }
+
+与上标同理，下标可以通过 `sub` 字段定义，使文本靠下对齐并缩小字号。
+
+=== "代码"
+
+    ``` json linenums="1" hl_lines="7"
+    {
+        "message": [
+            "我们所经历的每个平凡的日常，也许就是连续发生的奇迹。"
+            {
+                "text": "[注1]",
+                "style": {
+                    "sub": true
+                }
+            }
+        ]
+    }
+    ```
+
+=== "效果预览"
+
+    <span>我们所经历的每个平凡的日常，也许就是连续发生的奇迹。<sub>[注1]</sub></span>
 
 ## :material-format-letter-spacing: 字间距 { id="letter-spacing" }
 
