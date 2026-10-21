@@ -26,3 +26,4 @@ file:///D:/Echo-Live/live.html?theme=void
 | `targeted` | 仅接收定向广播，填写任意内容即可生效。 | 对话框（`live.html`） |
 | `theme` | 设置主题。可用的主题请见[主题列表](../custom/theme.md#theme-list)。 | 对话框（`live.html`）和历史记录（`history.html`） |
 | `theme-variant` | 设置主题变体。 | 对话框（`live.html`）和历史记录（`history.html`） |
+| `zoom` | 设置网页缩放率，默认为 1。 | 对话框（`live.html`）和历史记录（`history.html`） |

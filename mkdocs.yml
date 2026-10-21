@@ -128,6 +128,7 @@ nav:
   - 启动参数: message/start-par.md
   - 文本样式: message/style.md
   - 停顿: message/pause.md
+  - 变更速度: message/speed.md
   - 模拟打字: message/typewrite.md
   - 注释: message/ruby.md
   - 事件: message/event.md

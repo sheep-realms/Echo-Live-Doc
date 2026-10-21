@@ -65,7 +65,8 @@ Echo-Live 的演出主体（即 `live.html` 中的 `#echo-live` 元素）DOM 结
     .echo-live .bottom-left,
     .echo-live .bottom-center,
     .echo-live .bottom-right,
-    .center-center-content>div {
+    .center-center-content>div,
+    .bottom-center-content>div {
         border: var(--md-default-fg-color--lighter) 1px solid;
         margin: 0.25em;
         padding: 0.25em;
@@ -104,7 +105,13 @@ Echo-Live 的演出主体（即 `live.html` 中的 `#echo-live` 元素）DOM 结
         <div>.bottom</div>
         <div class="line">
             <div class="bottom-left">.bottom-left</div>
-            <div class="bottom-center">.bottom-center</div>
+            <div class="bottom-center">
+                <div>.bottom-center</div>
+                <div class="bottom-center-content">
+                    <div class="controller red">.controller</div>
+                    <div class="typing-message red">.typing-message</div>
+                </div>
+            </div>
             <div class="bottom-right">.bottom-right</div>
         </div>
     </div>
@@ -130,7 +137,12 @@ Echo-Live 的演出主体（即 `live.html` 中的 `#echo-live` 元素）DOM 结
     <div class="bottom">
         <div class="bottom-left"></div>
         <div class="bottom-center">
-            <!-- 源文件中这里默认预制了一列 span 元素以模拟工具栏 -->
+            <div class="controller">
+                <!-- 源文件中这里默认预制了一列 span 元素以模拟工具栏 -->
+            </div>
+            <div class="typing-message">
+                <!-- 输入提示 -->
+            </div>
         </div>
         <div class="bottom-right"></div>
     </div>
