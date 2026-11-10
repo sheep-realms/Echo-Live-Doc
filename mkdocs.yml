@@ -186,6 +186,7 @@ nav:
       - dev/broadcast/api/set_live_display.md
       - dev/broadcast/api/set_theme.md
       - dev/broadcast/api/set_theme_style_url.md
+      - dev/broadcast/api/set_theme_variant.md
       - dev/broadcast/api/shutdown.md
       - dev/broadcast/api/websocket_close.md
       - dev/broadcast/api/websocket_heartbeat.md
