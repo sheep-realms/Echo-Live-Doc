@@ -280,6 +280,17 @@
 | `remove_continuous_duplicate` | true | 去除连续的重复消息。如果场景中有多个对话框同时接收消息，启用此项可避免重复记录历史消息。 |
 | `latest_message_hide` | true | 隐藏最新的历史记录。 |
 
+#### 文本样式
+前缀：`history.text_style.`
+
+| 配置项 | 预设值 | 描述 |
+| - | - | - |
+| `enable` | false | 启用富文本解析。 |
+| `allow_basic_style` | true | 允许解析基本样式。包括粗体、斜体、下划线、删除线、字重、上标和下标。 |
+| `allow_color` | false | 允许解析文本颜色。 |
+| `allow_background_color` | false | 允许解析背景颜色。 |
+| `allow_font_size` | false | 允许解析字号。 |
+
 ### :material-account-box: 形象播放器相关配置
 
 #### 默认形象
