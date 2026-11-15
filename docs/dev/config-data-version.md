@@ -1,6 +1,14 @@
 # 配置文件数据版本历史
 
-## 17（1.9.0~至今）
+## 18（1.9.5~至今）
+
+**新增：**
+
+- `history`：
+    - `text_style`：
+      - `enable`、`allow_basic_style`、`allow_color`、`allow_background_color`、`allow_font_size`
+
+## 17（1.9.0~1.9.4）
 
 **新增：**
 

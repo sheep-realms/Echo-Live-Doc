@@ -20,6 +20,7 @@ Echo-Live 对话框客户端向历史记录客户端发送正在打印的消息�
 | - | - | - | - |
 | `username` | String | 说话人 | Echo-Live 对话框中显示的说话人。 |
 | `message` | String | 消息 | Echo 当前正在打印的**单条**消息的纯文本。 |
+| `original_message` | String\|Object\|Array | 消息 | Echo 当前正在打印的**单条**消息的原始段落格式。 |
 
 ``` javascript title="示例"
 {
@@ -27,7 +28,17 @@ Echo-Live 对话框客户端向历史记录客户端发送正在打印的消息�
     /* 这里省略了一部分头部信息 */ 
     data: {
         username: '【说话人】',
-        message: '这里是说话内容。'
+        message: '这里是说话内容。',
+        original_message: {
+            text: '这里是说话内容。'
+        }
     }
 }
 ```
+
+## :material-history: 历史
+
+| 版本 | 描述 |
+| - | - |
+| 1.3.0 | 加入了 `echo_printing` API。 |
+| 1.9.5 | 新增 `original_message` 字段。 |
